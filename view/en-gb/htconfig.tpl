@@ -31,7 +31,7 @@ App::$config['system']['timezone'] = '{{$timezone}}';
 // What is your site name?
 
 App::$config['system']['baseurl'] = '{{$siteurl}}';
-App::$config['system']['sitename'] = "Hubzilla";
+App::$config['system']['sitename'] = "BlaBlaNet";
 App::$config['system']['location_hash'] = '{{$site_id}}';
 
 
@@ -72,7 +72,7 @@ App::$config['system']['admin_email'] = '{{$adminmail}}';
 // paid, tiered, or free determines how these listings will be presented.  
 
 
-App::$config['system']['access_policy'] = ACCESS_PRIVATE;
+App::$config['system']['access_policy'] = ACCESS_FREE;
 
 // If you operate a public site, you might wish that people are directed
 // to a "sellpage" where you can describe for features or policies or service plans in depth.
@@ -99,7 +99,7 @@ App::$config['system']['directory_mode']  = DIRECTORY_MODE_NORMAL;
 
 // default system theme
 
-App::$config['system']['theme'] = 'redbasic';
+App::$config['system']['theme'] = 'suckerberg';
 
 
 // PHP error logging setup

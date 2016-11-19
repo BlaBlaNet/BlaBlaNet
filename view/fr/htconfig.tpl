@@ -32,7 +32,7 @@ App::$config['system']['timezone'] = '{{$timezone}}';
 // Quel sera le nom de votre site?
 
 App::$config['system']['baseurl'] = '{{$siteurl}}';
-App::$config['system']['sitename'] = "Hubzilla";
+App::$config['system']['sitename'] = "BlaBlaNet";
 App::$config['system']['location_hash'] = '{{$site_id}}';
 
 // Choices are 'basic', 'standard', and 'pro'.
@@ -85,5 +85,5 @@ App::$config['system']['directory_mode']  = DIRECTORY_MODE_NORMAL;
 
 // Thème par défaut
 
-App::$config['system']['theme'] = 'redbasic';
+App::$config['system']['theme'] = 'suckerberg';
 
