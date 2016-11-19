@@ -5,14 +5,14 @@
  */
 
 /**
- * Hubzilla.
+ * BlaBlaNet.
  *
- * Hubzilla is an open source decentralised communications
+ * BlaBlaNet is an open source decentralised communications
  * platform combined with a decentralised identity/authentication framework
  * wrapped in an extensible content management system, providing website designers
  * the ability to embed fully decentralised communications and social tools
  * into many traditional website designs (blogs, forums, small business
- * websites, charitable organisations, etc.). Hubzilla also provides DNS mobility
+ * websites, charitable organisations, etc.). BlaBlaNet also provides DNS mobility
  * and internet scale privacy/access control.
  *
  * This allows any individual website to participate in a matrix of linked
@@ -561,7 +561,7 @@ define ( 'ITEM_BUILDBLOCK',      0x0100);	// Named thusly to make sure nobody co
 //define ( 'ITEM_PDL',			 0x0200);	// Page Description Language - e.g. Comanche
 define ( 'ITEM_BUG',			 0x0400);	// Is a bug, can be used by the internal bug tracker
 define ( 'ITEM_PENDING_REMOVE',  0x0800);   // deleted, notification period has lapsed
-define ( 'ITEM_DOC',             0x1000);   // hubzilla only, define here so that item import does the right thing
+define ( 'ITEM_DOC',             0x1000);   // BlaBlaNet only, define here so that item import does the right thing
 
 define ( 'ITEM_TYPE_POST',       0 );
 define ( 'ITEM_TYPE_BLOCK',      1 );
@@ -1713,7 +1713,7 @@ function login($register = false, $form_id = 'main-login', $hiddens=false) {
 		$reglink = 'register';
 
 	$reg = array(
-		'title' => t('Create an account to access services and applications within the Hubzilla'),
+		'title' => t('Create an account to access services and applications within the BlaBlaNet'),
 		'desc' => t('Register'),
 		'link' => (($register) ? $reglink : 'pubsites')
 	);
@@ -2348,7 +2348,7 @@ function construct_page(&$a) {
 }
 
 /**
- * @brief Returns Hubzilla's root directory.
+ * @brief Returns BlaBlaNet's root directory.
  *
  * @return string
  */
@@ -2454,7 +2454,7 @@ function z_check_cert() {
 /**
  * @brief Send email to admin if server has an invalid certificate.
  *
- * If a Hubzilla hub is available over https it must have a publicly valid
+ * If a BlaBlaNet hub is available over https it must have a publicly valid
  * certificate.
  */
 function cert_bad_email() {
@@ -2466,7 +2466,7 @@ function cert_bad_email() {
 		'$error' => t('Website SSL certificate is not valid. Please correct.')
 	));
 
-	$subject = email_header_encode(sprintf(t('[hubzilla] Website SSL error for %s'), App::get_hostname()));
+	$subject = email_header_encode(sprintf(t('[BlaBlaNet] Website SSL error for %s'), App::get_hostname()));
 	mail(App::$config['system']['admin_email'], $subject, $email_msg,
 		'From: Administrator' . '@' . App::get_hostname() . "\n"
 		. 'Content-type: text/plain; charset=UTF-8' . "\n"
@@ -2574,7 +2574,7 @@ function check_cron_broken() {
 		'$lastdate' => (($d)? $d : t('never'))
 	));
 
-	$subject = email_header_encode(sprintf(t('[hubzilla] Cron tasks not running on %s'), App::get_hostname()));
+	$subject = email_header_encode(sprintf(t('[BlaBlaNet] Cron tasks not running on %s'), App::get_hostname()));
 	mail(App::$config['system']['admin_email'], $subject, $email_msg,
 		'From: Administrator' . '@' . App::get_hostname() . "\n"
 		. 'Content-type: text/plain; charset=UTF-8' . "\n"
