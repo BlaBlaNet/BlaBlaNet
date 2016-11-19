@@ -76,7 +76,7 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
 		directory and issue an update command for that repository.
 
             cd mywebsite
-            util/update_addon_repo MynewAddons
+            util/update_addon_repo blablanet
 
 	- Create searchable representations of the online documentation. You may do this any time
 		that the documentation is updated.

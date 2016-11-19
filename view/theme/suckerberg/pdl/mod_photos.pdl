@@ -1,0 +1,13 @@
+[region=aside]
+[widget=shortprofile][/widget]
+[widget=photo_albums][/widget]
+[/region]
+
+[region=content]
+[widget=zcard][/widget]
+$content
+[/region]
+
+[region=right_aside]
+[widget=suggestions][/widget]
+[/region]
