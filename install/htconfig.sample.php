@@ -40,7 +40,7 @@ App::$config['system']['timezone'] = 'America/Los_Angeles';
 // What is your site name? DO NOT ADD A TRAILING SLASH!
 
 App::$config['system']['baseurl'] = 'https://mysite.example';
-App::$config['system']['sitename'] = "Hubzilla";
+App::$config['system']['sitename'] = "BlaBlaNet";
 App::$config['system']['location_hash'] = 'if the auto install failed, put a unique random string here';
 
 
