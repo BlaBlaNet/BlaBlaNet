@@ -2189,7 +2189,7 @@ function deliverable_singleton($channel_id,$xchan) {
 
 function get_repository_version($branch = 'master') {
 
-	$path = "https://raw.githubusercontent.com/BlaBlaNet-Social-Network/$branch/boot.php";
+	$path = "https://geditlab.com/blablanet/BlaBlanet/raw/$branch/boot.php";
 	
 	$x = z_fetch_url($path);
 	if($x['success']) {
