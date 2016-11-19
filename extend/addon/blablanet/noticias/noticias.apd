@@ -1,0 +1,3 @@
+url: $baseurl/noticias
+name: Ultimas Noticias
+photo: $baseurl/addon/noticias/noticias.png

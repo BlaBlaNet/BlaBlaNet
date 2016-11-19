@@ -1,0 +1,3 @@
+url: $baseurl/pgpkey
+name: PGP Encryption
+photo: $baseurl/addon/pgpkey/pgpkey.png

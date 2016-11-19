@@ -1,0 +1,3 @@
+url: $baseurl/status
+name: Status
+photo: $baseurl/addon/status/status.png

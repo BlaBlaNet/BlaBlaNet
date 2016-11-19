@@ -1,0 +1,3 @@
+url: $baseurl/voip
+name: BlaBlanet Voip Provider
+photo: $baseurl/addon/voip/voip.png

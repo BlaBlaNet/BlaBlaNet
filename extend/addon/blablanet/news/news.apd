@@ -1,0 +1,3 @@
+url: $baseurl/news
+name: News
+photo: $baseurl/addon/news/news.png
