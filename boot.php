@@ -43,8 +43,8 @@ require_once('include/connections.php');
 require_once('include/account.php');
 
 
-define ( 'PLATFORM_NAME',           'hubzilla' );
-define ( 'STD_VERSION',             '1.14.3' );
+define ( 'PLATFORM_NAME',           'BlaBlaNet' );
+define ( 'STD_VERSION',             '1.15.0' );
 define ( 'ZOT_REVISION',            '1.1' );
 
 define ( 'DB_UPDATE_VERSION',       1183  );
@@ -72,16 +72,12 @@ define ( 'DIRECTORY_MODE_STANDALONE',  0x0100); // A detached (off the grid) hub
 // a standalone hub, we need to seed the service with a starting
 // point to go out and find the rest of the world.
 
-define ( 'DIRECTORY_REALM',            'RED_GLOBAL');
-define ( 'DIRECTORY_FALLBACK_MASTER',  'https://hub.pixelbits.de');
+define ( 'DIRECTORY_REALM',            'BLA_BLANET');
+define ( 'DIRECTORY_FALLBACK_MASTER',  'https://inboxwall.com');
 
 $DIRECTORY_FALLBACK_SERVERS = array( 
-	'https://hubzilla.site',
-	'https://hubzilla.zottel.net',
-	'https://hub.pixelbits.de',
-	'https://my.federated.social',
-	'https://hubzilla.nl',
-	'https://blablanet.es'
+	'https://blablanet.es',
+	'https://blablanet.co.il'
 );
 
 
@@ -450,9 +446,9 @@ define ( 'TERM_OBJ_APP',     7 );
 /**
  * various namespaces we may need to parse
  */
-define ( 'PROTOCOL_ZOT',              'http://purl.org/zot/protocol' );
-define ( 'NAMESPACE_ZOT',             'http://purl.org/zot' );
-define ( 'NAMESPACE_DFRN' ,           'http://purl.org/macgirvin/dfrn/1.0' );
+///define ( 'PROTOCOL_ZOT',              'http://purl.org/zot/protocol' );
+////define ( 'NAMESPACE_ZOT',             'http://purl.org/zot' );
+///define ( 'NAMESPACE_DFRN' ,           'http://purl.org/macgirvin/dfrn/1.0' );
 define ( 'NAMESPACE_THREAD' ,         'http://purl.org/syndication/thread/1.0' );
 define ( 'NAMESPACE_TOMB' ,           'http://purl.org/atompub/tombstones/1.0' );
 define ( 'NAMESPACE_ACTIVITY',        'http://activitystrea.ms/spec/1.0/' );
