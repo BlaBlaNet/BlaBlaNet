@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2012-2014 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # 
 # Translators:
@@ -5965,9 +5965,9 @@ msgstr "Kjører på webplasseringen"
 
 #: ../../Zotlabs/Module/Siteinfo.php:76
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
-msgstr "Vennligst besøk <a href=\"http://hubzilla.org\">hubzilla.org</a> for å lære mer om $Projectname."
+msgstr "Vennligst besøk <a href=\"http://Blablanet.org\">Blablanet.org</a> for å lære mer om $Projectname."
 
 #: ../../Zotlabs/Module/Siteinfo.php:77
 msgid "Bug reports and issues: please visit"
@@ -6393,8 +6393,8 @@ msgstr "%s <!item_type!>"
 
 #: ../../Zotlabs/Lib/Enotify.php:104
 #, php-format
-msgid "[Hubzilla:Notify] New mail received at %s"
-msgstr "[Hubzilla:Notify] Ny melding mottatt hos %s"
+msgid "[Blablanet:Notify] New mail received at %s"
+msgstr "[Blablanet:Notify] Ny melding mottatt hos %s"
 
 #: ../../Zotlabs/Lib/Enotify.php:106
 #, php-format
@@ -6432,8 +6432,8 @@ msgstr "%1$s, %2$s kommenterte på [zrl=%3$s]din %4$s[/zrl]"
 
 #: ../../Zotlabs/Lib/Enotify.php:192
 #, php-format
-msgid "[Hubzilla:Notify] Comment to conversation #%1$d by %2$s"
-msgstr "[Hubzilla:Notify] Kommentar til samtale #%1$d av %2$s"
+msgid "[Blablanet:Notify] Comment to conversation #%1$d by %2$s"
+msgstr "[Blablanet:Notify] Kommentar til samtale #%1$d av %2$s"
 
 #: ../../Zotlabs/Lib/Enotify.php:193
 #, php-format
@@ -6449,8 +6449,8 @@ msgstr "Vennligst besøk %s for å se og/eller svare i samtalen"
 
 #: ../../Zotlabs/Lib/Enotify.php:202
 #, php-format
-msgid "[Hubzilla:Notify] %s posted to your profile wall"
-msgstr "[Hubzilla:Notify] %s skrev et innlegg på din profilvegg"
+msgid "[Blablanet:Notify] %s posted to your profile wall"
+msgstr "[Blablanet:Notify] %s skrev et innlegg på din profilvegg"
 
 #: ../../Zotlabs/Lib/Enotify.php:204
 #, php-format
@@ -6464,8 +6464,8 @@ msgstr "%1$s, %2$s skrev et innlegg på [zrl=%3$s]din vegg[/zrl]"
 
 #: ../../Zotlabs/Lib/Enotify.php:230
 #, php-format
-msgid "[Hubzilla:Notify] %s tagged you"
-msgstr "[Hubzilla:Notify] %s merket deg"
+msgid "[Blablanet:Notify] %s tagged you"
+msgstr "[Blablanet:Notify] %s merket deg"
 
 #: ../../Zotlabs/Lib/Enotify.php:231
 #, php-format
@@ -6479,8 +6479,8 @@ msgstr "%1$s, %2$s [zrl=%3$s]merket deg[/zrl]."
 
 #: ../../Zotlabs/Lib/Enotify.php:244
 #, php-format
-msgid "[Hubzilla:Notify] %1$s poked you"
-msgstr "[Hubzilla:Notify] %1$s prikket deg"
+msgid "[Blablanet:Notify] %1$s poked you"
+msgstr "[Blablanet:Notify] %1$s prikket deg"
 
 #: ../../Zotlabs/Lib/Enotify.php:245
 #, php-format
@@ -6494,8 +6494,8 @@ msgstr "%1$s, %2$s [zrl=%2$s]dyttet deg[/zrl]."
 
 #: ../../Zotlabs/Lib/Enotify.php:262
 #, php-format
-msgid "[Hubzilla:Notify] %s tagged your post"
-msgstr "[Hubzilla:Notify] %s merket ditt innlegg"
+msgid "[Blablanet:Notify] %s tagged your post"
+msgstr "[Blablanet:Notify] %s merket ditt innlegg"
 
 #: ../../Zotlabs/Lib/Enotify.php:263
 #, php-format
@@ -6508,8 +6508,8 @@ msgid "%1$s, %2$s tagged [zrl=%3$s]your post[/zrl]"
 msgstr "%1$s, %2$s merket [zrl=%3$s]ditt innlegg[/zrl]"
 
 #: ../../Zotlabs/Lib/Enotify.php:276
-msgid "[Hubzilla:Notify] Introduction received"
-msgstr "[Hubzilla:Notify] Introduksjon mottatt"
+msgid "[Blablanet:Notify] Introduction received"
+msgstr "[Blablanet:Notify] Introduksjon mottatt"
 
 #: ../../Zotlabs/Lib/Enotify.php:277
 #, php-format
@@ -6533,8 +6533,8 @@ msgid "Please visit %s to approve or reject the connection request."
 msgstr "Vennligst besøk %s for å godkjenne eller avslå forespørselen om forbindelse."
 
 #: ../../Zotlabs/Lib/Enotify.php:291
-msgid "[Hubzilla:Notify] Friend suggestion received"
-msgstr "[Hubzilla:Notify] Venneforslag mottatt"
+msgid "[Blablanet:Notify] Friend suggestion received"
+msgstr "[Blablanet:Notify] Venneforslag mottatt"
 
 #: ../../Zotlabs/Lib/Enotify.php:292
 #, php-format
@@ -6562,8 +6562,8 @@ msgid "Please visit %s to approve or reject the suggestion."
 msgstr "Vennligst besøk %s for å godkjenne eller avslå dette forslaget."
 
 #: ../../Zotlabs/Lib/Enotify.php:518
-msgid "[Hubzilla:Notify]"
-msgstr "[Hubzilla:Notify]"
+msgid "[Blablanet:Notify]"
+msgstr "[Blablanet:Notify]"
 
 #: ../../Zotlabs/Lib/Enotify.php:667
 msgid "created a new post"
@@ -9631,8 +9631,8 @@ msgid "$Projectname event notification:"
 msgstr "$Projectname hendelsesvarsling:"
 
 #: ../../view/theme/redbasic/php/config.php:82
-msgid "Focus (Hubzilla default)"
-msgstr "Focus (Hubzilla standardtema)"
+msgid "Focus (Blablanet default)"
+msgstr "Focus (Blablanet standardtema)"
 
 #: ../../view/theme/redbasic/php/config.php:103
 msgid "Theme settings"
@@ -9789,8 +9789,8 @@ msgstr "Oppdateringsfeil ved %s"
 
 #: ../../boot.php:1684
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
-msgstr "Lag en konto for å få tilgang til tjenester og programmer i Hubzilla"
+"Create an account to access services and applications within the Blablanet"
+msgstr "Lag en konto for å få tilgang til tjenester og programmer i Blablanet"
 
 #: ../../boot.php:1706
 msgid "Password"
@@ -9814,8 +9814,8 @@ msgstr "Nettstedets SSL-sertifikat er ikke gyldig. Vennligst fiks dette."
 
 #: ../../boot.php:2428
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
-msgstr "[hubzilla] SSL-feil ved nettsted hos %s"
+msgid "[Blablanet] Website SSL error for %s"
+msgstr "[Blablanet] SSL-feil ved nettsted hos %s"
 
 #: ../../boot.php:2469
 msgid "Cron/Scheduled tasks not running."
@@ -9823,5 +9823,5 @@ msgstr "Cron/planlagte oppgaver kjører ikke."
 
 #: ../../boot.php:2473
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
-msgstr "[hubzilla] Cron-oppgaver kjører ikke på %s"
+msgid "[Blablanet] Cron tasks not running on %s"
+msgstr "[Blablanet] Cron-oppgaver kjører ikke på %s"

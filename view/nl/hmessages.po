@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2012-2014 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # 
 # Translators:
@@ -1007,11 +1007,11 @@ msgstr "Beheerder: "
 
 #: ../../Zotlabs/Module/Admin/Plugins.php:348
 msgid "Minimum project version: "
-msgstr "Minimum versie Hubzilla: "
+msgstr "Minimum versie Blablanet: "
 
 #: ../../Zotlabs/Module/Admin/Plugins.php:349
 msgid "Maximum project version: "
-msgstr "Maximum versie Hubzilla:"
+msgstr "Maximum versie Blablanet:"
 
 #: ../../Zotlabs/Module/Admin/Plugins.php:350
 msgid "Minimum PHP version: "
@@ -3139,7 +3139,7 @@ msgstr "Voer e-mailadressen in, één per regel:"
 
 #: ../../Zotlabs/Module/Invite.php:136
 msgid "Please join my community on $Projectname."
-msgstr "Hierbij nodig ik je uit om mij, en andere vrienden en kennissen, op $Projectname te vergezellen. Lees meer over $Projectname  op http://hubzilla.org"
+msgstr "Hierbij nodig ik je uit om mij, en andere vrienden en kennissen, op $Projectname te vergezellen. Lees meer over $Projectname  op http://Blablanet.org"
 
 #: ../../Zotlabs/Module/Invite.php:138
 msgid "You will need to supply this invitation code:"
@@ -4830,9 +4830,9 @@ msgstr "Draaiend op weblocatie"
 
 #: ../../Zotlabs/Module/Siteinfo.php:59
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
-msgstr "Bezoek <a href=\"http://hubzilla.org\">hubzilla.org</a> "
+msgstr "Bezoek <a href=\"http://Blablanet.org\">Blablanet.org</a> "
 
 #: ../../Zotlabs/Module/Siteinfo.php:60
 msgid "Bug reports and issues: please visit"
@@ -9987,8 +9987,8 @@ msgid "Empty path"
 msgstr "Ontbrekende locatie"
 
 #: ../../view/theme/redbasic/php/config.php:9
-msgid "Focus (Hubzilla default)"
-msgstr "Focus (Hubzilla-standaard)"
+msgid "Focus (Blablanet default)"
+msgstr "Focus (Blablanet-standaard)"
 
 #: ../../view/theme/redbasic/php/config.php:110
 msgid "Theme settings"
@@ -10141,8 +10141,8 @@ msgstr "Update-fout op %s"
 
 #: ../../boot.php:1720
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
-msgstr "Maak een account aan om toegang te krijgen tot diensten en toepassingen van Hubzilla"
+"Create an account to access services and applications within the Blablanet"
+msgstr "Maak een account aan om toegang te krijgen tot diensten en toepassingen van Blablanet"
 
 #: ../../boot.php:1741
 msgid "Login/Email"
@@ -10170,8 +10170,8 @@ msgstr "Het SSL-certificaat van deze website is ongeldig. Corrigeer dit a.u.b."
 
 #: ../../boot.php:2473
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
-msgstr "[hubzilla] Probleem met SSL-certificaat voor %s"
+msgid "[Blablanet] Website SSL error for %s"
+msgstr "[Blablanet] Probleem met SSL-certificaat voor %s"
 
 #: ../../boot.php:2577
 msgid "Cron/Scheduled tasks not running."
@@ -10179,5 +10179,5 @@ msgstr "Cron is niet actief"
 
 #: ../../boot.php:2581
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
-msgstr "[hubzilla] Cron-taken zijn niet actief op %s"
+msgid "[Blablanet] Cron tasks not running on %s"
+msgstr "[Blablanet] Cron-taken zijn niet actief op %s"

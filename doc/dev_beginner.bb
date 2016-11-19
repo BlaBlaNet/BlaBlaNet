@@ -168,14 +168,11 @@ Note the access details (hostname, username, password, database name).
 
 [h2]Fork the project on github[/h2]
 
-Please follow the instruction in the offiical [url=http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project] documentation[/url] of git.
-It is a good idea to read the whole manual! Git is different to other version control systems in many ways.
 
 Now you should
 [list]
-[*] create an account at github.com
-[*] fork https://github.com/redmatrix/hubzilla
-[*] fork https://github.com/redmatrix/hubzilla-addons
+[*] create an account at geditlabs.com
+[*] fork https://geditlab.com/blablanet/BlaBlanet.git
 [/list]
 
 If you not want to use GIT from the command line - there is a usefull Eclipse plugin named ""Eclipse Mylyn to GitHub connector".
@@ -198,9 +195,9 @@ Install git (and optionally git-gui a client gui)
 
 Download the main project red and red-addons
 [code]
-root@debian:/var# git clone https://github.com/yourname/red www
+root@debian:/var# git clone https://geditlab.com/yourname/red www
 root@debian:/var# cd www/
-root@debian:/var/www# git clone https://github.com/yourname/red-addons addon
+root@debian:/var/www# git clone https://geditlab.com/yourname/red-addons addon
 [/code]
 
 Make this extra folder
@@ -313,9 +310,9 @@ Install the PHP plugin
 Menu > Help > Install new software...
 Install "PHP Developnent Tools ..."
 
-Optionally - Install the GitHub connector plugin
+Optionally - Install the Geditlab connector plugin
 Menu > Help > Install new software...
-Install "Eclipse Mylyn to GitHub connector"
+Install "Eclipse Mylyn to Geditlab connector"
 
 Configure the PHP plugin
 Menu > Window > Preferences...
@@ -344,7 +341,7 @@ Expected:
 There is a related page in this docs: [zrl=[baseurl]/help/git_for_non_developers]Git for Non-Developers[/zrl].
 As stated befor it is recommended to read the official documentation [url=http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project]GitHub-Contributing-to-a-Project[/url] of git.
 
-Eclipse has a usefull plugin for GIT: "Eclipse Mylyn to GitHub connector".
+Eclipse has a usefull plugin for GIT: "Eclipse Mylyn to Geditlab connector".
 
 Make sure you have set your data
 [code]
@@ -362,7 +359,7 @@ surfer@debian:/var/www$ git checkout -b dev_beginning
 Make sure your local repository is up-to-date with the main project.
 Add the original repository as a remote named “upstream” if not done yet
 [code]
-surfer@debian:/var/www$ git remote add upstream https://github.com/redmatrix/hubzilla
+surfer@debian:/var/www$ git remote add upstream https://geditlab.com/blablanet/BlaBlanet.git
 [/code]
 
 Fetch the newest work from that remote

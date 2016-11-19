@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2012-2014 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # 
 # Translators:
@@ -1001,7 +1001,7 @@ msgstr "Protokolldatei"
 msgid ""
 "Must be writable by web server. Relative to your top-level webserver "
 "directory."
-msgstr "Muss für den Web-Server schreibbar sein. Relativ zum Hubzilla-Stammverzeichnis."
+msgstr "Muss für den Web-Server schreibbar sein. Relativ zum Blablanet-Stammverzeichnis."
 
 #: ../../Zotlabs/Module/Admin/Logs.php:93
 msgid "Log level"
@@ -4409,7 +4409,7 @@ msgstr "Meist liegt das daran, dass der Nutzer, unter dem der Web-Server läuft,
 msgid ""
 "At the end of this procedure, we will give you a text to save in a file "
 "named .htconfig.php in your Red top folder."
-msgstr "Am Schluss dieses Vorgangs wird ein Text generiert, den Du unter dem Dateinamen .htconfig.php im Stammverzeichnis Deiner Hubzilla-Installation speichern musst."
+msgstr "Am Schluss dieses Vorgangs wird ein Text generiert, den Du unter dem Dateinamen .htconfig.php im Stammverzeichnis Deiner Blablanet-Installation speichern musst."
 
 #: ../../Zotlabs/Module/Setup.php:567
 msgid ""
@@ -4432,7 +4432,7 @@ msgstr "$Projectname verwendet Smarty3 um Vorlagen für die Webdarstellung zu ü
 msgid ""
 "In order to store these compiled templates, the web server needs to have "
 "write access to the directory %s under the top level web folder."
-msgstr "Um diese kompilierten Vorlagen speichern zu können, braucht der Web-Server Schreibzugriff auf das Verzeichnis %s unterhalb des Hubzilla-Stammverzeichnisses."
+msgstr "Um diese kompilierten Vorlagen speichern zu können, braucht der Web-Server Schreibzugriff auf das Verzeichnis %s unterhalb des Blablanet-Stammverzeichnisses."
 
 #: ../../Zotlabs/Module/Setup.php:586 ../../Zotlabs/Module/Setup.php:607
 msgid ""
@@ -4457,7 +4457,7 @@ msgid ""
 "This software uses the store directory to save uploaded files. The web "
 "server needs to have write access to the store directory under the Red top "
 "level folder"
-msgstr "Diese Software benutzt das Verzeichnis store, um hochgeladene Dateien zu speichern. Der Web-Server benötigt Schreibrechte für dieses Verzeichnis direkt unterhalb des Hubzilla-Stammverzeichnisses"
+msgstr "Diese Software benutzt das Verzeichnis store, um hochgeladene Dateien zu speichern. Der Web-Server benötigt Schreibrechte für dieses Verzeichnis direkt unterhalb des Blablanet-Stammverzeichnisses"
 
 #: ../../Zotlabs/Module/Setup.php:610
 msgid "store is writable"
@@ -4629,9 +4629,9 @@ msgstr "Erreichbar unter der Web-Adresse"
 
 #: ../../Zotlabs/Module/Siteinfo.php:59
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
-msgstr "Bitte besuchen Sie <a href=\"http://hubzilla.org\">hubzilla.org</a>, um mehr über $Projectname zu erfahren."
+msgstr "Bitte besuchen Sie <a href=\"http://Blablanet.org\">Blablanet.org</a>, um mehr über $Projectname zu erfahren."
 
 #: ../../Zotlabs/Module/Siteinfo.php:60
 msgid "Bug reports and issues: please visit"
@@ -6694,8 +6694,8 @@ msgstr "%s <!item_type!>"
 
 #: ../../Zotlabs/Lib/Enotify.php:104
 #, php-format
-msgid "[Hubzilla:Notify] New mail received at %s"
-msgstr "[Hubzilla:Benachrichtigung] Neue Mail empfangen auf %s"
+msgid "[Blablanet:Notify] New mail received at %s"
+msgstr "[Blablanet:Benachrichtigung] Neue Mail empfangen auf %s"
 
 #: ../../Zotlabs/Lib/Enotify.php:106
 #, php-format
@@ -6733,8 +6733,8 @@ msgstr "%1$s, %2$s hat [zrl=%3$s]Deinen %4$s[/zrl] kommentiert"
 
 #: ../../Zotlabs/Lib/Enotify.php:192
 #, php-format
-msgid "[Hubzilla:Notify] Comment to conversation #%1$d by %2$s"
-msgstr "[Hubzilla:Benachrichtigung] Kommentar in Unterhaltung #%1$d von %2$s"
+msgid "[Blablanet:Notify] Comment to conversation #%1$d by %2$s"
+msgstr "[Blablanet:Benachrichtigung] Kommentar in Unterhaltung #%1$d von %2$s"
 
 #: ../../Zotlabs/Lib/Enotify.php:193
 #, php-format
@@ -6750,8 +6750,8 @@ msgstr "Bitte besuche %s, um die Unterhaltung anzusehen und/oder zu kommentieren
 
 #: ../../Zotlabs/Lib/Enotify.php:202
 #, php-format
-msgid "[Hubzilla:Notify] %s posted to your profile wall"
-msgstr "[Hubzilla:Benachrichtigung] %s schrieb auf Deine Pinnwand"
+msgid "[Blablanet:Notify] %s posted to your profile wall"
+msgstr "[Blablanet:Benachrichtigung] %s schrieb auf Deine Pinnwand"
 
 #: ../../Zotlabs/Lib/Enotify.php:204
 #, php-format
@@ -6765,8 +6765,8 @@ msgstr "%1$s, %2$s hat auf [zrl=%3$s]Deine Pinnwand[/zrl] geschrieben"
 
 #: ../../Zotlabs/Lib/Enotify.php:230
 #, php-format
-msgid "[Hubzilla:Notify] %s tagged you"
-msgstr "[Hubzilla:Benachrichtigung] %s hat Dich erwähnt"
+msgid "[Blablanet:Notify] %s tagged you"
+msgstr "[Blablanet:Benachrichtigung] %s hat Dich erwähnt"
 
 #: ../../Zotlabs/Lib/Enotify.php:231
 #, php-format
@@ -6780,8 +6780,8 @@ msgstr "%1$s, %2$s [zrl=%3$s]hat Dich erwähnt[/zrl]."
 
 #: ../../Zotlabs/Lib/Enotify.php:244
 #, php-format
-msgid "[Hubzilla:Notify] %1$s poked you"
-msgstr "[Hubzilla:Benachrichtigung] %1$s hat Dich angestupst"
+msgid "[Blablanet:Notify] %1$s poked you"
+msgstr "[Blablanet:Benachrichtigung] %1$s hat Dich angestupst"
 
 #: ../../Zotlabs/Lib/Enotify.php:245
 #, php-format
@@ -6795,8 +6795,8 @@ msgstr "%1$s, %2$s [zrl=%2$s]hat Dich angestupst[/zrl]."
 
 #: ../../Zotlabs/Lib/Enotify.php:262
 #, php-format
-msgid "[Hubzilla:Notify] %s tagged your post"
-msgstr "[Hubzilla:Benachrichtigung] %s  hat Deinen Beitrag verschlagwortet"
+msgid "[Blablanet:Notify] %s tagged your post"
+msgstr "[Blablanet:Benachrichtigung] %s  hat Deinen Beitrag verschlagwortet"
 
 #: ../../Zotlabs/Lib/Enotify.php:263
 #, php-format
@@ -6809,8 +6809,8 @@ msgid "%1$s, %2$s tagged [zrl=%3$s]your post[/zrl]"
 msgstr "%1$s, %2$s hat [zrl=%3$s]Deinen Beitrag[/zrl] verschlagwortet"
 
 #: ../../Zotlabs/Lib/Enotify.php:276
-msgid "[Hubzilla:Notify] Introduction received"
-msgstr "[Hubzilla:Benachrichtigung] Vorstellung erhalten"
+msgid "[Blablanet:Notify] Introduction received"
+msgstr "[Blablanet:Benachrichtigung] Vorstellung erhalten"
 
 #: ../../Zotlabs/Lib/Enotify.php:277
 #, php-format
@@ -6834,8 +6834,8 @@ msgid "Please visit %s to approve or reject the connection request."
 msgstr "Bitte besuche %s , um die Verbindungsanfrage anzunehmen oder abzulehnen."
 
 #: ../../Zotlabs/Lib/Enotify.php:291
-msgid "[Hubzilla:Notify] Friend suggestion received"
-msgstr "[Hubzilla:Benachrichtigung] Freundschaftsvorschlag erhalten"
+msgid "[Blablanet:Notify] Friend suggestion received"
+msgstr "[Blablanet:Benachrichtigung] Freundschaftsvorschlag erhalten"
 
 #: ../../Zotlabs/Lib/Enotify.php:292
 #, php-format
@@ -6863,8 +6863,8 @@ msgid "Please visit %s to approve or reject the suggestion."
 msgstr "Bitte besuche %s um den Vorschlag zu akzeptieren oder abzulehnen."
 
 #: ../../Zotlabs/Lib/Enotify.php:518
-msgid "[Hubzilla:Notify]"
-msgstr "[Hubzilla:Benachrichtigung]"
+msgid "[Blablanet:Notify]"
+msgstr "[Blablanet:Benachrichtigung]"
 
 #: ../../Zotlabs/Lib/Enotify.php:667
 msgid "created a new post"
@@ -10018,8 +10018,8 @@ msgid "Allows fine tuning of themes and page layouts"
 msgstr "Erlaubt die Feineinstellung von Designs und Seitenlayouts"
 
 #: ../../view/theme/redbasic/php/config.php:9
-msgid "Focus (Hubzilla default)"
-msgstr "Focus (Voreinstellung für Hubzilla)"
+msgid "Focus (Blablanet default)"
+msgstr "Focus (Voreinstellung für Blablanet)"
 
 #: ../../view/theme/redbasic/php/config.php:110
 msgid "Theme settings"
@@ -10172,8 +10172,8 @@ msgstr "Aktualisierungsfehler auf %s"
 
 #: ../../boot.php:1720
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
-msgstr "Erstelle ein Konto, um Anwendungen und Dienste innerhalb von Hubzilla nutzen zu können."
+"Create an account to access services and applications within the Blablanet"
+msgstr "Erstelle ein Konto, um Anwendungen und Dienste innerhalb von Blablanet nutzen zu können."
 
 #: ../../boot.php:1741
 msgid "Login/Email"
@@ -10201,8 +10201,8 @@ msgstr "Das SSL-Zertifikat der Website ist nicht gültig. Bitte beheben."
 
 #: ../../boot.php:2473
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
-msgstr "[hubzilla] Website-SSL-Fehler für %s"
+msgid "[Blablanet] Website SSL error for %s"
+msgstr "[Blablanet] Website-SSL-Fehler für %s"
 
 #: ../../boot.php:2577
 msgid "Cron/Scheduled tasks not running."
@@ -10210,5 +10210,5 @@ msgstr "Cron-Aufgaben laufen nicht."
 
 #: ../../boot.php:2581
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
-msgstr "[hubzilla] Cron-Aufgaben für %s laufen nicht"
+msgid "[Blablanet] Cron tasks not running on %s"
+msgstr "[Blablanet] Cron-Aufgaben für %s laufen nicht"

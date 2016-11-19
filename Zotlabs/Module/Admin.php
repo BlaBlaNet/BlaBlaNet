@@ -131,7 +131,7 @@ class Admin extends \Zotlabs\Web\Controller {
 		}
 
 		$vmaster = get_repository_version('master');
-		$vdev = get_repository_version('dev');
+		//$vdev = get_repository_version('dev');
 
 		$upgrade = ((version_compare(STD_VERSION,$vmaster) < 0) ? t('Your software should be updated') : '');
 
@@ -148,7 +148,7 @@ class Admin extends \Zotlabs\Web\Controller {
 			'$plugins'  => array( t('Active plugins'), $plugins ),
 			'$version'  => array( t('Version'), STD_VERSION),
 			'$vmaster'  => array( t('Repository version (master)'), $vmaster),
-			'$vdev'     => array( t('Repository version (dev)'), $vdev),
+			//'$vdev'     => array( t('Repository version (dev)'), $vdev),
 			'$upgrade'  => $upgrade,
 			'$build' => get_config('system', 'db_version')
 		));

@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2012-2014 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # 
 # Translators:
@@ -1007,11 +1007,11 @@ msgstr "Gestore:"
 
 #: ../../Zotlabs/Module/Admin/Plugins.php:348
 msgid "Minimum project version: "
-msgstr "Minima versione hubzilla"
+msgstr "Minima versione Blablanet"
 
 #: ../../Zotlabs/Module/Admin/Plugins.php:349
 msgid "Maximum project version: "
-msgstr "Massima versione hubzilla"
+msgstr "Massima versione Blablanet"
 
 #: ../../Zotlabs/Module/Admin/Plugins.php:350
 msgid "Minimum PHP version: "
@@ -1623,13 +1623,13 @@ msgstr "Seleziona per pubblicare sui directory server <strong>tutti</strong> i p
 
 #: ../../Zotlabs/Module/Admin/Site.php:302
 msgid "Import Public Streams"
-msgstr "Suggerisci contenuti pubblici della rete Hubzilla"
+msgstr "Suggerisci contenuti pubblici della rete Blablanet"
 
 #: ../../Zotlabs/Module/Admin/Site.php:302
 msgid ""
 "Import and allow access to public content pulled from other sites. Warning: "
 "this content is unmoderated."
-msgstr "Suggerisci e visualizza i post pubblici presenti su altri siti Hubzilla. Attenzione: i contenuti potrebbero essere inappropriati perché non sottoposti a moderazione."
+msgstr "Suggerisci e visualizza i post pubblici presenti su altri siti Blablanet. Attenzione: i contenuti potrebbero essere inappropriati perché non sottoposti a moderazione."
 
 #: ../../Zotlabs/Module/Admin/Site.php:303
 msgid "Login on Homepage"
@@ -3833,7 +3833,7 @@ msgstr "Indirizzo email dell'amministratore del hub"
 msgid ""
 "Your account email address must match this in order to use the web admin "
 "panel."
-msgstr "Il tuo indirizzo email deve corrispondere a questo per poter usare il pannello di amministrazione di Hubzilla."
+msgstr "Il tuo indirizzo email deve corrispondere a questo per poter usare il pannello di amministrazione di Blablanet."
 
 #: ../../Zotlabs/Module/Setup.php:310 ../../Zotlabs/Module/Setup.php:357
 msgid "Website URL"
@@ -4001,7 +4001,7 @@ msgstr "Errore: il modulo xml PHP è richiesto per DAV ma non è installato."
 msgid ""
 "The web installer needs to be able to create a file called \".htconfig.php\""
 " in the top folder of your web server and it is unable to do so."
-msgstr "L'installazione web deve poter creare un file chiamato \".htconfig.php\" nella cartella di Hubzilla ma non è in grado di farlo."
+msgstr "L'installazione web deve poter creare un file chiamato \".htconfig.php\" nella cartella di Blablanet ma non è in grado di farlo."
 
 #: ../../Zotlabs/Module/Setup.php:565
 msgid ""
@@ -4013,7 +4013,7 @@ msgstr "Spesso ciò è dovuto ai permessi di accesso al disco: il web server pot
 msgid ""
 "At the end of this procedure, we will give you a text to save in a file "
 "named .htconfig.php in your Red top folder."
-msgstr "Alla fine di questa procedura ti sarà dato il testo da salvare in un file di nome .htconfig.php dentro la cartella principale di Hubzilla."
+msgstr "Alla fine di questa procedura ti sarà dato il testo da salvare in un file di nome .htconfig.php dentro la cartella principale di Blablanet."
 
 #: ../../Zotlabs/Module/Setup.php:567
 msgid ""
@@ -4029,7 +4029,7 @@ msgstr ".htconfig.php è scrivibile"
 msgid ""
 "Red uses the Smarty3 template engine to render its web views. Smarty3 "
 "compiles templates to PHP to speed up rendering."
-msgstr "Hubzilla usa il sistema Smarty3 per costruire i suoi template grafici. Smarty3 è molto veloce perché compila i template delle pagine direttamente in PHP."
+msgstr "Blablanet usa il sistema Smarty3 per costruire i suoi template grafici. Smarty3 è molto veloce perché compila i template delle pagine direttamente in PHP."
 
 #: ../../Zotlabs/Module/Setup.php:585
 #, php-format
@@ -4834,9 +4834,9 @@ msgstr "In esecuzione sull'indirizzo web"
 
 #: ../../Zotlabs/Module/Siteinfo.php:59
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
-msgstr "Visita <a href=\"http://hubzilla.org\">hubzilla.org</a> per maggiori informazioni su $Projectname."
+msgstr "Visita <a href=\"http://Blablanet.org\">Blablanet.org</a> per maggiori informazioni su $Projectname."
 
 #: ../../Zotlabs/Module/Siteinfo.php:60
 msgid "Bug reports and issues: please visit"
@@ -5062,7 +5062,7 @@ msgstr "La registrazione su questo hub è soggetta ad approvazione."
 
 #: ../../Zotlabs/Module/Register.php:194
 msgid "<a href=\"pubsites\">Register at another affiliated hub.</a>"
-msgstr "<a href=\"pubsites\">Registrati su un altro server hubzilla.</a>"
+msgstr "<a href=\"pubsites\">Registrati su un altro server Blablanet.</a>"
 
 #: ../../Zotlabs/Module/Register.php:204
 msgid ""
@@ -9987,7 +9987,7 @@ msgid "Empty path"
 msgstr "La posizione è vuota"
 
 #: ../../view/theme/redbasic/php/config.php:9
-msgid "Focus (Hubzilla default)"
+msgid "Focus (Blablanet default)"
 msgstr "Focus (predefinito)"
 
 #: ../../view/theme/redbasic/php/config.php:110
@@ -10141,8 +10141,8 @@ msgstr "Errore di aggiornamento su %s"
 
 #: ../../boot.php:1720
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
-msgstr "Registrati per accedere ai servizi e alle applicazioni di Hubzilla"
+"Create an account to access services and applications within the Blablanet"
+msgstr "Registrati per accedere ai servizi e alle applicazioni di Blablanet"
 
 #: ../../boot.php:1741
 msgid "Login/Email"
@@ -10170,8 +10170,8 @@ msgstr "Il certificato SSL del sito non è valido. Si prega di intervenire."
 
 #: ../../boot.php:2473
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
-msgstr "[hubzilla] Errore SSL su %s"
+msgid "[Blablanet] Website SSL error for %s"
+msgstr "[Blablanet] Errore SSL su %s"
 
 #: ../../boot.php:2577
 msgid "Cron/Scheduled tasks not running."
@@ -10179,5 +10179,5 @@ msgstr "Processi cron non avviati."
 
 #: ../../boot.php:2581
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
-msgstr "[hubzilla] Cron non è stato eseguito %s"
+msgid "[Blablanet] Cron tasks not running on %s"
+msgstr "[Blablanet] Cron non è stato eseguito %s"

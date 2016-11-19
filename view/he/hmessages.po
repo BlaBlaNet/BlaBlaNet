@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2012-2014 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # 
 # Translators:
@@ -5971,9 +5971,9 @@ msgstr ""
 
 #: ../../Zotlabs/Module/Siteinfo.php:76
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
-msgstr "אנא בקר באתר <a href=\"http://hubzilla.org\">hubzilla.org</a> כדי ללמוד עוד אודות $Projectname."
+msgstr "אנא בקר באתר <a href=\"http://Blablanet.org\">Blablanet.org</a> כדי ללמוד עוד אודות $Projectname."
 
 #: ../../Zotlabs/Module/Siteinfo.php:77
 msgid "Bug reports and issues: please visit"
@@ -6333,8 +6333,8 @@ msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:104
 #, php-format
-msgid "[Hubzilla:Notify] New mail received at %s"
-msgstr "[Hubzilla:התראה] דואר חדש נתקבל %s"
+msgid "[Blablanet:Notify] New mail received at %s"
+msgstr "[Blablanet:התראה] דואר חדש נתקבל %s"
 
 #: ../../Zotlabs/Lib/Enotify.php:106
 #, php-format
@@ -6372,8 +6372,8 @@ msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:192
 #, php-format
-msgid "[Hubzilla:Notify] Comment to conversation #%1$d by %2$s"
-msgstr "[Hubzilla:התראה] תגובה לדיון #%1$d מאת %2$s"
+msgid "[Blablanet:Notify] Comment to conversation #%1$d by %2$s"
+msgstr "[Blablanet:התראה] תגובה לדיון #%1$d מאת %2$s"
 
 #: ../../Zotlabs/Lib/Enotify.php:193
 #, php-format
@@ -6389,8 +6389,8 @@ msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:202
 #, php-format
-msgid "[Hubzilla:Notify] %s posted to your profile wall"
-msgstr "[Hubzilla:התראה] %s פרסם לקיר הפרופיל שלך"
+msgid "[Blablanet:Notify] %s posted to your profile wall"
+msgstr "[Blablanet:התראה] %s פרסם לקיר הפרופיל שלך"
 
 #: ../../Zotlabs/Lib/Enotify.php:204
 #, php-format
@@ -6404,8 +6404,8 @@ msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:230
 #, php-format
-msgid "[Hubzilla:Notify] %s tagged you"
-msgstr "[Hubzilla:התראה] %s תייג אותך"
+msgid "[Blablanet:Notify] %s tagged you"
+msgstr "[Blablanet:התראה] %s תייג אותך"
 
 #: ../../Zotlabs/Lib/Enotify.php:231
 #, php-format
@@ -6419,7 +6419,7 @@ msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:244
 #, php-format
-msgid "[Hubzilla:Notify] %1$s poked you"
+msgid "[Blablanet:Notify] %1$s poked you"
 msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:245
@@ -6434,8 +6434,8 @@ msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:262
 #, php-format
-msgid "[Hubzilla:Notify] %s tagged your post"
-msgstr "[Hubzilla:התראה] %s תייג פוסט שלך"
+msgid "[Blablanet:Notify] %s tagged your post"
+msgstr "[Blablanet:התראה] %s תייג פוסט שלך"
 
 #: ../../Zotlabs/Lib/Enotify.php:263
 #, php-format
@@ -6448,8 +6448,8 @@ msgid "%1$s, %2$s tagged [zrl=%3$s]your post[/zrl]"
 msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:276
-msgid "[Hubzilla:Notify] Introduction received"
-msgstr "[Hubzilla:התראה] היכרות פורמלית נתקבלה"
+msgid "[Blablanet:Notify] Introduction received"
+msgstr "[Blablanet:התראה] היכרות פורמלית נתקבלה"
 
 #: ../../Zotlabs/Lib/Enotify.php:277
 #, php-format
@@ -6473,8 +6473,8 @@ msgid "Please visit %s to approve or reject the connection request."
 msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:291
-msgid "[Hubzilla:Notify] Friend suggestion received"
-msgstr "[Hubzilla:התראה] הצעת חבר נתקבלה"
+msgid "[Blablanet:Notify] Friend suggestion received"
+msgstr "[Blablanet:התראה] הצעת חבר נתקבלה"
 
 #: ../../Zotlabs/Lib/Enotify.php:292
 #, php-format
@@ -6502,8 +6502,8 @@ msgid "Please visit %s to approve or reject the suggestion."
 msgstr ""
 
 #: ../../Zotlabs/Lib/Enotify.php:518
-msgid "[Hubzilla:Notify]"
-msgstr "[Hubzilla:התראה]"
+msgid "[Blablanet:Notify]"
+msgstr "[Blablanet:התראה]"
 
 #: ../../Zotlabs/Lib/Enotify.php:667
 msgid "created a new post"
@@ -9697,7 +9697,7 @@ msgid "Public Timeline"
 msgstr "ציר זמן ציבורי"
 
 #: ../../view/theme/redbasic/php/config.php:82
-msgid "Focus (Hubzilla default)"
+msgid "Focus (Blablanet default)"
 msgstr ""
 
 #: ../../view/theme/redbasic/php/config.php:103
@@ -9855,7 +9855,7 @@ msgstr ""
 
 #: ../../boot.php:1685
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
+"Create an account to access services and applications within the Blablanet"
 msgstr ""
 
 #: ../../boot.php:1707
@@ -9880,8 +9880,8 @@ msgstr "תעודת SSL אתר רשת אינה תקינה. אנא תקן."
 
 #: ../../boot.php:2429
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
-msgstr "[hubzilla] שגיאת SSL אתר רשת עבור %s"
+msgid "[Blablanet] Website SSL error for %s"
+msgstr "[Blablanet] שגיאת SSL אתר רשת עבור %s"
 
 #: ../../boot.php:2470
 msgid "Cron/Scheduled tasks not running."
@@ -9889,5 +9889,5 @@ msgstr "משימות Cron/מתוזמנות לא רצות."
 
 #: ../../boot.php:2474
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
-msgstr "[hubzilla] משימות Cron לא רצות על %s"
+msgid "[Blablanet] Cron tasks not running on %s"
+msgstr "[Blablanet] משימות Cron לא רצות על %s"

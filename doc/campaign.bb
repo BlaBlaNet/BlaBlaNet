@@ -153,7 +153,7 @@ Each contributor at this level gets their own $Projectname virtual private serve
 
 We're a handful of volunteers, and we understand that not everyone can contribute by donating money.  There are many other ways you can in getting the Matrix to version 1.0!
 
-First, you can checkout our source code on github: https://github.com/redmatrix/hubzilla
+First, you can checkout our source code on github: https://geditlab.com/blablanet
 
 Maybe you can dive in and help us out with some development.
 
@@ -219,7 +219,7 @@ Comanche is another one of our priorities for the next six months.
 
 [b]9. Where can I see some technical description of Zot?[/b]
 
-Our github wiki contains a number of high-level and technical descriptions of Zot, Comanche, and Red in general: https://github.com/friendica/red/wiki
+Our github wiki contains a number of high-level and technical descriptions of Zot, Comanche, and Red
 
 [b]10. What happens if you raise more than {TARGETED NUMBER}?[/b]
 

@@ -1551,7 +1551,7 @@ function match_webfinger_location($s,$h) {
 	// GNU-social and the older StatusNet - the $host/user/123 form doesn't work
 	if(preg_match('|' . $h . '/index.php/user/([0-9]*?)$|',$s))
 		return $s;
-	// Redmatrix / hubzilla
+	// BlaBlaNet
 	if(preg_match('|' . $h . '/channel/|',$s))
 		return $s;
 	// Friendica
@@ -2189,7 +2189,7 @@ function deliverable_singleton($channel_id,$xchan) {
 
 function get_repository_version($branch = 'master') {
 
-	$path = "https://raw.githubusercontent.com/redmatrix/hubzilla/$branch/boot.php";
+	$path = "https://raw.githubusercontent.com/BlaBlaNet-Social-Network/$branch/boot.php";
 	
 	$x = z_fetch_url($path);
 	if($x['success']) {

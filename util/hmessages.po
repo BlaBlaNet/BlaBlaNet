@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2015-2017 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # Mike Macgirvin, 2012
 #
@@ -5451,7 +5451,7 @@ msgstr ""
 
 #: ../../Zotlabs/Module/Siteinfo.php:59
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
 msgstr ""
 
@@ -9992,7 +9992,7 @@ msgid "invalid target signature"
 msgstr ""
 
 #: ../../view/theme/redbasic/php/config.php:9
-msgid "Focus (Hubzilla default)"
+msgid "Focus (Blablanet default)"
 msgstr ""
 
 #: ../../view/theme/redbasic/php/config.php:110
@@ -10146,7 +10146,7 @@ msgstr ""
 
 #: ../../boot.php:1720
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
+"Create an account to access services and applications within the Blablanet"
 msgstr ""
 
 #: ../../boot.php:1741
@@ -10175,7 +10175,7 @@ msgstr ""
 
 #: ../../boot.php:2473
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
+msgid "[Blablanet] Website SSL error for %s"
 msgstr ""
 
 #: ../../boot.php:2577
@@ -10184,5 +10184,5 @@ msgstr ""
 
 #: ../../boot.php:2581
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
+msgid "[Blablanet] Cron tasks not running on %s"
 msgstr ""

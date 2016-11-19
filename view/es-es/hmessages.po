@@ -1,5 +1,5 @@
-# Hubzilla Project
-# Copyright (C) 2012-2014 the Hubzilla Project
+# Blablanet Project
+# Copyright (C) 2012-2014 the Blablanet Project
 # This file is distributed under the same license as the Red package.
 # 
 # Translators:
@@ -4016,7 +4016,7 @@ msgstr "Esto está generalmente ligado a un problema de permisos, a causa del cu
 msgid ""
 "At the end of this procedure, we will give you a text to save in a file "
 "named .htconfig.php in your Red top folder."
-msgstr "Al término de este procedimiento, podemos crear un fichero de texto para guardar con el nombre .htconfig.php en el directorio raíz de su instalación de Hubzilla."
+msgstr "Al término de este procedimiento, podemos crear un fichero de texto para guardar con el nombre .htconfig.php en el directorio raíz de su instalación de Blablanet."
 
 #: ../../Zotlabs/Module/Setup.php:567
 msgid ""
@@ -4032,7 +4032,7 @@ msgstr ".htconfig.php tiene permisos de escritura"
 msgid ""
 "Red uses the Smarty3 template engine to render its web views. Smarty3 "
 "compiles templates to PHP to speed up rendering."
-msgstr "Hubzilla hace uso del motor de plantillas Smarty3 para diseñar sus plantillas gráficas. Smarty3 es más rápido porque compila las plantillas de páginas directamente en PHP."
+msgstr "Blablanet hace uso del motor de plantillas Smarty3 para diseñar sus plantillas gráficas. Smarty3 es más rápido porque compila las plantillas de páginas directamente en PHP."
 
 #: ../../Zotlabs/Module/Setup.php:585
 #, php-format
@@ -4856,9 +4856,9 @@ msgstr "Corriendo en el sitio web"
 
 #: ../../Zotlabs/Module/Siteinfo.php:59
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://Blablanet.org\">Blablanet.org</a> to learn more "
 "about $Projectname."
-msgstr "Por favor, visite <a href=\"http://hubzilla.org\">hubzilla.org</a> para más información sobre $Projectname."
+msgstr "Por favor, visite <a href=\"http://Blablanet.org\">Blablanet.org</a> para más información sobre $Projectname."
 
 #: ../../Zotlabs/Module/Siteinfo.php:60
 msgid "Bug reports and issues: please visit"
@@ -6833,7 +6833,7 @@ msgid ""
 "Use this form to create temporary access identifiers to share things with "
 "non-members. These identities may be used in Access Control Lists and "
 "visitors may login using these credentials to access private content."
-msgstr "Utilice este formulario para crear identificadores de acceso temporal para compartir cosas con los no miembros de Hubzilla. Estas identidades se pueden usar en las Listas de control de acceso (ACL) y así los visitantes pueden iniciar sesión, utilizando estas credenciales, para acceder a su contenido privado."
+msgstr "Utilice este formulario para crear identificadores de acceso temporal para compartir cosas con los no miembros de Blablanet. Estas identidades se pueden usar en las Listas de control de acceso (ACL) y así los visitantes pueden iniciar sesión, utilizando estas credenciales, para acceder a su contenido privado."
 
 #: ../../Zotlabs/Module/Settings/Tokens.php:115
 msgid ""
@@ -10227,7 +10227,7 @@ msgid "Empty path"
 msgstr "Ruta vacía"
 
 #: ../../view/theme/redbasic/php/config.php:9
-msgid "Focus (Hubzilla default)"
+msgid "Focus (Blablanet default)"
 msgstr "Focus (predefinido)"
 
 #: ../../view/theme/redbasic/php/config.php:110
@@ -10381,8 +10381,8 @@ msgstr "Error de actualización en %s"
 
 #: ../../boot.php:1720
 msgid ""
-"Create an account to access services and applications within the Hubzilla"
-msgstr "Crear una cuenta para acceder a los servicios y aplicaciones dentro de Hubzilla"
+"Create an account to access services and applications within the Blablanet"
+msgstr "Crear una cuenta para acceder a los servicios y aplicaciones dentro de Blablanet"
 
 #: ../../boot.php:1741
 msgid "Login/Email"
@@ -10410,8 +10410,8 @@ msgstr "El certificado SSL del sitio web no es válido. Por favor, solucione el 
 
 #: ../../boot.php:2473
 #, php-format
-msgid "[hubzilla] Website SSL error for %s"
-msgstr "[hubzilla] Error SSL del sitio web en %s"
+msgid "[Blablanet] Website SSL error for %s"
+msgstr "[Blablanet] Error SSL del sitio web en %s"
 
 #: ../../boot.php:2577
 msgid "Cron/Scheduled tasks not running."
@@ -10419,5 +10419,5 @@ msgstr "Las tareas del Planificador/Cron no están funcionando."
 
 #: ../../boot.php:2581
 #, php-format
-msgid "[hubzilla] Cron tasks not running on %s"
-msgstr "[hubzilla] Las tareas de Cron no están funcionando en %s"
+msgid "[Blablanet] Cron tasks not running on %s"
+msgstr "[Blablanet] Las tareas de Cron no están funcionando en %s"
