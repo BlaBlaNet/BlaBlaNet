@@ -1,5 +1,5 @@
 # BlaBlaNet-Social-Network
-BaBlaNet Social Network is a Fork of Hubzilla with new improvements and advance add-ons 
+BaBlaNet Social Network is a decentralized Social Network with new improvements and advance add-ons 
 You can BlaBlaNet Social Network Working in https://blablanet.com
 
 1. Requirements
@@ -38,7 +38,7 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
     software much easier to update. The Linux command to clone the repository 
     into a directory "mywebsite" would be
 
-        git clone https://github.com/BlaBlaNet/BlaBlaNet-Social-Network.git
+        git clone https://geditlab.com/blablanet/BlaBlanet
 
     - and then you can pick up the latest changes at any time with
 
@@ -59,7 +59,7 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
         above permissions will allow the software to work, but are not
         optimal.]
  
-    - For installing addons front other Repository
+    - For installing addons front other Repository after finish the Browser Install
 
         - First you should be **on** your website folder
 
@@ -68,8 +68,14 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
     - Then you should clone the addon repository (separately). We'll give this repository
          a nickname of 'hzaddons'. You can pull in other BlaBlanet addons repositories by 
          giving them different nicknames. We not Guranty Further Versions be compatible with 
-         Hubzilla Addons.
-
+         BlaBlaNet Addons.
+              
+              util/add_addon_repo blablanet
+        
+        That will update the Main Addons 
+        
+        And for add New Addons:
+        
             util/add_addon_repo URL + ADDON NAME + insecure
 
     - For keeping the addon tree updated, you should be on your top level website 
