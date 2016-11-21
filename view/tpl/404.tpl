@@ -1,6 +1,6 @@
 <div class="generic-content-wrapper-styled">
 <h1>{{$message}}</h1>
-</div>
+
 <BODY style="font-size: 9pt; color: white; font-family: Fixedsys" bgcolor="#000080" link="white" alink="white" vlink="white">
 
 <center>
@@ -443,4 +443,4 @@ reappears, contact your system administrator or technical support guru.<br><br>
 Click <a href="https://blablanet.com">this link</a> to continue _</font>
 
 </td></tr></table>
-
+</div>
