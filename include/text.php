@@ -1178,7 +1178,7 @@ function list_smilies() {
 		'<img class="smiley" src="' . z_root() . '/images/smiley-facepalm.gif" alt=":facepalm" />',
 		'<img class="smiley" src="' . z_root() . '/images/like.gif" alt=":like" />',
 		'<img class="smiley" src="' . z_root() . '/images/dislike.gif" alt=":dislike" />',
-		'<img class="smiley" src="' . z_root() . '/images/hz-16.png" alt=":hubzilla" />',
+		'<img class="smiley" src="' . z_root() . '/images/bb-16.png" alt=":blablanet" />',
 
 	);
 
