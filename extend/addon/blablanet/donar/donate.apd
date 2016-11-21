@@ -1,0 +1,4 @@
+url: $baseurl/donate
+requires: local_channel
+name: Support Blablanet
+photo: $baseurl/addon/donate/donate.png

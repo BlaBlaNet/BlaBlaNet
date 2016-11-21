@@ -4,7 +4,7 @@
 
 <br />
 
-<img src="addon/donar/tipping.jpg" alt="Donations" style="max-width: 95%;"/>
+<img src="addon/donate/tipping.jpg" alt="Donations" style="max-width: 95%;"/>
 
 <br />
 <br />

@@ -1,18 +1,17 @@
 <?php
 
 /**
- * Name: Donar BlaBlanet
+ * Name: donate BlaBlanet
  * Description: Support BlaBlanet projects
- * Version: 1.5
- * Author: Original Author Macgirvin Fork by Jacob M.
+ * Version: 1.6
  * 
  */
 
 function load(){}
 function unload(){}
-function donar_module(){}
+function donate_module(){}
 
-function donar_content(&$a) {
+function donate_content(&$a) {
 
 /* Format - array( display name, paypal id, description of services or skills you provide to the matrix) */
 
@@ -34,9 +33,9 @@ $sponsors = array(
 
 
 
-call_hooks('donar_contributors',$contributors);
+call_hooks('donate_contributors',$contributors);
 
-call_hooks('donar_sponsors',$sponsors);
+call_hooks('donate_sponsors',$sponsors);
 
 $sponsors[] = t('And the people and organisations who help be possible Blablanet Servers be running .');
 
@@ -47,7 +46,7 @@ $text .= '<p>' . t('Help support our ground-breaking work in decentralisation, w
 
 $text .= '<p>' . t('Your donations keep servers and services running and also helps us to provide innovative new features and continued development.') . '</p>';
 
-$o = replace_macros(get_markup_template('donar.tpl','addon/donar'),array(
+$o = replace_macros(get_markup_template('donate.tpl','addon/donate'),array(
 	'$header' => t('Donate'),
 	'$text' => $text,
 	'$choice' => t('Choose a project, developer, or public hub to support with a one-time donation'),
@@ -60,7 +59,7 @@ $o = replace_macros(get_markup_template('donar.tpl','addon/donar'),array(
 	'$thanks' => t('Special thanks to: '),
 ));
 
-call_hooks('donar_plugin',$o);
+call_hooks('donate_plugin',$o);
 
 return $o;
 
