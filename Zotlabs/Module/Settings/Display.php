@@ -163,7 +163,7 @@ class Display {
 		$browser_update = (($browser_update == 0) ? 80 : $browser_update / 1000); // default if not set: 40 seconds
 	
 		$itemspage = intval(get_pconfig(local_channel(), 'system','itemspage'));
-		$itemspage = (($itemspage > 0 && $itemspage < 101) ? $itemspage : 20); // default if not set: 20 items
+		$itemspage = (($itemspage > 0 && $itemspage < 101) ? $itemspage : 50); // default if not set: 50 items
 			
 		$nosmile = get_pconfig(local_channel(),'system','no_smilies');
 		$nosmile = (($nosmile===false)? '0': $nosmile); // default if not set: 0
