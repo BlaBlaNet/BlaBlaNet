@@ -3,7 +3,7 @@
 /**
  *
  * Name: Chess
- * Description: Hubzilla plugin for decentralized, identity-aware chess games powered by chessboard.js
+ * Description: Plugin for decentralized, identity-aware chess games powered by chessboard.js
  * Version: 0.8.3
  * Author: Andrew Manning <https://grid.reticu.li/channel/andrewmanning/>
  * MinVersion: 1.3.3

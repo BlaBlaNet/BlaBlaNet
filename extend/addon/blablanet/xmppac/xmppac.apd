@@ -1,3 +1,4 @@
 url: $baseurl/xmppac
+requires: local_channel
 name: XMPP Account Free
 photo: $baseurl/addon/xmppac/xmpp.png
