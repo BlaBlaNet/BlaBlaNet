@@ -50,7 +50,7 @@ $o .= <<< EOT
 EOT;
 
 
-
+call_hooks('xmppac_plugin',$o);
     return $o;
 
 }
