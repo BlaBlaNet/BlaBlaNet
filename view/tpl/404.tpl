@@ -1,7 +1,7 @@
 <div class="generic-content-wrapper-styled">
 <h1>{{$message}}</h1>
 
-<BODY style="font-size: 9pt; color: white; font-family: Fixedsys" bgcolor="#000080" link="white" alink="white" vlink="white">
+<BODY style="font-size: 9pt; color: black; font-family: Fixedsys" bgcolor="#000080" link="white" alink="white" vlink="white">
 
 <center>
 
