@@ -1,16 +1,14 @@
 <div class="generic-content-wrapper-styled">
 <h1>{{$message}}</h1>
 
-<BODY style="font-size: 9pt; color: black; font-family: Fixedsys" bgcolor="#000080" link="white" alink="white" vlink="white">
+<BODY style="font-size: 9pt; color: black; font-family: Fixedsys" bgcolor="#000080" link="white" alink="blue" vlink="white">
 
 <center>
 
 <p><br><p><br><p><br>
 
 <table border="0" width="75%">
-
 <tr><td colspan="2" align="center">
-<font colspan="2" size="2" color="#000080" style="background: #c0c0c0" face="Fixedsys">&nbsp;www.royalking.co.uk&nbsp;</font>
 </td></tr>
 
 <tr>
@@ -440,7 +438,7 @@ reappears, contact your system administrator or technical support guru.<br><br>
 <tr><td>&nbsp;</td></tr>
 
 <tr><td align="center" colspan="2">
-Click <a href="https://blablanet.com">this link</a> to continue _</font>
+-----------------------</font>
 
 </td></tr></table>
 </div>
