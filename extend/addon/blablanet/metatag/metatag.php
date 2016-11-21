@@ -3,11 +3,11 @@
 /**
  * Name: SEO MetaTags by Blablanet
  * Description: Inserts metatag in every page.    
- * Version: 1.2
+ * Version: 1.3
  * Author: Jacob Maldonado <https://blablanet.com>
  * 
  */
-/*  Seo Meta Tags Plugin for Hubzilla
+/*  Seo Meta Tags Plugin for BlaBlaNet Social Network
  *
  *   Author: Jacob Maldonado
  *           
