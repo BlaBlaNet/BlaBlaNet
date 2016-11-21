@@ -2,7 +2,7 @@
 <schemaMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="http://schemaspy.sourceforge.net/xmlschema/2011/02/05/schemaspy.meta.xsd">
 <comments>
-2015-11-04 - Hubzilla database schema with some corrected cross-table relationships supporting decentralized publishing. Haakon Meland Eriksen.
+2015-11-04 -  database schema with some corrected cross-table relationships supporting decentralized publishing. Haakon Meland Eriksen.
 </comments>
 
    <tables>
