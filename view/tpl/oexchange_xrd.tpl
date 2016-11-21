@@ -6,21 +6,21 @@
     <Property 
         type="http://www.oexchange.org/spec/0.8/prop/vendor">Zotlabs</Property>
     <Property 
-        type="http://www.oexchange.org/spec/0.8/prop/title">Hubzilla</Property>
+        type="http://www.oexchange.org/spec/0.8/prop/title">BlaBlaNet</Property>
     <Property 
-        type="http://www.oexchange.org/spec/0.8/prop/name">Hubzilla</Property>
+        type="http://www.oexchange.org/spec/0.8/prop/name">BlaBlaNet</Property>
     <Property 
-        type="http://www.oexchange.org/spec/0.8/prop/prompt">Send to Hubzilla</Property>
+        type="http://www.oexchange.org/spec/0.8/prop/prompt">Send to BlaBlaNet</Property>
 
     <Link 
         rel="icon" 
-        href="{{$base}}/images/hz-16.png"
+        href="{{$base}}/images/bb-16.png"
         type="image/png" 
         />
 
     <Link 
         rel="icon32" 
-        href="{{$base}}/images/hz-32.png"
+        href="{{$base}}/images/bb-32.png"
         type="image/png" 
         />
 

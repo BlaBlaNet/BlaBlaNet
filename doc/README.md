@@ -1,11 +1,11 @@
 
-Hubzilla
+BlaBlaNet
 ========
 
 ###Websites. Redefined.
 
 
-![Hubzilla](../images/hz-32.png)
+![Hubzilla](../images/bb-32.png)
 
 **What are Hubs?**
 

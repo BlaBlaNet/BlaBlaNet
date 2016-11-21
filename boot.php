@@ -972,7 +972,7 @@ class App {
 		self::$is_mobile = $mobile_detect->isMobile();
 		self::$is_tablet = $mobile_detect->isTablet();
 
-		self::head_set_icon('/images/hz-32.png');
+		self::head_set_icon('/images/bb-32.png');
 
 		/*
 		 * register template engines
