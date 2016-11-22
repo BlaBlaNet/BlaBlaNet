@@ -60,8 +60,9 @@ function menu_element($channel,$menu) {
 					$entry['flags'][] = 'zid';
 				if($it['mitem_flags'] & MENU_ITEM_NEWWIN)
 					$entry['flags'][] = 'new-window';
-				if($it['mitem_flags'] & MENU_ITEM_CHATROOM)
+				/** if($it['mitem_flags'] & MENU_ITEM_CHATROOM)
 					$entry['flags'][] = 'chatroom';
+**/
 			}
 			$arr['items'][] = $entry;
 		}
