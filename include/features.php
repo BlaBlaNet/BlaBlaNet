@@ -139,7 +139,7 @@ function get_features($filtered = true) {
 				feature_level('photo_location',2),
 			],
 
-			[
+			/**[
 				'ajaxchat',       
 				t('Access Controlled Chatrooms'),          
 				t('Provide chatrooms and chat services with access control.'),
@@ -147,7 +147,7 @@ function get_features($filtered = true) {
 				get_config('feature_lock','ajaxchat'),
 				feature_level('ajaxchat',1),
 			],
-
+**/
 			[
 				'smart_birthdays',       
 				t('Smart Birthdays'),          
@@ -166,14 +166,14 @@ function get_features($filtered = true) {
 				feature_level('advanced_dirsearch',4),
 			],
 
-			[ 
+			/**[ 
 				'advanced_theming', 
 				t('Advanced Theme and Layout Settings'),
 				t('Allows fine tuning of themes and page layouts'),
 				false, 
 				get_config('feature_lock','advanced_theming'),
 				feature_level('advanced_theming',4),
-			],
+			], **/
 		],
 
 		// Post composition
