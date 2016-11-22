@@ -615,13 +615,13 @@ function widget_settings_menu($arr) {
 		'url' 	=> z_root().'/settings/featured',
 		'selected'	=> ((argv(1) === 'featured') ? 'active' : ''),
 	);
-
+/**
 	$tabs[] =	array(
 		'label'	=> t('Display settings'),
 		'url' 	=> z_root().'/settings/display',
 		'selected'	=> ((argv(1) === 'display') ? 'active' : ''),
 	);
-
+**/
 	if($hublocs) {
 		$tabs[] = array(
 			'label' => t('Manage locations'),
