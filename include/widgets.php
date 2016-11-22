@@ -872,7 +872,7 @@ function widget_menu_preview($arr) {
 
 	return menu_render(App::$data['menu_item']);
 }
-
+/**
 function widget_chatroom_list($arr) {
 
 
@@ -896,6 +896,8 @@ function widget_chatroom_members() {
 
 	return $o;
 }
+
+**/
 
 function widget_wiki_list($arr) {
 
