@@ -7,13 +7,13 @@
 [h3]Externe Ressourcen[/h3]
 [zrl=[baseurl]/help/external-resource-links]Links zu externen Ressourcen[/zrl]
 
-[url=https://github.com/redmatrix/hubzilla]Haupt-Website[/url]
-[url=https://github.com/redmatrix/hubzilla-addons]Addons-Website[/url]
+[url=https://geditlab.com/blablanet/BlaBlanet]Haupt-Website[/url]
+[url=https://geditlab.com/blablanet/blablanet-addons]Addons-Website[/url]
 
 [url=[baseurl]/help/credits]$Projectname Credits[/url]
 
-[h3]Über diesen $Projectname-Hub[/h3]
-[zrl=[baseurl]/help/TermsOfService]Nutzungsbedingungen dieses Hubs[/zrl]
+[h3]Über diesen $Projectname-Ants node[/h3]
+[zrl=[baseurl]/help/TermsOfService]Nutzungsbedingungen dieses Ants Nodes[/zrl]
 [zrl=[baseurl]/siteinfo]Informationen zu diesem Hub und der $Projectname-Version[/zrl]
-[zrl=[baseurl]/siteinfo/json]Detaillierte technische Informationen zu diesem Hub im JSON-Format[/zrl]
+[zrl=[baseurl]/siteinfo/json]Detaillierte technische Informationen zu diesem Ants Node im JSON-Format[/zrl]
 

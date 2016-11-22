@@ -9,7 +9,7 @@
 [url=https://geditlab.com/blablanet/BlaBlanet]Main Website[/url]
 [url=https://geditlab.com/blablanet/blablanet-addons]Addon Website[/url]
 [url=[baseurl]/help/credits]$Projectname Credits[/url]
-[h3]About this $Projectname hub[/h3]
+[h3]About this $Projectname Ants Node[/h3]
 [zrl=[baseurl]/help/TermsOfService]Terms of Service For This Hub[/zrl]
 [zrl=[baseurl]/siteinfo]Ants Node Information (/siteinfo)[/zrl]
 [zrl=[baseurl]/siteinfo/json]Detailed Technical Ants Node Information in JSON format(/siteinfo/json)[/zrl]

@@ -10,7 +10,7 @@
 [url=https://geditlab.com/blablanet/blablanet-addons]Complements del Lloc Web[/url]
 [url=[baseurl]/help/credits]Credits en $Projectname[/url]
 [h3]Sobre Aquest Node $Projectname[/h3]
-[zrl=[baseurl]/help/TermsOfService]Termes de Servei per a AQUEST Node[/zrl]
+[zrl=[baseurl]/help/TermsOfService]Termes de Servei per a AQUEST Ants Node[/zrl]
 [zrl=[baseurl]/siteinfo]Informació del Node[/zrl]
-[zrl=[baseurl]/siteinfo/json]Informació Tècnica Detallada en format JSON d'aquest Node[/zrl]
+[zrl=[baseurl]/siteinfo/json]Informació Tècnica Detallada en format JSON d'aquest Ants Node[/zrl]
 

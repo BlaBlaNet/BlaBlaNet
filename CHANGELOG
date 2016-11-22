@@ -11,4 +11,6 @@ BlaBlaNet 1.15 (2016-10-01)
         - Change Icon Grid APP
         - Add some Screenshots
         - Change SiteInfo Setup
+        - Remove Load Average front Zotlabs/Module/Siteinfo.php Dangerous server Information not need to be release
+        
  
