@@ -1,5 +1,7 @@
-Hubzilla 1.15 (2016-10-13)
-	- Change Widgets Remove Display Setting
-        - Force Suckerberg Theme in Install again Redbasic
+BlaBlaNet 1.15 (2016-10-01)
+	- Change Widgets.php Remove Display Setting Make User menu easy and Friendly
+        - Force Suckerberg Theme Install again Redbasic
         - Remove Images
-        - Changes to Zot Protocol 
+        - Changes to Zot Protocol
+        - Add Metatags to the .htconfig File 
+ 
