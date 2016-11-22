@@ -970,7 +970,7 @@ function widget_wiki_page_history($arr) {
 			'$pageHistory' => $pageHistory['history']
 	));
 }
-
+/**
 function widget_bookmarkedchats($arr) {
 
 	if(! feature_enabled(App::$profile['profile_uid'],'ajaxchat'))
@@ -1023,7 +1023,7 @@ function widget_suggestedchats($arr) {
 		'$rooms' => $r
 	));
 }
-
+**/
 function widget_item($arr) {
 
 	$channel_id = 0;
