@@ -77,7 +77,8 @@ define ( 'DIRECTORY_FALLBACK_MASTER',  'https://inboxwall.com');
 
 $DIRECTORY_FALLBACK_SERVERS = array( 
 	'https://blablanet.es',
-	'https://blablanet.co.il'
+	'https://blablanet.co.il',
+        'https://blablanet.asia'
 );
 
 
