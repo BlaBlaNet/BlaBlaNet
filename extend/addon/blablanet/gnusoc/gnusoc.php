@@ -453,8 +453,8 @@ function gnusoc_follow_from_feed(&$a,&$b) {
 			$xchan = $r[0];
 		}
 
-		$x = \Zotlabs\Access\PermissionRoles::role_perms('social');
-		$their_perms = \Zotlabs\Access\Permissions::FilledPerms($x['perms_connect']);
+		$x = \GeditLab\Access\PermissionRoles::role_perms('social');
+		$their_perms = \GeditLab\Access\Permissions::FilledPerms($x['perms_connect']);
 
 		$r = q("select * from abook where abook_channel = %d and abook_xchan = '%s' limit 1",
 			intval($importer['channel_id']),
@@ -482,12 +482,12 @@ function gnusoc_follow_from_feed(&$a,&$b) {
 		else {
 			$role = get_pconfig($importer['channel_id'],'system','permissions_role');
 			if($role) {
-				$x = \Zotlabs\Access\PermissionRoles::role_perms($role);
+				$x = \GeditLab\Access\PermissionRoles::role_perms($role);
 				if($x['perms_auto'])
-					$my_perms = \Zotlabs\Access\Permissions::FilledPerms($x['perms_connect']);
+					$my_perms = \GeditLab\Access\Permissions::FilledPerms($x['perms_connect']);
 			}
 			if(! $my_perms)
-				$my_perms = \Zotlabs\Access\Permissions::FilledAutoperms($importer['channel_id']);
+				$my_perms = \GeditLab\Access\Permissions::FilledAutoperms($importer['channel_id']);
 
 			$closeness = get_pconfig($importer['channel_id'],'system','new_abook_closeness');
 			if($closeness === false)
@@ -524,7 +524,7 @@ function gnusoc_follow_from_feed(&$a,&$b) {
 				);
 		
 				if($new_connection) {
-					\Zotlabs\Lib\Enotify::submit(array(
+					\GeditLab\Lib\Enotify::submit(array(
 						'type'       => NOTIFY_INTRO,
 						'from_xchan'   => $xchan['xchan_hash'],
 						'to_xchan'     => $importer['channel_hash'],
@@ -535,7 +535,7 @@ function gnusoc_follow_from_feed(&$a,&$b) {
 						// Send back a sharing notification to them
 						$deliver = gnusoc_remote_follow($importer,$new_connection[0]);
 						if($deliver)
-							Zotlabs\Daemon\Master::Summon(array('Deliver',$deliver));
+							GeditLab\Daemon\Master::Summon(array('Deliver',$deliver));
 
 					}
 

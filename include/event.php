@@ -98,7 +98,7 @@ function ical_wrapper($ev) {
 	$o .= "BEGIN:VCALENDAR";
 	$o .= "\r\nVERSION:2.0";
 	$o .= "\r\nMETHOD:PUBLISH";
-	$o .= "\r\nPRODID:-//" . get_config('system','sitename') . "//" . Zotlabs\Lib\System::get_platform_name() . "//" . strtoupper(App::$language). "\r\n";
+	$o .= "\r\nPRODID:-//" . get_config('system','sitename') . "//" . GeditLab\Lib\System::get_platform_name() . "//" . strtoupper(App::$language). "\r\n";
 	if(array_key_exists('dtstart', $ev))
 		$o .= format_event_ical($ev);
 	else {
@@ -501,7 +501,7 @@ function event_addtocal($item_id, $uid) {
 		if($ev->private)
 			$ev['allow_cid'] = '<' . $channel['channel_hash'] . '>'; 
 		else {
-			$acl = new Zotlabs\Access\AccessList($channel);
+			$acl = new GeditLab\Access\AccessList($channel);
 			$x = $acl->get();
 			$ev['allow_cid'] = $x['allow_cid'];
 			$ev['allow_gid'] = $x['allow_gid'];

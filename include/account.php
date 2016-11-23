@@ -772,7 +772,7 @@ function upgrade_bool_message($bbcode = false) {
 
 function get_account_techlevel($account_id = 0) {
 
-	$role = \Zotlabs\Lib\System::get_server_role();
+	$role = \GeditLab\Lib\System::get_server_role();
 	if($role == 'basic')
 		return 0;
 	if($role == 'standard')

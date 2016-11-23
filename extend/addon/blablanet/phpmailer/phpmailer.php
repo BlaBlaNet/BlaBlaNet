@@ -11,12 +11,12 @@
 
 
 function phpmailer_install() {
-	\Zotlabs\Extend\Hook::register('email_send','addon/phpmailer/phpmailer.php','phpmailer_email_send');
+	\GeditLab\Extend\Hook::register('email_send','addon/phpmailer/phpmailer.php','phpmailer_email_send');
 }
 
 
 function phpmailer_uninstall() {
-	\Zotlabs\Extend\Hook::unregister_by_file('addon/phpmailer/phpmailer.php');
+	\GeditLab\Extend\Hook::unregister_by_file('addon/phpmailer/phpmailer.php');
 }
 
 

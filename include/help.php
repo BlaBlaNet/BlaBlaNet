@@ -239,7 +239,7 @@ function store_doc_file($s) {
 		intval(ITEM_TYPE_DOC)
 	);
 
-	\Zotlabs\Lib\IConfig::Set($item,'system','docfile',$s);
+	\GeditLab\Lib\IConfig::Set($item,'system','docfile',$s);
 
 	if($r) {
 		$item['id'] = $r[0]['id'];

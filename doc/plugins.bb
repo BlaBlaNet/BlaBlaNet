@@ -47,14 +47,14 @@ In our case, we'll call them randplace_load() and randplace_unload(), as that is
 
 Next we'll talk about [b]hooks[/b]. Hooks are places in $Projectname code where we allow plugins to do stuff. There are a [url=[baseurl]/help/hooklist]lot of these[/url], and they each have a name. What we normally do is use the pluginname_load() function to register a &quot;handler function&quot; for any hooks you are interested in. Then when any of these hooks are triggered, your code will be called.
 
-We register hook handlers with the 'Zotlabs\Extend\Hook::register()' function. It typically takes 3 arguments. The first is the hook we wish to catch, the second is the filename of the file to find our handler function (relative to the base of your $Projectname installation), and the third is the function name of your handler function. So let's create our randplace_load() function right now. 
+We register hook handlers with the 'GeditLab\Extend\Hook::register()' function. It typically takes 3 arguments. The first is the hook we wish to catch, the second is the filename of the file to find our handler function (relative to the base of your $Projectname installation), and the third is the function name of your handler function. So let's create our randplace_load() function right now. 
 
 [code]
 	function randplace_load() {
-	    Zotlabs\Extend\Hook::register('post_local', 'addon/randplace/randplace.php', 'randplace_post_hook');
+	    GeditLab\Extend\Hook::register('post_local', 'addon/randplace/randplace.php', 'randplace_post_hook');
 
-        Zotlabs\Extend\Hook::register('feature_settings', 'addon/randplace/randplace.php', 'randplace_settings');
-	    Zotlabs\Extend\Hook::register('feature_settings_post', 'addon/randplace/randplace.php', 'randplace_settings_post');
+        GeditLab\Extend\Hook::register('feature_settings', 'addon/randplace/randplace.php', 'randplace_settings');
+	    GeditLab\Extend\Hook::register('feature_settings_post', 'addon/randplace/randplace.php', 'randplace_settings_post');
 
 	}
 [/code]
@@ -64,10 +64,10 @@ So we're going to catch three events, 'post_local' which is triggered when a pos
 Next we'll create an unload function. This is easy, as it just unregisters our hooks. It takes exactly the same arguments. 
 [code]
 	function randplace_unload() {
-	    Zotlabs\Extend\Hook::unregister('post_local', 'addon/randplace/randplace.php', 'randplace_post_hook');
+	    GeditLab\Extend\Hook::unregister('post_local', 'addon/randplace/randplace.php', 'randplace_post_hook');
 
-        Zotlabs\Extend\Hook::unregister('feature_settings', 'addon/randplace/randplace.php', 'randplace_settings');
-	    Zotlabs\Extend\Hook::unregister('feature_settings_post', 'addon/randplace/randplace.php', 'randplace_settings_post');
+        GeditLab\Extend\Hook::unregister('feature_settings', 'addon/randplace/randplace.php', 'randplace_settings');
+	    GeditLab\Extend\Hook::unregister('feature_settings_post', 'addon/randplace/randplace.php', 'randplace_settings_post');
 	}
 [/code]
 
@@ -209,15 +209,15 @@ Sometimes your plugins want to provide a range of new functionality which isn't 
 There are two ways to accomplish this. To create a module object use the following model:
 [code]
 <?php     /* file: addon/randplace/Mod_Randplace.php */
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 
-	// Your module will consist of the name of your addon with an uppercase first character, within the Zotlabs\Module namespace
+	// Your module will consist of the name of your addon with an uppercase first character, within the GeditLab\Module namespace
 	// To avoid namespace conflicts with your plugin, the convention we're using is to name the module file Mod_Addonname.php
 	// In this case 'Mod_Randplace.php' and then include it from within your main plugin file 'randplace.php' with the line:
 	//
 	// require_once('addon/randplace/Mod_Randplace.php');
 	
-	class Randplace extends \Zotlabs\Web\Controller {
+	class Randplace extends \GeditLab\Web\Controller {
 		function init() { 
 			// init method is always called first if it exists 
 		}
@@ -275,9 +275,9 @@ To register a hook using a class method as a callback, a couple of things need t
  */
 
 function myplugin_load() {
-	Zotlabs\Extend\Hook::register('hook_name','addon/myplugin/myplugin.php','\\Myplugin::foo');
+	GeditLab\Extend\Hook::register('hook_name','addon/myplugin/myplugin.php','\\Myplugin::foo');
 [b]or[/b]
-	Zotlabs\Extend\Hook::register('hook_name','addon/myplugin/myplugin.php',array('\\Myplugin','foo'));
+	GeditLab\Extend\Hook::register('hook_name','addon/myplugin/myplugin.php',array('\\Myplugin','foo'));
 }
  
 class Myplugin {

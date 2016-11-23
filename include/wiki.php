@@ -4,7 +4,7 @@
  * @brief Wiki related functions.
  */
 
-use \Zotlabs\Storage\GitRepo as GitRepo;
+use \GeditLab\Storage\GitRepo as GitRepo;
 define ( 'WIKI_ITEM_RESOURCE_TYPE', 'wiki' );
 
 function wiki_list($channel, $observer_hash) {

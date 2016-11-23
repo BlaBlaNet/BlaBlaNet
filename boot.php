@@ -639,7 +639,7 @@ function sys_boot() {
 		load_config('system');
 		load_config('feature');
 
-		App::$session = new Zotlabs\Web\Session();
+		App::$session = new GeditLab\Web\Session();
 		App::$session->init();
 		load_hooks();
 		call_hooks('init_1');
@@ -691,7 +691,7 @@ function startup() {
 }
 
 
-class ZotlabsAutoloader {
+class GeditLabAutoloader {
     static public function loader($className) {
 		$debug = false;
         $filename = str_replace('\\', '/', $className) . ".php";
@@ -978,18 +978,18 @@ class App {
 		 * register template engines
 		 */
 
-		spl_autoload_register('ZotlabsAutoloader::loader');
+		spl_autoload_register('GeditLabAutoloader::loader');
 
-		self::$meta= new Zotlabs\Web\HttpMeta();
+		self::$meta= new GeditLab\Web\HttpMeta();
 
 		// create an instance of the smarty template engine so we can register it.
 
-		$smarty = new Zotlabs\Render\SmartyTemplate();
+		$smarty = new GeditLab\Render\SmartyTemplate();
 
 		$dc = get_declared_classes();
 
 		foreach ($dc as $k) {
-			if(in_array('Zotlabs\\Render\\TemplateEngine', class_implements($k))) {
+			if(in_array('GeditLab\\Render\\TemplateEngine', class_implements($k))) {
 				self::register_template_engine($k);
 			}
 		}
@@ -1048,7 +1048,7 @@ class App {
 	}
 
 	public static function set_role() {
-		$role_str = \Zotlabs\Lib\System::get_server_role();
+		$role_str = \GeditLab\Lib\System::get_server_role();
 		switch($role_str) {
 			case 'basic':
 				$role = SERVER_ROLE_BASIC;
@@ -1173,7 +1173,7 @@ class App {
 		if(! self::$meta->get_field('og:title'))
 			self::$meta->set('og:title',self::$page['title']);
 
-		self::$meta->set('generator', Zotlabs\Lib\System::get_platform_name());
+		self::$meta->set('generator', GeditLab\Lib\System::get_platform_name());
 
 		/* put the head template at the beginning of page['htmlhead']
 		 * since the code added by the modules frequently depends on it
@@ -1188,7 +1188,7 @@ class App {
 			'$local_channel' => local_channel(),
 			'$metas' => self::$meta->get(),
 			'$update_interval' => $interval,
-			'osearch' => sprintf( t('Search %1$s (%2$s)','opensearch'), Zotlabs\Lib\System::get_site_name(), t('$Projectname','opensearch')), 
+			'osearch' => sprintf( t('Search %1$s (%2$s)','opensearch'), GeditLab\Lib\System::get_site_name(), t('$Projectname','opensearch')), 
 			'$icon' => head_get_icon(),
 			'$head_css' => head_get_css(),
 			'$head_js' => head_get_js(),
@@ -1677,7 +1677,7 @@ function fix_system_urls($oldurl, $newurl) {
 				}
 			}
 
-			Zotlabs\Daemon\Master::Summon(array('Notifier', 'refresh_all', $c[0]['channel_id']));
+			GeditLab\Daemon\Master::Summon(array('Notifier', 'refresh_all', $c[0]['channel_id']));
 		}
 	}
 
@@ -1758,7 +1758,7 @@ function killme() {
 	// If it is closed prematurely sessions might not get saved correctly.
 	// Note the second arg to PHP's session_set_save_handler() seems to order that shutdown 
 	// procedure last despite our best efforts, so we don't use that and implictly
-	// call register_shutdown_function('session_write_close'); within Zotlabs\Web\Session::init()
+	// call register_shutdown_function('session_write_close'); within GeditLab\Web\Session::init()
 	// and then register the database close function here where nothing else can register
 	// after it.
 
@@ -1955,11 +1955,11 @@ function proc_run(){
 		// convert 'include/foo.php' to 'Foo'
 		$orig = substr(ucfirst(substr($args[1],8)),0,-4);
 		logger('proc_run_redirect: ' . $orig);
-		if(file_exists('Zotlabs/Daemon/' . $orig . '.php')) {
+		if(file_exists('GeditLab/Daemon/' . $orig . '.php')) {
 			array_shift($args); // daemons are all run by php, pop it off the top of the array
 			$args[0] = $orig;   // replace with the new daemon name
 			logger('Redirecting old proc_run interface: ' . print_r($args,true), LOGGER_DEBUG, LOG_DEBUG);
-			\Zotlabs\Daemon\Master::Summon($args); // summon the daemon
+			\GeditLab\Daemon\Master::Summon($args); // summon the daemon
 			return;
 		}
 	}
@@ -2170,7 +2170,7 @@ function get_custom_nav(&$a, $navname) {
  */
 function load_pdl(&$a) {
 
-	App::$comanche = new Zotlabs\Render\Comanche();
+	App::$comanche = new GeditLab\Render\Comanche();
 
 	if (! count(App::$layout)) {
 
@@ -2231,10 +2231,10 @@ function construct_page(&$a) {
 		}
 	}
 
-	$current_theme = Zotlabs\Render\Theme::current();
+	$current_theme = GeditLab\Render\Theme::current();
 
 	// logger('current_theme: ' . print_r($current_theme,true));
-	// Zotlabs\Render\Theme::debug();
+	// GeditLab\Render\Theme::debug();
 
 	if (($p = theme_include($current_theme[0] . '.js')) != '')
 		head_add_js($p);
@@ -2250,7 +2250,7 @@ function construct_page(&$a) {
 		head_add_css(((x(App::$page, 'template')) ? App::$page['template'] : 'default' ) . '.css');
 
 	head_add_css('mod_' . App::$module . '.css');
-	head_add_css(Zotlabs\Render\Theme::url($installing));
+	head_add_css(GeditLab\Render\Theme::url($installing));
 
 	head_add_js('mod_' . App::$module . '.js');
 
@@ -2477,7 +2477,7 @@ function cert_bad_email() {
 function check_for_new_perms() {
 
 	$pregistered = get_config('system','perms');
-	$pcurrent = array_keys(\Zotlabs\Access\Permissions::Perms());
+	$pcurrent = array_keys(\GeditLab\Access\Permissions::Perms());
 
 	if(! $pregistered) {
 		set_config('system','perms',$pcurrent);
@@ -2503,14 +2503,14 @@ function check_for_new_perms() {
 							intval($cc['uid'])
 						);
 						// get the permissions role details
-						$rp = \Zotlabs\Access\PermissionRoles::role_perms($r[0]['v']);
+						$rp = \GeditLab\Access\PermissionRoles::role_perms($r[0]['v']);
 						if($rp) {
 							// set the channel limits if appropriate or 0
 							if(array_key_exists('limits',$rp) && array_key_exists($p,$rp['limits'])) {
-								\Zotlabs\Access\PermissionLimits::Set($cc['uid'],$p,$rp['limits'][$p]);
+								\GeditLab\Access\PermissionLimits::Set($cc['uid'],$p,$rp['limits'][$p]);
 							}
 							else {
-								\Zotlabs\Access\PermissionLimits::Set($cc['uid'],$p,0);
+								\GeditLab\Access\PermissionLimits::Set($cc['uid'],$p,0);
 							}
 
 							$set = ((array_key_exists('perms_connect',$rp) && array_key_exists($p,$rp['perms_connect'])) ? true : false);
@@ -2543,7 +2543,7 @@ function check_cron_broken() {
 	$d = get_config('system','lastcron');
 	
 	if((! $d) || ($d < datetime_convert('UTC','UTC','now - 4 hours'))) {
-		Zotlabs\Daemon\Master::Summon(array('Cron'));
+		GeditLab\Daemon\Master::Summon(array('Cron'));
 		set_config('system','lastcron',datetime_convert());
 	}
 

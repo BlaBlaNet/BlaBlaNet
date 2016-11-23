@@ -50,7 +50,7 @@ function photo_upload($channel, $observer, $args) {
 	// all other settings. 'allow_cid' being passed from an external source takes priority over channel settings.
 	// ...messy... needs re-factoring once the photos/files integration stabilises
 
-	$acl = new Zotlabs\Access\AccessList($channel);
+	$acl = new GeditLab\Access\AccessList($channel);
 	if(array_key_exists('directory',$args) && $args['directory'])
 		$acl->set($args['directory']);
 	if(array_key_exists('allow_cid',$args))
@@ -412,7 +412,7 @@ function photo_upload($channel, $observer, $args) {
 		// in the photos pages - using the photos permissions instead. We need the public policy to keep the photo
 		// linked item from leaking into the feed when somebody has a channel with read_stream restrictions.  
 
-		$arr['public_policy']   = map_scope(\Zotlabs\Access\PermissionLimits::Get($channel['channel_id'],'view_stream'),true);
+		$arr['public_policy']   = map_scope(\GeditLab\Access\PermissionLimits::Get($channel['channel_id'],'view_stream'),true);
 		if($arr['public_policy'])
 			$arr['item_private'] = 1;
 
@@ -422,7 +422,7 @@ function photo_upload($channel, $observer, $args) {
 		$item_id = $result['item_id'];
 
 		if($visible && $deliver) 
-			Zotlabs\Daemon\Master::Summon(array('Notifier', 'wall-new', $item_id));
+			GeditLab\Daemon\Master::Summon(array('Notifier', 'wall-new', $item_id));
 	}
 
 	$ret['success'] = true;

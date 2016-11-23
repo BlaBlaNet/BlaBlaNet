@@ -156,7 +156,7 @@ function tagadelic($uid, $count = 0, $authors = '', $owner = '', $flags = 0, $re
 	if(! $r)
 		return array();
 
-	return Zotlabs\Text\Tagadelic::calc($r);
+	return GeditLab\Text\Tagadelic::calc($r);
 
 }
 
@@ -174,7 +174,7 @@ function dir_tagadelic($count = 0) {
 		return array();
 
 
-	return Zotlabs\Text\Tagadelic::calc($r);
+	return GeditLab\Text\Tagadelic::calc($r);
 
 }
 
@@ -214,7 +214,7 @@ function app_tagadelic($count = 0) {
 	if(! $r)
 		return array();
 
-	return Zotlabs\Text\Tagadelic::calc($r);
+	return GeditLab\Text\Tagadelic::calc($r);
 
 }
 

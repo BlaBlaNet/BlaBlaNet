@@ -2261,7 +2261,7 @@ function update_r1176() {
 	$r = q("select * from item_id where true");
 	if($r) {
 		foreach($r as $rr) {
-			\Zotlabs\Lib\IConfig::Set($rr['iid'],'system',$rr['service'],$rr['sid'],true);
+			\GeditLab\Lib\IConfig::Set($rr['iid'],'system',$rr['service'],$rr['sid'],true);
 		}
 	}
 	return UPDATE_SUCCESS;
@@ -2430,7 +2430,7 @@ function update_r1180() {
 }
 
 function update_r1181() {
-	if(\Zotlabs\Lib\System::get_server_role() == 'pro') {
+	if(\GeditLab\Lib\System::get_server_role() == 'pro') {
 		q("update account set account_level = 5 where true");
 	}
 	return UPDATE_SUCCESS;

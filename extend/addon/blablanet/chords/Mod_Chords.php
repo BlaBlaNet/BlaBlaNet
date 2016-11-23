@@ -1,9 +1,9 @@
 <?php
 
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 
 
-class Chords extends \Zotlabs\Web\Controller {
+class Chords extends \GeditLab\Web\Controller {
 
 	function get() {
 

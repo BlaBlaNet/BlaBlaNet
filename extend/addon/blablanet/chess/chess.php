@@ -317,7 +317,7 @@ function chess_post(&$a) {
                 }
                 // Ensure ACL specifies exactly one other channel
                 $channel = App::get_channel();
-                $acl = new Zotlabs\Access\AccessList($channel);
+                $acl = new GeditLab\Access\AccessList($channel);
                 $acl->set_from_array($_REQUEST);
                 $perms = $acl->get();
                 $allow_cid = expand_acl($perms['allow_cid']);
@@ -400,7 +400,7 @@ function chess_content($a) {
                     notice(t('You must be logged in to see this page.') . EOL);
                     return;
                 }
-                $acl = new Zotlabs\Access\AccessList(App::get_channel());
+                $acl = new GeditLab\Access\AccessList(App::get_channel());
                 $channel_acl = $acl->get();
 
                 require_once('include/acl_selectors.php');
@@ -540,7 +540,7 @@ function chess_create_game($channel, $color, $acl) {
     $item_id = $post['item_id'];
 
     if ($item_id) {
-		Zotlabs\Daemon\Master::Summon(['Notifier','activity',$item_id]);
+		GeditLab\Daemon\Master::Summon(['Notifier','activity',$item_id]);
         return array('item' => $arr, 'status' => true);
     } else {
         return array('item' => null, 'status' => false);
@@ -601,7 +601,7 @@ function chess_make_move($observer, $newPosFEN, $g) {
     $item_id = $post['item_id'];
 
     if ($item_id) {
-		Zotlabs\Daemon\Master::Summon(['Notifier','activity',$item_id]);
+		GeditLab\Daemon\Master::Summon(['Notifier','activity',$item_id]);
         return array('item' => $arr, 'status' => true);
     } else {
         return array('item' => null, 'status' => false);

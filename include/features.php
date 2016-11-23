@@ -45,7 +45,7 @@ function feature_level($feature,$def) {
 
 function get_features($filtered = true) {
 
-	$server_role = \Zotlabs\Lib\System::get_server_role();
+	$server_role = \GeditLab\Lib\System::get_server_role();
 
 	if($server_role === 'basic' && $filtered)
 		return array();

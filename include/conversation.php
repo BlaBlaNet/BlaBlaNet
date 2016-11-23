@@ -755,7 +755,7 @@ function conversation(&$a, $items, $mode, $update, $page_mode = 'traditional', $
 			// Normal View
 //			logger('conv: items: ' . print_r($items,true));
 
-			$conv = new Zotlabs\Lib\ThreadStream($mode, $preview, $prepared_item);
+			$conv = new GeditLab\Lib\ThreadStream($mode, $preview, $prepared_item);
 
 			// In the display mode we don't have a profile owner. 
 
@@ -805,7 +805,7 @@ function conversation(&$a, $items, $mode, $update, $page_mode = 'traditional', $
 
 				if($item['id'] == $item['parent']) {
 
-					$item_object = new Zotlabs\Lib\ThreadItem($item);
+					$item_object = new GeditLab\Lib\ThreadItem($item);
 					$conv->add_thread($item_object);
 					if($page_mode === 'list') {
 						$item_object->set_template('conv_list.tpl');
@@ -1696,7 +1696,7 @@ function profile_tabs($a, $is_owner = false, $nickname = null){
 
 
 	if ($p['chat'] && feature_enabled($uid,'ajaxchat')) {
-		$has_chats = Zotlabs\Lib\Chatroom::list_count($uid);
+		$has_chats = GeditLab\Lib\Chatroom::list_count($uid);
 		if ($has_chats) {
 			$tabs[] = array(
 				'label' => t('Chatrooms'),

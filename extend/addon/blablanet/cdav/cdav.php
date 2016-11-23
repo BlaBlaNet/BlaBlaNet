@@ -141,14 +141,14 @@ function cdav_uninstall() {
 }
 
 function cdav_load() {
-	Zotlabs\Extend\Hook::register('well_known', 'addon/cdav/cdav.php', 'cdav_well_known');
-	Zotlabs\Extend\Hook::register('feature_settings', 'addon/cdav/cdav.php', 'cdav_feature_settings');
-	Zotlabs\Extend\Hook::register('feature_settings_post', 'addon/cdav/cdav.php','cdav_feature_settings_post');
-	Zotlabs\Extend\Hook::register('load_pdl', 'addon/cdav/cdav.php', 'cdav_load_pdl');
+	GeditLab\Extend\Hook::register('well_known', 'addon/cdav/cdav.php', 'cdav_well_known');
+	GeditLab\Extend\Hook::register('feature_settings', 'addon/cdav/cdav.php', 'cdav_feature_settings');
+	GeditLab\Extend\Hook::register('feature_settings_post', 'addon/cdav/cdav.php','cdav_feature_settings_post');
+	GeditLab\Extend\Hook::register('load_pdl', 'addon/cdav/cdav.php', 'cdav_load_pdl');
 }
 
 function cdav_unload() {
-	Zotlabs\Extend\Hook::unregister_by_file('addon/cdav/cdav.php');
+	GeditLab\Extend\Hook::unregister_by_file('addon/cdav/cdav.php');
 }
 
 function cdav_well_known(&$x) {

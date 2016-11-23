@@ -69,7 +69,7 @@ function check_upstream_directory() {
 	if ($directory) {
 		$h = parse_url($directory);
 		if ($h) {
-			$j = Zotlabs\Zot\Finger::run('[system]@' . $h['host']);
+			$j = GeditLab\Zot\Finger::run('[system]@' . $h['host']);
 			if ($j['success']) {
 				if (array_key_exists('site', $j) && array_key_exists('directory_mode', $j['site'])) {
 					if ($j['site']['directory_mode'] === 'normal') {

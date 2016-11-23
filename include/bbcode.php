@@ -177,9 +177,9 @@ function bb_parse_crypt($match) {
 
 function bb_parse_app($match) {
 
-	$app = Zotlabs\Lib\Apps::app_decode($match[1]);
+	$app = GeditLab\Lib\Apps::app_decode($match[1]);
 	if ($app)
-		return Zotlabs\Lib\Apps::app_render($app);
+		return GeditLab\Lib\Apps::app_render($app);
 }
 
 function bb_parse_element($match) {

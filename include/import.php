@@ -636,7 +636,7 @@ function import_items($channel,$items,$sync = false,$relocate = null) {
 			if($sync && $item['item_wall']) {
 				// deliver singletons if we have any
 				if($item_result && $item_result['success']) {
-					Zotlabs\Daemon\Master::Summon( [ 'Notifier','single_activity',$item_result['item_id'] ]);
+					GeditLab\Daemon\Master::Summon( [ 'Notifier','single_activity',$item_result['item_id'] ]);
 				}
 			}
 		}
@@ -666,7 +666,7 @@ function import_item_ids($channel,$itemids) {
 				intval($r[0]['id'])
 			);
 			if(! $z) {
-				\Zotlabs\Lib\IConfig::Set($r[0]['id'],'system',$i['service'],$i['sid'],true);
+				\GeditLab\Lib\IConfig::Set($r[0]['id'],'system',$i['service'],$i['sid'],true);
 			}
 		}
 	}
@@ -998,7 +998,7 @@ function import_mail($channel,$mails,$sync = false) {
 			$m['uid'] = $channel['channel_id'];
 			$mail_id = mail_store($m);
 			if($sync && $mail_id) {
-				Zotlabs\Daemon\Master::Summon(array('Notifier','single_mail',$mail_id));
+				GeditLab\Daemon\Master::Summon(array('Notifier','single_mail',$mail_id));
 			}
  		}
 	}	

@@ -1897,7 +1897,7 @@ function format_and_send_email($sender,$xchan,$item) {
 		$tpl = get_markup_template('email_notify_html.tpl');
 		$email_html_body = replace_macros($tpl,array(
 			'$banner'	    => $banner,
-			'$notify_icon'  => Zotlabs\Lib\System::get_notify_icon(),
+			'$notify_icon'  => GeditLab\Lib\System::get_notify_icon(),
 			'$product'	    => $product,
 			'$preamble'	    => '',
 			'$sitename'	    => $sitename,
@@ -1945,7 +1945,7 @@ function format_and_send_email($sender,$xchan,$item) {
 
 		// use the EmailNotification library to send the message
 
-		Zotlabs\Lib\Enotify::send(array(
+		GeditLab\Lib\Enotify::send(array(
 			'fromName'             => $product,
 			'fromEmail'            => $sender_email,
 			'replyTo'              => $sender_email,
@@ -1982,7 +1982,7 @@ function do_delivery($deliveries) {
 		$deliver[] = $d;
 
 		if(count($deliver) >= $deliveries_per_process) {
-			Zotlabs\Daemon\Master::Summon(array('Deliver',$deliver));
+			GeditLab\Daemon\Master::Summon(array('Deliver',$deliver));
 			$deliver = array();
 			if($interval)
 				@time_sleep_until(microtime(true) + (float) $interval);
@@ -1992,7 +1992,7 @@ function do_delivery($deliveries) {
 	// catch any stragglers
 
 	if($deliver)
-		Zotlabs\Daemon\Master::Summon(array('Deliver',$deliver));
+		GeditLab\Daemon\Master::Summon(array('Deliver',$deliver));
 	
 
 }
@@ -2040,8 +2040,8 @@ function get_site_info() {
 	$site_info = get_config('system','info');
 	$site_name = get_config('system','sitename');
 	if(! get_config('system','hidden_version_siteinfo')) {
-		$version = Zotlabs\Lib\System::get_project_version();
-		$tag = Zotlabs\Lib\System::get_std_version();
+		$version = GeditLab\Lib\System::get_project_version();
+		$tag = GeditLab\Lib\System::get_std_version();
 
 		if(@is_dir('.git') && function_exists('shell_exec')) {
 			$commit = trim( @shell_exec('git log -1 --format="%h"'));
@@ -2077,7 +2077,7 @@ function get_site_info() {
 	$data = Array(
 		'version' => $version,
 		'version_tag' => $tag,
-		'server_role' => Zotlabs\Lib\System::get_server_role(),
+		'server_role' => GeditLab\Lib\System::get_server_role(),
 		'commit' => $commit,
 		'url' => z_root(),
 		'plugins' => $visible_plugins,
@@ -2091,7 +2091,7 @@ function get_site_info() {
 		'locked_features' => $locked_features,
 		'admin' => $admin,
 		'site_name' => (($site_name) ? $site_name : ''),
-		'platform' => Zotlabs\Lib\System::get_platform_name(),
+		'platform' => GeditLab\Lib\System::get_platform_name(),
 		'dbdriver' => DBA::$dba->getdriver(),
 		'lastpoll' => get_config('system','lastpoll'),
 		'info' => (($site_info) ? $site_info : ''),
@@ -2252,7 +2252,7 @@ function z_mail($params) {
 	if(! $params['fromName']) {
 		$params['fromName'] = get_config('system','from_email_name');
 		if(! $params['fromName'])
-			$params['fromName'] = Zotlabs\Lib\System::get_site_name();
+			$params['fromName'] = GeditLab\Lib\System::get_site_name();
 	}
 	if(! $params['replyTo']) {
 		$params['replyTo'] = get_config('system','reply_address');

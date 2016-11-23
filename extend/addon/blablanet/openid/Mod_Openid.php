@@ -1,12 +1,12 @@
 <?php
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 
 
 require_once('library/openid/openid.php');
 require_once('include/auth.php');
 
 
-class Openid extends \Zotlabs\Web\Controller {
+class Openid extends \GeditLab\Web\Controller {
 
 	function get() {
 	

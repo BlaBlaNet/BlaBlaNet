@@ -229,7 +229,7 @@ function create_identity($arr) {
 	$role_permissions = null;
 
 	if(array_key_exists('permissions_role',$arr) && $arr['permissions_role']) {
-		$role_permissions = \Zotlabs\Access\PermissionRoles::role_perms($arr['permissions_role']);
+		$role_permissions = \GeditLab\Access\PermissionRoles::role_perms($arr['permissions_role']);
 	}
 
 	if($role_permissions && array_key_exists('directory_publish',$role_permissions))
@@ -279,7 +279,7 @@ function create_identity($arr) {
 		$perm_limits = site_default_perms();
 
 	foreach($perm_limits as $p => $v)
-		\Zotlabs\Access\PermissionLimits::Set($r[0]['channel_id'],$p,$v);
+		\GeditLab\Access\PermissionLimits::Set($r[0]['channel_id'],$p,$v);
 
 	if($role_permissions && array_key_exists('perms_auto',$role_permissions))
 		set_pconfig($r[0]['channel_id'],'system','autoperms',intval($role_permissions['perms_auto']));
@@ -350,7 +350,7 @@ function create_identity($arr) {
 		$myperms = ((array_key_exists('perms_connect',$role_permissions)) ? $role_permissions['perms_connect'] : array());
 	}
 	else {
-		$x = \Zotlabs\Access\PermissionRoles::role_perms('social');
+		$x = \GeditLab\Access\PermissionRoles::role_perms('social');
 		$myperms = $x['perms_connect'];
 	}
 
@@ -365,7 +365,7 @@ function create_identity($arr) {
 		intval(1)
 	);
 
-	$x = \Zotlabs\Access\Permissions::FilledPerms($myperms);
+	$x = \GeditLab\Access\Permissions::FilledPerms($myperms);
 	foreach($x as $k => $v) {
 		set_abconfig($newuid,$hash,'my_perms',$k,$v);
 	}
@@ -382,7 +382,7 @@ function create_identity($arr) {
 				$autoperms = intval($role_permissions['perms_auto']);
 				set_pconfig($newuid,'system','autoperms',$autoperms);
 				if($autoperms) {
-					$x = \Zotlabs\Access\Permissions::FilledPerms($role_permissions['perms_connect']);
+					$x = \GeditLab\Access\Permissions::FilledPerms($role_permissions['perms_connect']);
 					foreach($x as $k => $v) {
 						set_pconfig($newuid,'autoperms',$k,$v);
 					}
@@ -441,7 +441,7 @@ function create_identity($arr) {
 
 		call_hooks('create_identity', $newuid);
 
-		Zotlabs\Daemon\Master::Summon(array('Directory', $ret['channel']['channel_id']));
+		GeditLab\Daemon\Master::Summon(array('Directory', $ret['channel']['channel_id']));
 	}
 
 	$ret['success'] = true;
@@ -496,7 +496,7 @@ function identity_basic_export($channel_id, $items = false) {
 
 	// use constants here as otherwise we will have no idea if we can import from a site 
 	// with a non-standard platform and version.
-	$ret['compatibility'] = array('project' => PLATFORM_NAME, 'version' => STD_VERSION, 'database' => DB_UPDATE_VERSION, 'server_role' => Zotlabs\Lib\System::get_server_role());
+	$ret['compatibility'] = array('project' => PLATFORM_NAME, 'version' => STD_VERSION, 'database' => DB_UPDATE_VERSION, 'server_role' => GeditLab\Lib\System::get_server_role());
 
 	$r = q("select * from channel where channel_id = %d limit 1",
 		intval($channel_id)
@@ -1092,7 +1092,7 @@ function profile_sidebar($profile, $block = 0, $show_connect = true, $zcard = fa
 	}
 	$menublock = get_pconfig($profile['uid'],'system','channel_menublock');
 	if ($menublock && (! $block)) {
-		$comanche = new Zotlabs\Render\Comanche();
+		$comanche = new GeditLab\Render\Comanche();
 		$channel_menu .= $comanche->block($menublock);
 	}
 
@@ -1317,7 +1317,7 @@ function get_my_address() {
 function zid_init() {
 	$tmp_str = get_my_address();
 	if(validate_email($tmp_str)) {
-		Zotlabs\Daemon\Master::Summon(array('Gprobe',bin2hex($tmp_str)));
+		GeditLab\Daemon\Master::Summon(array('Gprobe',bin2hex($tmp_str)));
 		$arr = array('zid' => $tmp_str, 'url' => App::$cmd);
 		call_hooks('zid_init',$arr);
 		if(! local_channel()) {
@@ -1562,7 +1562,7 @@ function is_public_profile() {
 		return false;
 	$channel = App::get_channel();
 	if($channel) {
-		$perm = \Zotlabs\Access\PermissionLimits::Get($channel['channel_id'],'view_profile');
+		$perm = \GeditLab\Access\PermissionLimits::Get($channel['channel_id'],'view_profile');
 		if($perm == PERMS_PUBLIC)
 			return true;
 	}

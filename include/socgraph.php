@@ -152,7 +152,7 @@ function poco_load($xchan = '', $url = null) {
 		if(($x !== false) && (! count($x))) {
 			if($address) {
 				if($network === 'zot') {
-					$j = Zotlabs\Zot\Finger::run($address,null);
+					$j = GeditLab\Zot\Finger::run($address,null);
 					if($j['success']) {
 						import_xchan($j);
 					}

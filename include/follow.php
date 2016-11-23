@@ -55,7 +55,7 @@ function new_contact($uid,$url,$channel,$interactive = false, $confirm = false) 
 	if($arr['channel']['success']) 
 		$ret = $arr['channel'];
 	elseif(! $is_http)
-		$ret = Zotlabs\Zot\Finger::run($url,$channel);
+		$ret = GeditLab\Zot\Finger::run($url,$channel);
 
 	if($ret && is_array($ret) && $ret['success']) {
 		$is_red = true;
@@ -66,7 +66,7 @@ function new_contact($uid,$url,$channel,$interactive = false, $confirm = false) 
 
 	$role = get_pconfig($uid,'system','permissions_role');
 	if($role) {
-		$x = \Zotlabs\Access\PermissionRoles::role_perms($role);
+		$x = \GeditLab\Access\PermissionRoles::role_perms($role);
 		if($x['perms_connect'])
 			$my_perms = $x['perms_connect'];
 	}
@@ -260,7 +260,7 @@ function new_contact($uid,$url,$channel,$interactive = false, $confirm = false) 
 	if(! $r)
 		logger('mod_follow: abook creation failed');
 
-	$all_perms = \Zotlabs\Access\Permissions::Perms();
+	$all_perms = \GeditLab\Access\Permissions::Perms();
 	if($all_perms) {
 		foreach($all_perms as $k => $v) {
 			if(in_array($k,$my_perms))
@@ -278,7 +278,7 @@ function new_contact($uid,$url,$channel,$interactive = false, $confirm = false) 
 
 	if($r) {
 		$result['abook'] = $r[0];
-		Zotlabs\Daemon\Master::Summon(array('Notifier', 'permission_create', $result['abook']['abook_id']));
+		GeditLab\Daemon\Master::Summon(array('Notifier', 'permission_create', $result['abook']['abook_id']));
 	}
 
 	$arr = array('channel_id' => $uid, 'channel' => $channel, 'abook' => $result['abook']);

@@ -305,7 +305,7 @@ function menu_add_item($menu_id, $uid, $arr) {
 		$channel = App::get_channel();	
 	}
 
-	$acl = new Zotlabs\Access\AccessList($channel);
+	$acl = new GeditLab\Access\AccessList($channel);
 	$acl->set_from_array($arr);
 	$p = $acl->get();
 
@@ -346,7 +346,7 @@ function menu_edit_item($menu_id, $uid, $arr) {
 		$channel = App::get_channel();	
 	}
 
-	$acl = new Zotlabs\Access\AccessList($channel);
+	$acl = new GeditLab\Access\AccessList($channel);
 	$acl->set_from_array($arr);
 	$p = $acl->get();
 

@@ -1004,7 +1004,7 @@ function statusnet_fetchtimeline($a, $uid) {
 			//print_r($_REQUEST);
 			if ($_REQUEST["body"] != "") {
 				logger('statusnet: posting for user '.$uid);
-				$mod = new Zotlabs\Module\Item();
+				$mod = new GeditLab\Module\Item();
 				$mod->post();
 
 			}

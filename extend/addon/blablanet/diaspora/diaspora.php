@@ -74,7 +74,7 @@ function diaspora_load_module(&$a, &$b) {
 	}
 	if($b['module'] === 'fetch') {
 		require_once('addon/diaspora/Mod_Fetch.php');
-		$b['controller'] = new \Zotlabs\Module\Fetch();
+		$b['controller'] = new \GeditLab\Module\Fetch();
 		$b['installed'] = true;
 	}
 }

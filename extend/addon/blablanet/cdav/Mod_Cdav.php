@@ -1,8 +1,8 @@
 <?php
 
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 
-class Cdav extends \Zotlabs\Web\Controller {
+class Cdav extends \GeditLab\Web\Controller {
 
 	function init() {
 	
@@ -78,8 +78,8 @@ class Cdav extends \Zotlabs\Web\Controller {
 			 * own backend systems.
 			 */
 
-			$auth = new \Zotlabs\Storage\BasicAuth();
-			$auth->setRealm(ucfirst(\Zotlabs\Lib\System::get_platform_name()) . 'CalDAV/CardDAV');
+			$auth = new \GeditLab\Storage\BasicAuth();
+			$auth->setRealm(ucfirst(\GeditLab\Lib\System::get_platform_name()) . 'CalDAV/CardDAV');
 
 		//	$ob_hash = get_observer_hash();
 

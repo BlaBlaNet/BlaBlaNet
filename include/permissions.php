@@ -9,7 +9,7 @@ require_once('include/security.php');
  * 
  * Most of this file is obsolete and has been superceded by extensible permissions in v1.12; it is left here 
  * for reference and because we haven't yet checked that all functions have been replaced and are available 
- * elsewhere (typically Zotlabs/Access/*).
+ * elsewhere (typically GeditLab/Access/*).
  */
 
 
@@ -76,7 +76,7 @@ function get_all_perms($uid, $observer_xchan, $internal_use = true) {
 	if($api)
 		return get_all_api_perms($uid,$api);	
 
-	$global_perms = \Zotlabs\Access\Permissions::Perms();
+	$global_perms = \GeditLab\Access\Permissions::Perms();
 
 	// Save lots of individual lookups
 
@@ -96,7 +96,7 @@ function get_all_perms($uid, $observer_xchan, $internal_use = true) {
 
 		// First find out what the channel owner declared permissions to be.
 
-		$channel_perm = \Zotlabs\Access\PermissionLimits::Get($uid,$perm_name);
+		$channel_perm = \GeditLab\Access\PermissionLimits::Get($uid,$perm_name);
 
 		if(! $channel_checked) {
 			$r = q("select * from channel where channel_id = %d limit 1",
@@ -158,7 +158,7 @@ function get_all_perms($uid, $observer_xchan, $internal_use = true) {
 			// Check if this is a write permission and they are being ignored
 			// This flag is only visible internally.
 
-			$blocked_anon_perms = \Zotlabs\Access\Permissions::BlockedAnonPerms();
+			$blocked_anon_perms = \GeditLab\Access\Permissions::BlockedAnonPerms();
 
 
 			if(($x) && ($internal_use) && in_array($perm_name,$blocked_anon_perms) && intval($x[0]['abook_ignored'])) {
@@ -320,11 +320,11 @@ function perm_is_allowed($uid, $observer_xchan, $permission) {
 	if($arr['result'])
 		return true;
 
-	$global_perms = \Zotlabs\Access\Permissions::Perms();
+	$global_perms = \GeditLab\Access\Permissions::Perms();
 
 	// First find out what the channel owner declared permissions to be.
 
-	$channel_perm = \Zotlabs\Access\PermissionLimits::Get($uid,$permission);
+	$channel_perm = \GeditLab\Access\PermissionLimits::Get($uid,$permission);
 
 	$r = q("select channel_pageflags, channel_moved, channel_hash from channel where channel_id = %d limit 1",
 		intval($uid)
@@ -333,7 +333,7 @@ function perm_is_allowed($uid, $observer_xchan, $permission) {
 		return false;
 
 
-	$blocked_anon_perms = \Zotlabs\Access\Permissions::BlockedAnonPerms();
+	$blocked_anon_perms = \GeditLab\Access\Permissions::BlockedAnonPerms();
 
 	if($observer_xchan) {
 		if($channel_perm & PERMS_AUTHED)

@@ -11,17 +11,17 @@
  */
 
 function pageheader_load() {
-    Zotlabs\Extend\Hook::register('page_content_top', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_fetch'));
-	Zotlabs\Extend\Hook::register('feature_settings', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_addon_settings'));
-	Zotlabs\Extend\Hook::register('feature_settings_post', 'addon/pageheader/pageheader.php',array('\\Pageheader','pageheader_addon_settings_post'));
+    GeditLab\Extend\Hook::register('page_content_top', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_fetch'));
+	GeditLab\Extend\Hook::register('feature_settings', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_addon_settings'));
+	GeditLab\Extend\Hook::register('feature_settings_post', 'addon/pageheader/pageheader.php',array('\\Pageheader','pageheader_addon_settings_post'));
 
 }
 
 
 function pageheader_unload() {
-    Zotlabs\Extend\Hook::unregister('page_content_top', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_fetch'));
-	Zotlabs\Extend\Hook::unregister('feature_settings', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_addon_settings'));
-	Zotlabs\Extend\Hook::unregister('feature_settings_post', 'addon/pageheader/pageheader.php',array('\\Pageheader','pageheader_addon_settings_post'));
+    GeditLab\Extend\Hook::unregister('page_content_top', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_fetch'));
+	GeditLab\Extend\Hook::unregister('feature_settings', 'addon/pageheader/pageheader.php', array('\\Pageheader','pageheader_addon_settings'));
+	GeditLab\Extend\Hook::unregister('feature_settings_post', 'addon/pageheader/pageheader.php',array('\\Pageheader','pageheader_addon_settings_post'));
 
 }
 

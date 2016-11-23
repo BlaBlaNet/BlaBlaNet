@@ -215,7 +215,7 @@ function randpost_enotify_store(&$a,&$b) {
 
 	call_hooks('post_local_end', $x);
 
-	Zotlabs\Daemon\Master::Summon(array('Notifier','comment-new',$post_id));	
+	GeditLab\Daemon\Master::Summon(array('Notifier','comment-new',$post_id));	
 
 }
 
@@ -279,7 +279,7 @@ function randpost_fetch(&$a,&$b) {
 
 				call_hooks('post_local_end', $x);
 
-				Zotlabs\Daemon\Master::Summon(array('Notifier','wall-new',$post_id));
+				GeditLab\Daemon\Master::Summon(array('Notifier','wall-new',$post_id));
 			}
 		}
 	}

@@ -490,7 +490,7 @@ function pumpio_fetchtimeline($a, $uid) {
 
 				logger('pumpio: posting for user '.$uid);
 
-				$mod = new Zotlabs\Module\Item();
+				$mod = new GeditLab\Module\Item();
 				$mod->post();
 
 				logger('pumpio: posting done - user '.$uid);

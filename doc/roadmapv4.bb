@@ -11,7 +11,7 @@ Focus on visual website design tools, widgets, and sharing mechanisms
 
 [x] App organisation.
 
-[x] Conversion of core application to a composer format living under the namespace "Zotlabs"
+[x] Conversion of core application to a composer format living under the namespace "GeditLab"
 
 [x] Conversion of Modules to a more general purpose Controllers layout with DB/memory based
 controller routing as opposed to filesystem routing.

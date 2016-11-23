@@ -18,6 +18,6 @@ function extcron_unload() {}
 function extcron_module() {}
 
 function extcron_init(&$a) {
-	Zotlabs\Daemon\Master::Summon(array('Cron'));
+	GeditLab\Daemon\Master::Summon(array('Cron'));
 	killme();
 }

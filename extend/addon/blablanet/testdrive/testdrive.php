@@ -68,7 +68,7 @@ function testdrive_cron($a,$b) {
 			if(! $x)
 				continue;
 
-			\Zotlabs\Lib\Enotify::submit(array(
+			\GeditLab\Lib\Enotify::submit(array(
 				'type' => NOTIFY_SYSTEM,
 				'system_type'  => 'testdrive_expire',
 				'from_xchan'   => $x[0]['channel_hash'],

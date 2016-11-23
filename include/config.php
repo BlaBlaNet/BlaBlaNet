@@ -31,7 +31,7 @@
  */
 
 
-use Zotlabs\Lib as Zlib;
+use GeditLab\Lib as Zlib;
 
 function load_config($family) {
 	Zlib\Config::Load($family);

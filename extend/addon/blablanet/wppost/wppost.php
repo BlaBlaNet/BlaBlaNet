@@ -194,7 +194,7 @@ function wppost_send(&$a,&$b) {
 
 	$wp_blog     = get_pconfig($b['uid'],'wppost','wp_blog');
 
-	$DR = new Zotlabs\Zot\DReport(z_root(),$b['owner_xchan'],'wordpress wordpress',$b['mid']);
+	$DR = new GeditLab\Zot\DReport(z_root(),$b['owner_xchan'],'wordpress wordpress',$b['mid']);
 
 	if($edited) {
 		$r = q("select * from iconfig left join item on item.id = iconfig.iid 

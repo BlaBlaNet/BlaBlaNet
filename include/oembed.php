@@ -1,6 +1,6 @@
 <?php /** @file */
 
-use Zotlabs\Lib as Zlib;
+use GeditLab\Lib as Zlib;
 
 require_once('include/hubloc.php');
 

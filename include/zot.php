@@ -449,7 +449,7 @@ function zot_refresh($them, $channel = null, $force = false) {
 				else {
 					// if we were just granted read stream permission and didn't have it before, try to pull in some posts
 					if((! $old_read_stream_perm) && (intval($permissions['view_stream'])))
-						Zotlabs\Daemon\Master::Summon(array('Onepoll',$r[0]['abook_id']));
+						GeditLab\Daemon\Master::Summon(array('Onepoll',$r[0]['abook_id']));
 				}
 			}
 			else {
@@ -461,16 +461,16 @@ function zot_refresh($them, $channel = null, $force = false) {
 
 				$role = get_pconfig($channel['channel_id'],'system','permissions_role');
 				if($role) {
-					$xx = \Zotlabs\Access\PermissionRoles::role_perms($role);
+					$xx = \GeditLab\Access\PermissionRoles::role_perms($role);
 					if($xx['perms_auto']) {
 						$automatic = true;
 						$default_perms = $xx['perms_connect'];
-						$my_perms = \Zotlabs\Access\Permissions::FilledPerms($default_perms);
+						$my_perms = \GeditLab\Access\Permissions::FilledPerms($default_perms);
 					}
 				}
 
 				if(! $my_perms) {
-					$m = \Zotlabs\Access\Permissions::FilledAutoperms($channel['channel_id']);
+					$m = \GeditLab\Access\Permissions::FilledAutoperms($channel['channel_id']);
 					if($m) {
 						$automatic = true;
 						$my_perms = $m;
@@ -514,9 +514,9 @@ function zot_refresh($them, $channel = null, $force = false) {
 					);
 
 					if($new_connection) {
-						if(! \Zotlabs\Access\Permissions::PermsCompare($new_perms,$previous_perms))
-							Zotlabs\Daemon\Master::Summon(array('Notifier','permission_create',$new_connection[0]['abook_id']));
-						Zotlabs\Lib\Enotify::submit(array(
+						if(! \GeditLab\Access\Permissions::PermsCompare($new_perms,$previous_perms))
+							GeditLab\Daemon\Master::Summon(array('Notifier','permission_create',$new_connection[0]['abook_id']));
+						GeditLab\Lib\Enotify::submit(array(
 							'type'       => NOTIFY_INTRO,
 							'from_xchan' => $x['hash'],
 							'to_xchan'   => $channel['channel_hash'],
@@ -526,7 +526,7 @@ function zot_refresh($them, $channel = null, $force = false) {
 						if(intval($permissions['view_stream'])) {
 							if(intval(get_pconfig($channel['channel_id'],'perm_limits','send_stream') & PERMS_PENDING)
 								|| (! intval($new_connection[0]['abook_pending'])))
-								Zotlabs\Daemon\Master::Summon(array('Onepoll',$new_connection[0]['abook_id']));
+								GeditLab\Daemon\Master::Summon(array('Onepoll',$new_connection[0]['abook_id']));
 						}
 
 
@@ -1580,7 +1580,7 @@ function process_delivery($sender, $arr, $deliveries, $relay, $public = false, $
 	foreach($deliveries as $d) {
 		$local_public = $public;
 
-		$DR = new Zotlabs\Zot\DReport(z_root(),$sender['hash'],$d['hash'],$arr['mid']);
+		$DR = new GeditLab\Zot\DReport(z_root(),$sender['hash'],$d['hash'],$arr['mid']);
 
 		$r = q("select * from channel where channel_hash = '%s' limit 1",
 			dbesc($d['hash'])
@@ -1690,7 +1690,7 @@ function process_delivery($sender, $arr, $deliveries, $relay, $public = false, $
 
 				if((! $relay) && (! $request) && (! $local_public)
 					&& perm_is_allowed($channel['channel_id'],$sender['hash'],'send_stream')) {
-					Zotlabs\Daemon\Master::Summon(array('Notifier', 'request', $channel['channel_id'], $sender['hash'], $arr['parent_mid']));
+					GeditLab\Daemon\Master::Summon(array('Notifier', 'request', $channel['channel_id'], $sender['hash'], $arr['parent_mid']));
 				}
 				continue;
 			}
@@ -1762,7 +1762,7 @@ function process_delivery($sender, $arr, $deliveries, $relay, $public = false, $
 
 			if($relay && $item_id) {
 				logger('process_delivery: invoking relay');
-				Zotlabs\Daemon\Master::Summon(array('Notifier','relay',intval($item_id)));
+				GeditLab\Daemon\Master::Summon(array('Notifier','relay',intval($item_id)));
 				$DR->update('relayed');
 				$result[] = $DR->get();
 			}
@@ -1845,7 +1845,7 @@ function process_delivery($sender, $arr, $deliveries, $relay, $public = false, $
 
 		if($relay && $item_id) {
 			logger('process_delivery: invoking relay');
-			Zotlabs\Daemon\Master::Summon(array('Notifier','relay',intval($item_id)));
+			GeditLab\Daemon\Master::Summon(array('Notifier','relay',intval($item_id)));
 			$DR->addto_update('relayed');
 			$result[] = $DR->get();
 		}
@@ -2069,7 +2069,7 @@ function process_mail_delivery($sender, $arr, $deliveries) {
 
 	foreach($deliveries as $d) {
 
-		$DR = new Zotlabs\Zot\DReport(z_root(),$sender['hash'],$d['hash'],$arr['mid']);
+		$DR = new GeditLab\Zot\DReport(z_root(),$sender['hash'],$d['hash'],$arr['mid']);
 
 		$r = q("select * from channel where channel_hash = '%s' limit 1",
 			dbesc($d['hash'])
@@ -3067,7 +3067,7 @@ function build_sync_packet($uid = 0, $packet = null, $groups_changed = false) {
 			'msg'        => json_encode($info)
 		));
 
-		Zotlabs\Daemon\Master::Summon(array('Deliver', $hash));
+		GeditLab\Daemon\Master::Summon(array('Deliver', $hash));
 		$total = $total - 1;
 
 		if($interval && $total)
@@ -3534,11 +3534,11 @@ function process_channel_sync_delivery($sender, $arr, $deliveries) {
 		// we should probably do this for all items, but usually we only send one.
 
 		if(array_key_exists('item',$arr) && is_array($arr['item'][0])) {
-			$DR = new Zotlabs\Zot\DReport(z_root(),$d['hash'],$d['hash'],$arr['item'][0]['message_id'],'channel sync processed');
+			$DR = new GeditLab\Zot\DReport(z_root(),$d['hash'],$d['hash'],$arr['item'][0]['message_id'],'channel sync processed');
 			$DR->addto_recipient($channel['channel_name'] . ' <' . channel_reddress($channel) . '>');
 		}
 		else
-			$DR = new Zotlabs\Zot\DReport(z_root(),$d['hash'],$d['hash'],'sync packet','channel sync delivered');
+			$DR = new GeditLab\Zot\DReport(z_root(),$d['hash'],$d['hash'],'sync packet','channel sync delivered');
 
 		$result[] = $DR->get();
 
@@ -3683,7 +3683,7 @@ function zot_reply_message_request($data) {
 			 * invoke delivery to send out the notify packet
 			 */
 
-			Zotlabs\Daemon\Master::Summon(array('Deliver', $hash));
+			GeditLab\Daemon\Master::Summon(array('Deliver', $hash));
 		}
 	}
 	$ret['success'] = true;
@@ -3794,7 +3794,7 @@ function zotinfo($arr) {
 	}
 	elseif($ztarget_hash) {
 		// check if it has characteristics of a public forum based on custom permissions.
-		$m = \Zotlabs\Access\Permissions::FilledAutoperms($e['channel_id']);
+		$m = \GeditLab\Access\Permissions::FilledAutoperms($e['channel_id']);
 		if($m) {
 			foreach($m as $k => $v) {
 				if($k == 'tag_deliver' && intval($v) == 1)
@@ -3981,8 +3981,8 @@ function zotinfo($arr) {
 		$ret['site']['sellpage'] = get_config('system','sellpage');
 		$ret['site']['location'] = get_config('system','site_location');
 		$ret['site']['realm'] = get_directory_realm();
-		$ret['site']['project'] = Zotlabs\Lib\System::get_platform_name() . ' ' . Zotlabs\Lib\System::get_server_role();
-		$ret['site']['version'] = Zotlabs\Lib\System::get_project_version();
+		$ret['site']['project'] = GeditLab\Lib\System::get_platform_name() . ' ' . GeditLab\Lib\System::get_server_role();
+		$ret['site']['version'] = GeditLab\Lib\System::get_project_version();
 
 	}
 
@@ -4351,7 +4351,7 @@ function zot_reply_auth_check($data,$encrypted_packet) {
 	// the web server. We should probably convert this to webserver time rather than DB time so 
 	// that the different clocks won't affect it and allow us to keep the time short. 
 
-	Zotlabs\Zot\Verify::purge('auth','30 MINUTE');
+	GeditLab\Zot\Verify::purge('auth','30 MINUTE');
 
 	$y = q("select xchan_pubkey from xchan where xchan_hash = '%s' limit 1",
 		dbesc($sender_hash)
@@ -4391,7 +4391,7 @@ function zot_reply_auth_check($data,$encrypted_packet) {
 		// and we've already verified that this is them via zot_gethub() and that their key signed our token
 
 
-		$z = Zotlabs\Zot\Verify::match('auth',$c[0]['channel_id'],$data['secret'],$data['sender']['url']);
+		$z = GeditLab\Zot\Verify::match('auth',$c[0]['channel_id'],$data['secret'],$data['sender']['url']);
 		if (! $z) {
 			logger('mod_zot: auth_check: verification key not found.');
 			$ret['message'] .= 'verification key not found' . EOL;

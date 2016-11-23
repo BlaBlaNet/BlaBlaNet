@@ -9,7 +9,7 @@ function nodeinfo_content(&$a) {
 		$arr = array(
 
 			'version' => '1.0',
-			'software' => array('name' => 'redmatrix','version' => Zotlabs\project\System::get_project_version()),
+			'software' => array('name' => 'redmatrix','version' => GeditLab\project\System::get_project_version()),
 			'protocols' => array('inbound' => array('zot'), 'outbound' => array('zot')),
 			'services' => array(),
 			'openRegistrations' => ((get_config('system','register_policy') === REGISTER_OPEN) ? true : false),

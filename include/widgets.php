@@ -876,7 +876,7 @@ function widget_menu_preview($arr) {
 function widget_chatroom_list($arr) {
 
 
-	$r = Zotlabs\Lib\Chatroom::roomlist(App::$profile['profile_uid']);
+	$r = GeditLab\Lib\Chatroom::roomlist(App::$profile['profile_uid']);
 
 	if($r) {
 		return replace_macros(get_markup_template('chatroomlist.tpl'), array(

@@ -6,7 +6,7 @@
 // uncertain if this line is needed and why
 use Sabre\HTTP\URLUtil;
 
-use Zotlabs\Lib as Zlib;
+use GeditLab\Lib as Zlib;
 
 require_once('include/bbcode.php');
 require_once('include/oembed.php');
@@ -404,7 +404,7 @@ function post_activity_item($arr) {
 		return $ret;
 	}
 
-	$arr['public_policy'] = ((x($_REQUEST,'public_policy')) ? escape_tags($_REQUEST['public_policy']) : map_scope(\Zotlabs\Access\PermissionLimits::Get($channel['channel_id'],'view_stream'),true));
+	$arr['public_policy'] = ((x($_REQUEST,'public_policy')) ? escape_tags($_REQUEST['public_policy']) : map_scope(\GeditLab\Access\PermissionLimits::Get($channel['channel_id'],'view_stream'),true));
 	if($arr['public_policy'])
 		$arr['item_private'] = 1;
 
@@ -440,7 +440,7 @@ function post_activity_item($arr) {
 	$arr['deny_cid']     = ((x($arr,'deny_cid')) ? $arr['deny_cid'] : $channel['channel_deny_cid']);
 	$arr['deny_gid']     = ((x($arr,'deny_gid')) ? $arr['deny_gid'] : $channel['channel_deny_gid']);
 
-	$arr['comment_policy'] = map_scope(\Zotlabs\Access\PermissionLimits::Get($channel['channel_id'],'post_comments'));
+	$arr['comment_policy'] = map_scope(\GeditLab\Access\PermissionLimits::Get($channel['channel_id'],'post_comments'));
 
 	if ((! $arr['plink']) && (intval($arr['item_thread_top']))) {
 		$arr['plink'] = z_root() . '/channel/' . $channel['channel_address'] . '/?f=&mid=' . $arr['mid'];
@@ -465,7 +465,7 @@ function post_activity_item($arr) {
 	if($post_id) {
 		$arr['id'] = $post_id;
 		call_hooks('post_local_end', $arr);
-		Zotlabs\Daemon\Master::Summon(array('Notifier','activity',$post_id));
+		GeditLab\Daemon\Master::Summon(array('Notifier','activity',$post_id));
 		$ret['success'] = true;
 		$ret['activity'] = $post['item'];
 	}
@@ -996,7 +996,7 @@ function encode_item($item,$mirror = false) {
 	);
 
 	if($r)
-		$comment_scope = \Zotlabs\Access\PermissionLimits::Get($item['uid'],'post_comments');
+		$comment_scope = \GeditLab\Access\PermissionLimits::Get($item['uid'],'post_comments');
 	else
 		$comment_scope = 0;
 
@@ -2505,7 +2505,7 @@ function tag_deliver($uid, $item_id) {
 							dbesc($j_tgt['id']),
 							intval($u[0]['channel_id'])
 						);
-						Zotlabs\Daemon\Master::Summon(array('Notifier','edit_post',$p[0]['id']));
+						GeditLab\Daemon\Master::Summon(array('Notifier','edit_post',$p[0]['id']));
 					}
 				}
 			}
@@ -2819,7 +2819,7 @@ function start_delivery_chain($channel, $item, $item_id, $parent) {
 	$private = (($channel['channel_allow_cid'] || $channel['channel_allow_gid']
 		|| $channel['channel_deny_cid'] || $channel['channel_deny_gid']) ? 1 : 0);
 
-	$new_public_policy = map_scope(\Zotlabs\Access\PermissionLimits::Get($channel['channel_id'],'view_stream'),true);
+	$new_public_policy = map_scope(\GeditLab\Access\PermissionLimits::Get($channel['channel_id'],'view_stream'),true);
 
 	if((! $private) && $new_public_policy)
 		$private = 1;
@@ -2864,7 +2864,7 @@ function start_delivery_chain($channel, $item, $item_id, $parent) {
 		dbesc($channel['channel_deny_gid']),
 		intval($private),
 		dbesc($new_public_policy),
-		dbesc(map_scope(\Zotlabs\Access\PermissionLimits::Get($channel['channel_id'],'post_comments'))),
+		dbesc(map_scope(\GeditLab\Access\PermissionLimits::Get($channel['channel_id'],'post_comments'))),
 		dbesc($title),
 		dbesc($body),
 		intval($item_wall),
@@ -2876,7 +2876,7 @@ function start_delivery_chain($channel, $item, $item_id, $parent) {
 
 
 	if($r)
-		Zotlabs\Daemon\Master::Summon(array('Notifier','tgroup',$item_id));
+		GeditLab\Daemon\Master::Summon(array('Notifier','tgroup',$item_id));
 	else {
 		logger('start_delivery_chain: failed to update item');
 		// reset the source xchan to prevent loops
@@ -3374,7 +3374,7 @@ function item_expire($uid,$days) {
 		drop_item($item['id'],false);
 	}
 
-//	Zotlabs\Daemon\Master::Summon(array('Notifier','expire',$uid));
+//	GeditLab\Daemon\Master::Summon(array('Notifier','expire',$uid));
 }
 
 function retain_item($id) {
@@ -3400,7 +3400,7 @@ function drop_items($items) {
 	// multiple threads may have been deleted, send an expire notification
 
 	if($uid)
-		Zotlabs\Daemon\Master::Summon(array('Notifier','expire',$uid));
+		GeditLab\Daemon\Master::Summon(array('Notifier','expire',$uid));
 }
 
 
@@ -3496,7 +3496,7 @@ function drop_item($id,$interactive = true,$stage = DROPITEM_NORMAL,$force = fal
 		// set if we know we're going to send delete notifications out to others.
 
 		if((intval($item['item_wall']) && ($stage != DROPITEM_PHASE2)) || ($stage == DROPITEM_PHASE1))
-			Zotlabs\Daemon\Master::Summon(array('Notifier','drop',$notify_id));
+			GeditLab\Daemon\Master::Summon(array('Notifier','drop',$notify_id));
 
 		goaway(z_root() . '/' . $_SESSION['return_url']);
 	}
@@ -4217,7 +4217,7 @@ function update_remote_id($channel,$post_id,$webpage,$pagetitle,$namespace,$remo
 		// sixteen bytes of the mid - which makes the link portable and not quite as daunting
 		// as the entire mid. If it were the post_id the link would be less portable.
 
-		\Zotlabs\Lib\IConfig::Set(
+		\GeditLab\Lib\IConfig::Set(
 			intval($post_id),
 			'system',
 			$page_type,
@@ -4351,7 +4351,7 @@ function send_profile_photo_activity($channel,$photo,$profile) {
 
 	$arr['body'] = sprintf($t,$channel['channel_name'],$ptext) . "\n\n" . $ltext;
 
-	$acl = new Zotlabs\Access\AccessList($channel);
+	$acl = new GeditLab\Access\AccessList($channel);
 	$x = $acl->get();
 	$arr['allow_cid'] = $x['allow_cid'];
 

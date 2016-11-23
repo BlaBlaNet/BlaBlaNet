@@ -79,7 +79,7 @@ class MysqlProvider extends \LightOpenIDProvider {
 //		logger('assoc_handle: ' . $assoc_handle);
 //		logger('attributes: ' . print_r($attributes,true));
 	
-		$data = \Zotlabs\Module\Id::getUserData($assoc_handle);
+		$data = \GeditLab\Module\Id::getUserData($assoc_handle);
 	
 	
 		/** @FIXME this needs to be a template with localised strings */
@@ -128,7 +128,7 @@ class MysqlProvider extends \LightOpenIDProvider {
 			$this->cancel();
 		}
 
-		$data = \Zotlabs\Module\Id::getUserData();
+		$data = \GeditLab\Module\Id::getUserData();
 		if(! $data) {
 			return false;
 		}

@@ -1,5 +1,5 @@
 <?php
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 
 /**
  * @file mod/id.php
@@ -16,7 +16,7 @@ require 'library/openid/provider/provider.php';
  * @param App &$a
  */
 
-class Id extends \Zotlabs\Web\Controller {
+class Id extends \GeditLab\Web\Controller {
 
 
 
@@ -124,13 +124,13 @@ class Id extends \Zotlabs\Web\Controller {
 	*    ?>
 	*    <form action="" method="post">
 	*    <input type="hidden" name="openid.assoc_handle" value="<?php
-namespace Zotlabs\Module; echo $handle?>">
+namespace GeditLab\Module; echo $handle?>">
 	*    Login: <input type="text" name="login"><br>
 	*    Password: <input type="password" name="password"><br>
 	*    <button>Submit</button>
 	*    </form>
 	*    <?php
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 	*    die();
 	*    }
 	*/

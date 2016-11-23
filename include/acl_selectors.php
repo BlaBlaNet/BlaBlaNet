@@ -123,7 +123,7 @@ function populate_acl($defaults = null,$show_jotnets = true, $emptyACL_descripti
 	if(! $emptyACL_description) {
 		$showall_caption = t('Visible to your default audience');
 
-	} else if (is_a($emptyACL_description, '\\Zotlabs\\Lib\\PermissionDescription')) {
+	} else if (is_a($emptyACL_description, '\\GeditLab\\Lib\\PermissionDescription')) {
 		$showall_caption = $emptyACL_description->get_permission_description();
 		$showall_origin  = (($role === 'custom') ? $emptyACL_description->get_permission_origin_description() : '');
 		$showall_icon    = $emptyACL_description->get_permission_icon();

@@ -257,7 +257,7 @@ function send_message($uid = 0, $recipient='', $body='', $subject='', $replyto='
 		}
 	}
 
-	Zotlabs\Daemon\Master::Summon(array('Notifier','mail',$post_id));
+	GeditLab\Daemon\Master::Summon(array('Notifier','mail',$post_id));
 
 	$ret['success'] = true;
 	$ret['message_item'] = intval($post_id);

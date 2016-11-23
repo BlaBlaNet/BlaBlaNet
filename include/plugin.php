@@ -405,7 +405,7 @@ function check_plugin_versions($info) {
 		}
 	}
 	if(array_key_exists('serverroles',$info)) {
-		$role = \Zotlabs\Lib\System::get_server_role();
+		$role = \GeditLab\Lib\System::get_server_role();
 		if(! (
 			stristr($info['serverroles'],'*') 
 			|| stristr($info['serverroles'],'any') 
@@ -693,7 +693,7 @@ function theme_include($file, $root = '') {
 	else
 		$parent = 'NOPATH';
 
-	$theme = Zotlabs\Render\Theme::current();
+	$theme = GeditLab\Render\Theme::current();
 	$thname = $theme[0];
 
 	$ext = substr($file,strrpos($file,'.')+1);

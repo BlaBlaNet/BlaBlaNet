@@ -1,8 +1,8 @@
 <?php
 
-namespace Zotlabs\Module;
+namespace GeditLab\Module;
 
-class Fetch extends \Zotlabs\Web\Controller {
+class Fetch extends \GeditLab\Web\Controller {
 
 	function init() {
 

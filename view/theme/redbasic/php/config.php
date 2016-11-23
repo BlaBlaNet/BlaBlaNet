@@ -1,6 +1,6 @@
 <?php
 
-namespace Zotlabs\Theme;
+namespace GeditLab\Theme;
 
 class RedbasicConfig {
 

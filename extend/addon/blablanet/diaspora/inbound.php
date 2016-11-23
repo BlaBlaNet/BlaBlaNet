@@ -366,8 +366,8 @@ function diaspora_request($importer,$xml) {
 	// Please note some permissions such as PERMS_R_PAGES are impossible for Disapora.
 	// They cannot currently authenticate to our system.
 
-	$x = \Zotlabs\Access\PermissionRoles::role_perms('social');
-	$their_perms = \Zotlabs\Access\Permissions::FilledPerms($x['perms_connect']);
+	$x = \GeditLab\Access\PermissionRoles::role_perms('social');
+	$their_perms = \GeditLab\Access\Permissions::FilledPerms($x['perms_connect']);
 
 	if($contact && $contact['abook_id']) {
 
@@ -402,12 +402,12 @@ function diaspora_request($importer,$xml) {
 
 	$role = get_pconfig($importer['channel_id'],'system','permissions_role');
 	if($role) {
-		$x = \Zotlabs\Access\PermissionRoles::role_perms($role);
+		$x = \GeditLab\Access\PermissionRoles::role_perms($role);
 		if($x['perms_auto'])
-			$my_perms = \Zotlabs\Access\Permissions::FilledPerms($x['perms_connect']);
+			$my_perms = \GeditLab\Access\Permissions::FilledPerms($x['perms_connect']);
 	}
 	if(! $my_perms)
-		$my_perms = \Zotlabs\Access\Permissions::FilledAutoperms($importer['channel_id']);
+		$my_perms = \GeditLab\Access\Permissions::FilledAutoperms($importer['channel_id']);
 				
 	$closeness = get_pconfig($importer['channel_id'],'system','new_abook_closeness');
 	if($closeness === false)
@@ -445,7 +445,7 @@ function diaspora_request($importer,$xml) {
 			dbesc($ret['xchan_hash'])
 		);
 		if($new_connection) {
-			\Zotlabs\Lib\Enotify::submit(
+			\GeditLab\Lib\Enotify::submit(
 				[
 					'type'	       => NOTIFY_INTRO,
 					'from_xchan'   => $ret['xchan_hash'],
@@ -458,7 +458,7 @@ function diaspora_request($importer,$xml) {
 				// Send back a sharing notification to them
 				$x = diaspora_share($importer,$new_connection[0]);
 				if($x)
-					Zotlabs\Daemon\Master::Summon(array('Deliver',$x));
+					GeditLab\Daemon\Master::Summon(array('Deliver',$x));
 		
 			}
 
@@ -1202,7 +1202,7 @@ function diaspora_comment($importer,$xml,$msg) {
 		// the existence of parent_author_signature means the parent_author or owner
 		// is already relaying.
 		$upstream_leg = true;
-		Zotlabs\Daemon\Master::Summon(array('Notifier','comment-import',$message_id));
+		GeditLab\Daemon\Master::Summon(array('Notifier','comment-import',$message_id));
 	}
 
 	if($result['success']) {
@@ -1393,7 +1393,7 @@ function diaspora_conversation($importer,$xml,$msg) {
 			intval($importer['channel_id'])
 		);
 
-		\Zotlabs\Lib\Enotify::submit(array(
+		\GeditLab\Lib\Enotify::submit(array(
 			'from_xchan' => $person['xchan_hash'],
 			'to_xchan' => $importer['channel_hash'],
 			'type' => NOTIFY_MAIL,
@@ -1530,7 +1530,7 @@ function diaspora_message($importer,$xml,$msg) {
 		intval($importer['channel_id'])
 	);
 
-	\Zotlabs\Lib\Enotify::submit(array(
+	\GeditLab\Lib\Enotify::submit(array(
 		'from_xchan' => $person['xchan_hash'],
 		'to_xchan' => $importer['channel_hash'],
 		'type' => NOTIFY_MAIL,
@@ -1855,7 +1855,7 @@ function diaspora_like($importer,$xml,$msg) {
 		// is already relaying. The parent_item['origin'] indicates the message was created on our system
 
 		if(intval($parent_item['item_origin']) && (! $parent_author_signature))
-			Zotlabs\Daemon\Master::Summon(array('Notifier','comment-import',$result['item_id']));
+			GeditLab\Daemon\Master::Summon(array('Notifier','comment-import',$result['item_id']));
 		sync_an_item($importer['channel_id'],$result['item_id']);
 	}
 
@@ -1976,7 +1976,7 @@ function diaspora_signed_retraction($importer,$xml,$msg) {
 						// is already relaying.
 
 						logger('diaspora_signed_retraction: relaying relayable_retraction');
-						Zotlabs\Daemon\Master::Summon(array('Notifier','drop',$r[0]['id']));
+						GeditLab\Daemon\Master::Summon(array('Notifier','drop',$r[0]['id']));
 					}
 				}
 			}

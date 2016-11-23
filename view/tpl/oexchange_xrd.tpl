@@ -4,7 +4,7 @@
     <Subject>{{$base}}</Subject>
 
     <Property 
-        type="http://www.oexchange.org/spec/0.8/prop/vendor">Zotlabs</Property>
+        type="http://www.oexchange.org/spec/0.8/prop/vendor">GeditLab</Property>
     <Property 
         type="http://www.oexchange.org/spec/0.8/prop/title">BlaBlaNet</Property>
     <Property 

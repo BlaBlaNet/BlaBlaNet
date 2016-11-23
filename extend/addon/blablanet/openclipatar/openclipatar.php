@@ -311,7 +311,7 @@ function openclipatar_content(&$a) {
 		$_SESSION['reload_avatar'] = true;
 
 		// tell everybody
-		Zotlabs\Daemon\Master::Summon(array('Directory',local_channel()));
+		GeditLab\Daemon\Master::Summon(array('Directory',local_channel()));
 		
 		$returnafter = get_config('openclipatar', 'returnafter');
 		$returnafter_urls = array(

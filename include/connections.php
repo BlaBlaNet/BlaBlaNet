@@ -280,7 +280,7 @@ function channel_remove($channel_id, $local = true, $unset_session=false) {
 			dbesc($channel['channel_hash'])
 		);
 
-		Zotlabs\Daemon\Master::Summon(array('Notifier','purge_all',$channel_id));
+		GeditLab\Daemon\Master::Summon(array('Notifier','purge_all',$channel_id));
 	}
 
 
@@ -374,7 +374,7 @@ function channel_remove($channel_id, $local = true, $unset_session=false) {
 				@rrmdir($f);
 	}
 
-	Zotlabs\Daemon\Master::Summon(array('Directory',$channel_id));
+	GeditLab\Daemon\Master::Summon(array('Directory',$channel_id));
 
 	if($channel_id == local_channel() && $unset_session) {
 		App::$session->nuke();

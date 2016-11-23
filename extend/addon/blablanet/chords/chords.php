@@ -11,11 +11,11 @@
 require_once('addon/chords/Mod_Chords.php');
 
 function chords_load() {
-	Zotlabs\Extend\Hook::register('load_pdl', 'addon/chords/chords.php', '\\Chords::chords_pdl');
+	GeditLab\Extend\Hook::register('load_pdl', 'addon/chords/chords.php', '\\Chords::chords_pdl');
 }
 
 function chords_unload() {
-	Zotlabs\Extend\Hook::unregister_by_file('addon/chords/chords.php');
+	GeditLab\Extend\Hook::unregister_by_file('addon/chords/chords.php');
 
 }
 

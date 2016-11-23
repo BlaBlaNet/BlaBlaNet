@@ -35,15 +35,15 @@
 		include_once($file);
 	}
 
-	echo "Directory: Zotlabs\n";
-	$files = glob('Zotlabs/*/*.php');
+	echo "Directory: GeditLab\n";
+	$files = glob('GeditLab/*/*.php');
 	foreach($files as $file) {
 		echo $file . "\n";
 		include_once($file);
 	}
 
-	echo "Directory: Zotlabs/Module (sub-modules)\n";
-	$files = glob('Zotlabs/Module/*/*.php');
+	echo "Directory: GeditLab/Module (sub-modules)\n";
+	$files = glob('GeditLab/Module/*/*.php');
 	foreach($files as $file) {
 		echo $file . "\n";
 		include_once($file);

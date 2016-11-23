@@ -62,7 +62,7 @@ require_once('include/api_auth.php');
 
 
 	function api_register_func($path, $func, $auth=false) {
-		\Zotlabs\Lib\Api_router::register($path,$func,$auth);
+		\GeditLab\Lib\Api_router::register($path,$func,$auth);
 	}
 
 	
@@ -88,7 +88,7 @@ require_once('include/api_auth.php');
 		if((! $type) || (! in_array($type, [ 'json', 'xml', 'rss', 'as', 'atom' ])))
 			$type = 'json';
 
-		$info = \Zotlabs\Lib\Api_router::find($p);
+		$info = \GeditLab\Lib\Api_router::find($p);
 
 		logger('info: ' . $p . ' type: ' . $type . ' ' . print_r($info,true));
 
@@ -782,13 +782,13 @@ require_once('include/api_auth.php');
 		$_REQUEST['silent']='1'; //tell wall_upload function to return img info instead of echo
 		$_FILES['userfile'] = $_FILES['media'];
 
-		$mod = new Zotlabs\Module\Wall_attach();
+		$mod = new GeditLab\Module\Wall_attach();
 		$mod->post();
 
 
 		$_REQUEST['body']=$txt."\n\n".$posted;
 
-		$mod = new Zotlabs\Module\Item();
+		$mod = new GeditLab\Module\Item();
 		$mod->post();
 
 		// this should output the last post (the one we just posted).
@@ -882,7 +882,7 @@ require_once('include/api_auth.php');
 
 						// upload each image if we have any
 						$_REQUEST['silent']='1'; //tell wall_upload function to return img info instead of echo
-						$mod = new Zotlabs\Module\Wall_attach();
+						$mod = new GeditLab\Module\Wall_attach();
 						App::$data['api_info'] = $user_info;
 						$media = $mod->post();
 
@@ -895,7 +895,7 @@ require_once('include/api_auth.php');
 					$_FILES['userfile'] = $_FILES['media'];
 					// upload each image if we have any
 					$_REQUEST['silent']='1'; //tell wall_upload function to return img info instead of echo
-					$mod = new Zotlabs\Module\Wall_attach();
+					$mod = new GeditLab\Module\Wall_attach();
 					App::$data['api_info'] = $user_info;
 					$media = $mod->post();
 
@@ -907,7 +907,7 @@ require_once('include/api_auth.php');
 
 		// call out normal post function
 
-		$mod = new Zotlabs\Module\Item();
+		$mod = new GeditLab\Module\Item();
 		$mod->post();	
 
 		// this should output the last post (the one we just posted).
@@ -937,13 +937,13 @@ require_once('include/api_auth.php');
 			$_FILES['userfile'] = $_FILES['media'];
 			// upload the image if we have one
 			$_REQUEST['silent']='1'; //tell wall_upload function to return img info instead of echo
-			$mod = new Zotlabs\Module\Wall_upload();
+			$mod = new GeditLab\Module\Wall_upload();
 			$media = $mod->post();
 			if(strlen($media)>0)
 				$_REQUEST['body'] .= "\n\n".$media;
 		}
 
-		$mod = new Zotlabs\Module\Item();
+		$mod = new GeditLab\Module\Item();
 		$x = $mod->post();	
 		json_return_and_die($x);
 	}
@@ -1426,7 +1426,7 @@ require_once('include/api_auth.php');
 				$_REQUEST['profile_uid'] = api_user();
 				$_REQUEST['type'] = 'wall';
 				$_REQUEST['api_source'] = true;
-				$mod = new Zotlabs\Module\Item();
+				$mod = new GeditLab\Module\Item();
 				$mod->post();
 			}
 		}
@@ -2114,10 +2114,10 @@ require_once('include/api_auth.php');
 			'private' => $private, 'textlimit' => $textlimit, 'sslserver' => $sslserver, 'ssl' => $ssl,
 			'shorturllength' => '30',
         	'BlaBlaNet' => array(
-				'PLATFORM_NAME' => Zotlabs\Lib\System::get_platform_name(),
-				'STD_VERSION' => Zotlabs\Lib\System::get_project_version(),
+				'PLATFORM_NAME' => GeditLab\Lib\System::get_platform_name(),
+				'STD_VERSION' => GeditLab\Lib\System::get_project_version(),
 				'ZOT_REVISION' => ZOT_REVISION,
-				'DB_UPDATE_VERSION' => Zotlabs\Lib\System::get_update_version()
+				'DB_UPDATE_VERSION' => GeditLab\Lib\System::get_update_version()
 			)
 		));  
 
@@ -2151,12 +2151,12 @@ require_once('include/api_auth.php');
 
 		if($type === 'xml') {
 			header("Content-type: application/xml");
-			echo '<?xml version="1.0" encoding="UTF-8"?>' . "\r\n" . '<version>' . Zotlabs\Lib\System::get_project_version() . '</version>' . "\r\n";
+			echo '<?xml version="1.0" encoding="UTF-8"?>' . "\r\n" . '<version>' . GeditLab\Lib\System::get_project_version() . '</version>' . "\r\n";
 			killme();
 		}
 		elseif($type === 'json') {
 			header("Content-type: application/json");
-			echo '"' . Zotlabs\Lib\System::get_project_version() . '"';
+			echo '"' . GeditLab\Lib\System::get_project_version() . '"';
 			killme();
 		}
 	}
