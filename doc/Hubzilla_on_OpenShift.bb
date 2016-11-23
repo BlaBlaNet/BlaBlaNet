@@ -1,11 +1,11 @@
-[b]Hubzilla on OpenShift[/b]
-You will notice a new .openshift folder when you fetch from upstream, i.e. from [url=https://github.com/redmatrix/hubzilla.git]https://github.com/redmatrix/hubzilla.git[/url] , which contains a deploy script to set up Hubzilla on OpenShift with plugins and extra themes.
+[b]BlaBlaNet on OpenShift[/b]
+You will notice a new .openshift folder when you fetch from upstream, i.e. from [url=https://github.com/redmatrix/BlaBlaNet.git]https://github.com/redmatrix/BlaBlaNet.git[/url] , which contains a deploy script to set up BlaBlaNet on OpenShift with plugins and extra themes.
 
-As of this writing, 2015-10-28, you do not have to pay for OpenShift on the Free plan, which gives you three gears at no cost. The Bronze plan gives you three gears at no cost too, but you can expand to 16 gears by paying, and this requires you to register your payment card. The three gears can give three instances of Hubzilla with one gear each, or you can combine two gears into one high-availability Hubzilla instance and one extra gear. The main difference to be aware of is this: gears on the Free plan will go into hibernation if left idle for too long, this does not happen on the Bronze plan. 
+As of this writing, 2015-10-28, you do not have to pay for OpenShift on the Free plan, which gives you three gears at no cost. The Bronze plan gives you three gears at no cost too, but you can expand to 16 gears by paying, and this requires you to register your payment card. The three gears can give three instances of BlaBlaNet with one gear each, or you can combine two gears into one high-availability BlaBlaNet instance and one extra gear. The main difference to be aware of is this: gears on the Free plan will go into hibernation if left idle for too long, this does not happen on the Bronze plan. 
 
-Create an account on OpenShift, then use the registration e-mail and password to create your first Hubzilla instance. Install git and RedHat's command line tools - rhc - if you have not already done so. See for example https://developers.openshift.com/en/getting-started-debian-ubuntu.html on how to do this on Debian GNU/Linux, or in the menu on that page for other GNU/Linux distributions or other operating systems. 
+Create an account on OpenShift, then use the registration e-mail and password to create your first BlaBlaNet instance. Install git and RedHat's command line tools - rhc - if you have not already done so. See for example https://developers.openshift.com/en/getting-started-debian-ubuntu.html on how to do this on Debian GNU/Linux, or in the menu on that page for other GNU/Linux distributions or other operating systems. 
 
-[code]rhc app-create your_app_name php-5.4 mysql-5.5 cron phpmyadmin --namespace your_domain --from-code https://github.com/redmatrix/hubzilla.git -l your@email.address -p your_account_password
+[code]rhc app-create your_app_name php-5.4 mysql-5.5 cron phpmyadmin --namespace your_domain --from-code https://github.com/redmatrix/BlaBlaNet.git -l your@email.address -p your_account_password
 [/code]
 
 Make a note of the database username and password OpenShift creates for your instance, and use these at [url=https://your_app_name-your_domain.rhcloud.com/]https://your_app_name-your_domain.rhcloud.com/[/url] to complete the setup. You MUST change server address from 127.0.0.1 to localhost.
@@ -13,7 +13,7 @@ Make a note of the database username and password OpenShift creates for your ins
 NOTE: PostgreSQL is NOT supported by the deploy script yet, see [zrl=https://zot-mor.rhcloud.com/display/3c7035f2a6febf87057d84ea0ae511223e9b38dc27913177bc0df053edecac7c@zot-mor.rhcloud.com?zid=haakon%40zot-mor.rhcloud.com]this thread[/zrl].
 
 [b]Update[/b]
-To update, consider your own workflow first. I have forked Hubzilla code into my GitHub account to be able to try things out, this remote repo is called origin. Here is how I fetch new code from upstream, merge into my local repo, then push the updated code both into origin and the remote repo called openshift.
+To update, consider your own workflow first. I have forked BlaBlaNet code into my GitHub account to be able to try things out, this remote repo is called origin. Here is how I fetch new code from upstream, merge into my local repo, then push the updated code both into origin and the remote repo called openshift.
 
 [code]git fetch upstream;git checkout master;git merge upstream/master;git push origin;git push openshift HEAD
 [/code]
@@ -21,7 +21,7 @@ To update, consider your own workflow first. I have forked Hubzilla code into my
 [b]Administration[/b]
 Symptoms of need for MySQL database administration are:
 [list]
-[*] you can visit your domain and see the Hubzilla frontpage, but trying to login throws you back to login. This can mean your session table is marked as crashed.
+[*] you can visit your domain and see the BlaBlaNet frontpage, but trying to login throws you back to login. This can mean your session table is marked as crashed.
 [*] you can login, but your channel posts are not visible. This can mean your item table is marked as crashed.
 [*] you can login and you can see your channel posts, but apparently nobody is getting your posts, comments, likes and so on. This can mean your outq table is marked as crashed.
 [/list]
@@ -97,7 +97,7 @@ You can now start the MySQL service on OpenShift by locally doing
 
 [b]Notes[/b]
 [list]
-[*] definitely DO turn off feeds and discovery by default and limit delivery reports from 30 days to 3 days if you are on the Free or Bronze plan on OpenShift with a single 1Gb gear by visiting [observer.baseurl]/admin/site when logged in as administrator of your Hubzilla site. 
+[*] definitely DO turn off feeds and discovery by default and limit delivery reports from 30 days to 3 days if you are on the Free or Bronze plan on OpenShift with a single 1Gb gear by visiting [observer.baseurl]/admin/site when logged in as administrator of your BlaBlaNet site. 
 [*] The above defaults have been added into the deploy script.
 [*] DO add git gc to the deploy script
 [*] MAYBE DO add myisamchk - only checking? to the end of the deploy script.

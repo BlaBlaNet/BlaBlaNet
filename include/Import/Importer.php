@@ -1,11 +1,11 @@
 <?php /** @file */
 
-namespace Hubzilla\Import;
+namespace BlaBlaNet\Import;
 
 /**
  * @brief Class Import
  *
- * @package Hubzilla\Import
+ * @package BlaBlaNet\Import
  */
 class Import {
 

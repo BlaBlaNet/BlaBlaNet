@@ -5,7 +5,7 @@ Date: 15 July 2016
 
 Purpose:
 
-In order to facilitate sharing of private resources with non-members or members of federation nodes with limited identification discovery, Hubzilla should provide members with a mechanism to create and manage temporary ("throwaway") logins, aka "Zot Access Tokens". These tokens/credentials may be used to authenticate to a hubzilla site for the sole purpose of accessing privileged or access controlled resources (files, photos, posts, webpages, chatrooms, etc.). 
+In order to facilitate sharing of private resources with non-members or members of federation nodes with limited identification discovery, BlaBlaNet should provide members with a mechanism to create and manage temporary ("throwaway") logins, aka "Zot Access Tokens". These tokens/credentials may be used to authenticate to a BlaBlaNet site for the sole purpose of accessing privileged or access controlled resources (files, photos, posts, webpages, chatrooms, etc.). 
 
 
 Scope: 
@@ -19,7 +19,7 @@ Implementation:
 
 Zot Access Tokens are managed through a "tab" of the settings page. Access to this tab may be controlled by site configuration. On this page, channels may create, edit, list, and remove any access tokens under their control. 
 
-The form to create/edit accepts three parameters, a human readable name, a password or access token, and an optional expiration. Once expired, the access token is no longer valid, may no longer be used, and will be automatically purged from the list of temporary accounts. The password field in the create/edit forms displays the text of the access token and not an obscured password. By default we will create a token using the autoname() function, which generally produces a random character sequence which is "pronounceable", hence easy to convey or remember. This can be changed to any other character sequence which is acceptable to the site password complexity policy. (In most Hubzilla installations this imposes a minimum of three characters, but may be extended by plugin or site policy).
+The form to create/edit accepts three parameters, a human readable name, a password or access token, and an optional expiration. Once expired, the access token is no longer valid, may no longer be used, and will be automatically purged from the list of temporary accounts. The password field in the create/edit forms displays the text of the access token and not an obscured password. By default we will create a token using the autoname() function, which generally produces a random character sequence which is "pronounceable", hence easy to convey or remember. This can be changed to any other character sequence which is acceptable to the site password complexity policy. (In most BlaBlaNet installations this imposes a minimum of three characters, but may be extended by plugin or site policy).
 
 
 Usage:

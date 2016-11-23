@@ -199,7 +199,7 @@
 
 			{{if $nav.help}}
 				<li class="{{$sel.help}}{{if $nav.help.6}} hidden-xs{{/if}}">
-					<a class="{{$nav.help.2}}" target="hubzilla-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" id="{{$nav.help.4}}"{{if $nav.help.6}} onclick="contextualHelp(); return false;"{{/if}}>{{if $nav.help.6}}<i class="fa fa-question-circle"></i>{{else}}<i class="fa fa-question"></i>{{/if}}</a>
+					<a class="{{$nav.help.2}}" target="BlaBlaNet-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" id="{{$nav.help.4}}"{{if $nav.help.6}} onclick="contextualHelp(); return false;"{{/if}}>{{if $nav.help.6}}<i class="fa fa-question-circle"></i>{{else}}<i class="fa fa-question"></i>{{/if}}</a>
 				</li>
 			{{/if}}
 			</ul>
@@ -209,7 +209,7 @@
 	<div id="contextual-help-content" class="contextual-help-content">
 		{{$nav.help.5}}
 		<div class="pull-right">
-			<a class="contextual-help-tool" target="hubzilla-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}"><i class="fa fa-question"></i></a>
+			<a class="contextual-help-tool" target="BlaBlaNet-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}"><i class="fa fa-question"></i></a>
 			<a class="contextual-help-tool" href="#" onclick="contextualHelp(); return false;"><i class="fa fa-times"></i></a>
 		</div>
 	</div>

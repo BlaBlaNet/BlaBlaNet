@@ -233,7 +233,7 @@ function get_post_aclDialogDescription() {
 	$description = t('Post permissions %s cannot be changed %s after a post is shared.</br />These permissions set who is allowed to view the post.');
 
 	// Lets keep the emphasis styling seperate from the translation. It may change.
-	$emphasisOpen  = '<b><a href="' . z_root() . '/help/acl_dialog_post" target="hubzilla-help">';
+	$emphasisOpen  = '<b><a href="' . z_root() . '/help/acl_dialog_post" target="BlaBlaNet-help">';
 	$emphasisClose = '</a></b>';
 
 	return sprintf($description, $emphasisOpen, $emphasisClose);

@@ -18,7 +18,7 @@ A: $Projectname (la xarxa de nodes) NO POT censurat el teu contingut. Els admini
 
 **$Projectname** 
 
-Coneguda d'un altre forma com "la xarxa", Hubzilla és una col·lecció d'equips individuals/servidors (àlies nodes) que connecten entre si per formar una xarxa cooperativa més gran.
+Coneguda d'un altre forma com "la xarxa", BlaBlaNet és una col·lecció d'equips individuals/servidors (àlies nodes) que connecten entre si per formar una xarxa cooperativa més gran.
 
 **node (hub)** 
 

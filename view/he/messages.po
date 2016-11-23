@@ -8117,7 +8117,7 @@ msgstr ""
 
 #: ../../mod/siteinfo.php:164
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://BlaBlaNet.org\">BlaBlaNet.org</a> to learn more "
 "about $Projectname."
 msgstr ""
 

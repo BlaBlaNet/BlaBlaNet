@@ -10,14 +10,14 @@ Next, click the link to Register a new application. That brings up the new appli
 
 Icon. I uploaded $Projectname icon located at this link, after saving it to my computer:
 
-https://github.com/redmatrix/hubzilla/blob/master/images/rm-32.png
+https://github.com/redmatrix/BlaBlaNet/blob/master/images/rm-32.png
 
-Name. Give the application an appropriate name. I called mine hubzilla. You might prefer r2g.
+Name. Give the application an appropriate name. I called mine BlaBlaNet. You might prefer r2g.
 
 Description. Use this field to describe the purpose of the application. I put something to the effect of use for crossposting from $Projectname to GNUsocial.
 
 
-Source URL. Put the main domain name of the Red site you're using. Don't forget to put the "s" in https://yourhubzillasite.com. If your Red installation is a subdomain, that would probably be called for.
+Source URL. Put the main domain name of the Red site you're using. Don't forget to put the "s" in https://yourBlaBlaNetsite.com. If your Red installation is a subdomain, that would probably be called for.
 
 Organization. Since $Projectname is unorganized, I put that. If you use your installation for a group or business, that might be a good option.
 

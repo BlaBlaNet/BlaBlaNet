@@ -56,11 +56,11 @@ function import_diaspora($data) {
 
 	$channel_id = $c['channel']['channel_id'];
 
-	// Hubzilla only: Turn on the Diaspora protocol so that follow requests will be sent.
+	// BlaBlaNet only: Turn on the Diaspora protocol so that follow requests will be sent.
 
 	set_pconfig($channel_id,'system','diaspora_allowed','1');
 
-	// todo - add auto follow settings, (and strip exif in hubzilla)
+	// todo - add auto follow settings, (and strip exif in BlaBlaNet)
 
 	$location = escape_tags($data['user']['profile']['location']);
 	if(! $location)

@@ -31,7 +31,7 @@ $cookies = 'store/[data]/frphoto_cookie_' . $channel_address;
         curl_setopt ($ch, CURLOPT_COOKIEJAR, $cookies);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Hubzilla');
+        curl_setopt($ch, CURLOPT_USERAGENT, 'BlaBlaNet');
 
         $output = curl_exec($ch);
         curl_close($ch);

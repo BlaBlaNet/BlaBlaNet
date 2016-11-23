@@ -46,7 +46,7 @@
 [*] moremoods - Additional mood options
 [*] morepokes - additional poke options (not safe for work)
 [*] msgfooter - provide legal or other text on each outgoing post
-[*] noembed - use noembed.com as an addition to Hubzilla's native oembed functionality (currently broken)
+[*] noembed - use noembed.com as an addition to BlaBlaNet's native oembed functionality (currently broken)
 [*] nofed - prevent "federation" of channel posts, maintains all interaction on your site
 [*] nsabait - add random terrorism related hashtags to your posts
 [*] nsfw - Highly recommended plugin to collpase posts with inappropriate content
@@ -60,7 +60,7 @@
 [*] randpost - post/reply bot based on and requires fortunate
 [*] redfiles - import file storage from redmatrix
 [*] redphotos - import photo albums from redmatrix
-[*] redred - Crosspost to another Red Matrix or Hubzilla channel
+[*] redred - Crosspost to another Red Matrix or BlaBlaNet channel
 [*] rtof - Crosspost to Friendica
 [*] sendzid - add 'zid' auth parmaters to all outbound links, not just in-network links
 [*] skeleton - sample addon/plugin to demonstrate plugin development
@@ -93,7 +93,7 @@ For these reasons we [b]strongly recommend[/b] that you do NOT install addons fr
 We also recognise that some developers prefer working on their own and do not wish their code to be mingled with the project repository for a variety of reasons. These developers can ease troubleshooting and debugging by providing a README file in their respective code repository outlining the process for submitting patches and bug fixes. It is also recommended that these projects provide both a 'dev' (development) and 'master' (production) branch which tracks the current project branches of those names. This is because dev and master are often not compatible from the viewpoint of library interfaces. It is also highly recommended that your repository versions are tagged and moved forward within 24 hours of project releases. This is a major inconvenience for everybdy involved, and can present downtime for production sites while this process is being carried out; which is one more reason why we [b]strongly recommend[/b] that addons be submitted to the project addon repository and that you do NOT install such third-party addons. 
 
 
-[url=https://github.com/redmatrix/hubzilla-addons]https://github.com/redmatrix/hubzilla-addons[/url] Main project addon repository
+[url=https://github.com/redmatrix/BlaBlaNet-addons]https://github.com/redmatrix/BlaBlaNet-addons[/url] Main project addon repository
 
 [url=https://github.com/23n/red-addons]https://github.com/23n/red-addons[/url] Oliver's repository (mayan_places and flip)
 

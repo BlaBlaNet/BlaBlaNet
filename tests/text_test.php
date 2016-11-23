@@ -22,7 +22,7 @@ class TextTest extends PHPUnit_Framework_TestCase {
 		$this->assertTrue(valid_email_regex('ken@restivo.org'));
 	}
 	public function testGoodEmail3() {
-		$this->assertTrue(valid_email_regex('nobody@hubzilla.com'));
+		$this->assertTrue(valid_email_regex('nobody@BlaBlaNet.com'));
 	}
 	public function testBadEmail() {
 		$this->assertFalse(valid_email_regex('nobody!uses!these!any.more'));

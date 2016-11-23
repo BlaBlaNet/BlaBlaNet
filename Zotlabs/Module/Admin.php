@@ -4,7 +4,7 @@ namespace Zotlabs\Module;
 
 /**
  * @file mod/admin.php
- * @brief Hubzilla's admin controller.
+ * @brief BlaBlaNet's admin controller.
  *
  * Controller for the /admin/ area.
  */

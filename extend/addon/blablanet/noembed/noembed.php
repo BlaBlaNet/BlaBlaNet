@@ -2,10 +2,10 @@
 
 /**
  * Name: Noembed
- * Description: Use noembed.com as an addition to Hubzilla's native oembed functionality
+ * Description: Use noembed.com as an addition to BlaBlaNet's native oembed functionality
  * Version: 1.0
- * Author: Jeroen van Riet Paap <jeroenpraat@hubzilla.nl>, Mike Macgirvin <mike@zothub.com>
- * Maintainer: Jeroen van Riet Paap <jeroenpraat@hubzilla.nl>
+ * Author: Jeroen van Riet Paap <jeroenpraat@BlaBlaNet.nl>, Mike Macgirvin <mike@zothub.com>
+ * Maintainer: Jeroen van Riet Paap <jeroenpraat@BlaBlaNet.nl>
  * 
  */
 

@@ -302,7 +302,7 @@ function jappixmini_settings(&$a, &$s) {
 	}
 
 	$sc .= '<div class="section-content-info-wrapper form-group">';
-	$sc .= '<strong>' . t('Status:') . '</strong> Addon knows ' . $address_cnt . ' Jabber addresses of ' . $contact_cnt . ' Hubzilla contacts (takes some time, usually 10 minutes, to update).';
+	$sc .= '<strong>' . t('Status:') . '</strong> Addon knows ' . $address_cnt . ' Jabber addresses of ' . $contact_cnt . ' BlaBlaNet contacts (takes some time, usually 10 minutes, to update).';
 	$sc .= '</div>';
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
@@ -340,19 +340,19 @@ function jappixmini_settings(&$a, &$s) {
 	$onchange = "document.getElementById('id_jappixmini-friendica-password').disabled = !this.checked;jappixmini_set_password();";
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
-		'$field'	=> array('jappixmini-encrypt', t('Encrypt Jabber password with Hubzilla password'), $encrypt_checked, t('Recommended'), array(t('No'),t('Yes')), 'onchange="' . $onchange . '"')
+		'$field'	=> array('jappixmini-encrypt', t('Encrypt Jabber password with BlaBlaNet password'), $encrypt_checked, t('Recommended'), array(t('No'),t('Yes')), 'onchange="' . $onchange . '"')
 	));
 
 	$sc .= replace_macros(get_markup_template('field_password.tpl'), array(
-		'$field'	=> array('jappixmini-friendica-password', t('Hubzilla password'), '', '', '', $encrypt_disabled . ' onchange="jappixmini_set_password();"')
+		'$field'	=> array('jappixmini-friendica-password', t('BlaBlaNet password'), '', '', '', $encrypt_disabled . ' onchange="jappixmini_set_password();"')
 	));
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
-		'$field'	=> array('jappixmini-autoapprove', t('Approve subscription requests from Hubzilla contacts automatically'), $autoapprove, '', array(t('No'),t('Yes')))
+		'$field'	=> array('jappixmini-autoapprove', t('Approve subscription requests from BlaBlaNet contacts automatically'), $autoapprove, '', array(t('No'),t('Yes')))
 	));
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
-		'$field'	=> array('jappixmini-autosubscribe', t('Approve subscription requests from Hubzilla contacts automatically'), $autosubscribe, '', array(t('No'),t('Yes')))
+		'$field'	=> array('jappixmini-autosubscribe', t('Approve subscription requests from BlaBlaNet contacts automatically'), $autosubscribe, '', array(t('No'),t('Yes')))
 	));
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
@@ -443,7 +443,7 @@ function jappixmini_settings_post(&$a,&$b) {
 			}
 
 			if (! $valid) {
-				info("Hubzilla password not valid.");
+				info("BlaBlaNet password not valid.");
 				return;
 			}
 		}
@@ -698,5 +698,5 @@ function jappixmini_download_source(&$a,&$b) {
 
 	$b .= '<h1>Jappix Mini</h1>';
 	$b .= '<p>This site uses the jappixmini addon, which includes Jappix Mini by the <a href="'.z_root().'/addon/jappixmini/jappix/AUTHORS">Jappix authors</a> and is distributed under the terms of the <a href="'.z_root().'/addon/jappixmini/jappix/COPYING">GNU Affero General Public License</a>.</p>';
-	$b .= '<p>You can download the <a href="'.z_root().'/addon/jappixmini.tgz">source code of the addon</a>. The rest of Hubzilla is distributed under compatible licenses and can be retrieved from <a href="https://github.com/friendica/red">https://github.com/friendica/red</a> and <a href="https://github.com/friendica/red-addons">https://github.com/friendica/red-addons</a></p>';
+	$b .= '<p>You can download the <a href="'.z_root().'/addon/jappixmini.tgz">source code of the addon</a>. The rest of BlaBlaNet is distributed under compatible licenses and can be retrieved from <a href="https://github.com/friendica/red">https://github.com/friendica/red</a> and <a href="https://github.com/friendica/red-addons">https://github.com/friendica/red-addons</a></p>';
 }

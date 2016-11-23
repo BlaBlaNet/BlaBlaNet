@@ -4,7 +4,7 @@
 
 [zrl=[baseurl]/help/install]Instal·lació[/zrl]
 [zrl=[baseurl]/help/red2pi]Instal·lant $Projectname en una Raspberry Pi[/zrl]
-[zrl=[baseurl]/help/Hubzilla_on_OpenShift]$Projectname en OpenShift[/zrl]
+[zrl=[baseurl]/help/BlaBlaNet_on_OpenShift]$Projectname en OpenShift[/zrl]
 [zrl=[baseurl]/help/troubleshooting]Consells per solucionar problemes[/zrl]
 [zrl=[baseurl]/help/hidden_configs]Afinant Configuracions ocultes de $Projectname[/zrl]
 [zrl=[baseurl]/help/faq_admins]FAQ Per als Administradors[/zrl]

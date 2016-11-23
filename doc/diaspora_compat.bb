@@ -13,7 +13,7 @@ If you are using a configuration which allows direct Diaspora communications you
 
 [*]Private posts and their associated comments are sent in plaintext email notifications in Diaspora and Friendica. This is a major privacy issue and affects any private communications you have where *any* member of the conversation is on another network. Be aware of it. 
 
-[*]Access control only works on posts and comments. Diaspora members will get permission denied trying to access any other access controlled hubzilla objects such as files, photos, webpages, chatrooms, etc. In the case of private photos that are linked to posts, they will see a "prohibited sign" instead of the photo. Diaspora has no concept of private media and provides an illusion of photo privacy by using obscured URLs rather than protecting the photo from snooping by unauthorised viewers. 
+[*]Access control only works on posts and comments. Diaspora members will get permission denied trying to access any other access controlled BlaBlaNet objects such as files, photos, webpages, chatrooms, etc. In the case of private photos that are linked to posts, they will see a "prohibited sign" instead of the photo. Diaspora has no concept of private media and provides an illusion of photo privacy by using obscured URLs rather than protecting the photo from snooping by unauthorised viewers. 
 
 There is no workaround except to make your media resources public (to everybody on the internet).
 
@@ -38,7 +38,7 @@ There is no workaround except to make your media resources public (to everybody 
 
 [*]Privacy tags (@!somebody) will not be available to Diaspora members. These tags may have to be stripped or obscured to prevent them from being hijacked - which could result in privacy issues.  
 
-[*]Plus-tagged hubzilla forums should work from Diaspora. 
+[*]Plus-tagged BlaBlaNet forums should work from Diaspora. 
 
 
 [*]You cannot use Diaspora channels as channel sources. 

@@ -1,9 +1,9 @@
 [h2]Bugs, Issues, and things that go bump in the night...[/h2]
 [h3]Something went wrong! Who is charge of fixing it?[/h3]
 
-[b]Hubzilla Community Server[/b]
+[b]BlaBlaNet Community Server[/b]
 
-Hubzilla Community Server is open source software which is maintained by "the community" - essentially unpaid volunteers.
+BlaBlaNet Community Server is open source software which is maintained by "the community" - essentially unpaid volunteers.
 
 The first thing you need to do is talk to your hub administrator - the person who runs and manages your site. They are in the unique position of having access to the internal software and database and [b]logfiles[/b] and will need to be involved in fixing your problem. Other people "on the net" can't really help with this. The first thing the hub administrator needs to do is look at their logs and/or try to reproduce the problem. So try to be as helpful and courteous as possible in helping them look into the problem. 
 
@@ -21,7 +21,7 @@ If you get a blank white screen when doing something, this is almost always a co
 
 At this point it might be worthwhile discussing the issue on one of the online forums. There may be several of these and some may be more suited to your spoken language. As a last resort, try "Channel One", which is in English.
 
-If the community developers can't help you right away, understand that they are volunteers and may have a lot of other work and demands on their time. At this point you need to file a bug report. You will need an account on github.com to do this. So register, and then visit https://github.com/redmatrix/hubzilla/issues
+If the community developers can't help you right away, understand that they are volunteers and may have a lot of other work and demands on their time. At this point you need to file a bug report. You will need an account on github.com to do this. So register, and then visit https://github.com/redmatrix/BlaBlaNet/issues
 . Create an issue here and provide all the same information that you provided online. Don't leave out anything. 
 
 Then you wait. If it's a high profile issue, it may get fixed quickly. But nobody is in charge of fixing bugs. If it lingers without resolution, please spend some more time investigating the problem. Ask about anything you don't understand related to the behaviour. You will learn more about how the software works and quite possibly figure out why it isn't working now. Ultimately it is somebody in the community who is going to fix this and you are a member of the community; and this is how the open source process works.

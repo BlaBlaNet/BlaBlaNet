@@ -1,7 +1,7 @@
 <?php
 /**
  * Name: Piwik Analytics
- * Description: Piwik Analytics Plugin for Hubzilla
+ * Description: Piwik Analytics Plugin for BlaBlaNet
  * Version: 1.2
  * Author: Tobias Diekershoff <https://f.diekershoff.de/profile/tobias>
  * Author: Klaus Weidenbach
@@ -49,7 +49,7 @@ function piwik_analytics($a,&$b) {
 
 	/*
 	 *   styling of every HTML block added by this plugin is done in the
-	 *   associated CSS file. We just have to tell Hubzilla to get it
+	 *   associated CSS file. We just have to tell BlaBlaNet to get it
 	 *   into the page header.
 	 */
 	App::$page['htmlhead'] .= '<link rel="stylesheet"  type="text/css" href="' . z_root() . '/addon/piwik/piwik.css' . '" media="all" />';

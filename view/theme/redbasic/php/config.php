@@ -6,7 +6,7 @@ class RedbasicConfig {
 
 	function get_schemas() {
 		$scheme_choices = array();
-		$scheme_choices["---"] = t("Focus (Hubzilla default)");
+		$scheme_choices["---"] = t("Focus (BlaBlaNet default)");
 		$files = glob('view/theme/redbasic/schema/*.php');
 		if($files) {
 			foreach($files as $file) {

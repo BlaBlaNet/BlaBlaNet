@@ -1,7 +1,7 @@
 Hey, 
 I'm the web server at {{$sitename}};
    
-The Hubzilla developers released update {{$update}} recently, 
+The BlaBlaNet developers released update {{$update}} recently, 
 but when I tried to install it, something went terribly wrong.  
 This needs to be fixed soon and it requires human intervention. 
 Please contact a project developer if you can not figure out how to 

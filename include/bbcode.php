@@ -523,7 +523,7 @@ function bb_fixtable_lf($match) {
 
 
 	// BBcode 2 HTML was written by WAY2WEB.net
-	// extended to work with Mistpark/Friendica/Redmatrix/Hubzilla - Mike Macgirvin
+	// extended to work with Mistpark/Friendica/Redmatrix/BlaBlaNet - Mike Macgirvin
 
 function bbcode($Text, $preserve_nl = false, $tryoembed = true, $cache = false) {
 

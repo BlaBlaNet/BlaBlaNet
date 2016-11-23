@@ -2,7 +2,7 @@
 
 /**
  * Name: Friendica Photo Migrator
- * Description: Migrate photo albums from Friendica to a Redmatrix channel (not yet ported to Hubzilla)
+ * Description: Migrate photo albums from Friendica to a Redmatrix channel (not yet ported to BlaBlaNet)
  * Version: 1.0
  * Author: Mike Macgirvin
  * Maintainer: none
@@ -41,7 +41,7 @@ function frphotos_init(&$a) {
 		curl_setopt($ch, CURLOPT_USERPWD, $fr_username . ':' . $fr_password); 
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);                          
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);                           
-		curl_setopt($ch, CURLOPT_USERAGENT, 'Hubzilla');
+		curl_setopt($ch, CURLOPT_USERAGENT, 'BlaBlaNet');
  
 		$output = curl_exec($ch);
 		curl_close($ch);

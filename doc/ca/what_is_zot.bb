@@ -55,7 +55,7 @@ Per més detalla, informació tècnica sobre Zot, clica sobre algún dels següe
 
  - [url=https://github.com/friendica/red/wiki/zot]Especificació pel desenvolupament de Zot (en anglès)[/url]
 
- - [url=https://github.com/redmatrix/hubzilla/blob/master/include/zot.php]Referència per la implementació de Zot en PHP (en anglès)[/url]
+ - [url=https://github.com/redmatrix/BlaBlaNet/blob/master/include/zot.php]Referència per la implementació de Zot en PHP (en anglès)[/url]
 
 
 #include doc/macros/main_footer.bb;

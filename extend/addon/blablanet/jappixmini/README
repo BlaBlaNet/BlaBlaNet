@@ -2,7 +2,7 @@ Jappix Mini Plugin
 ==================
 
 This quick-and-dirty addon allows you to add a Jabber-based, Facebook-like chat
-to Hubzilla. It uses Jappix Mini.
+to BlaBlaNet. It uses Jappix Mini.
 
 It is necessary to use a BOSH host - so to use this plugin, each users need to
 know the address of a BOSH host that works with his account.
@@ -11,7 +11,7 @@ the configuration help field. If it is on the same server, you can also deactiva
 BOSH proxy. This should improve the performance.
 
 The addon has an experimental autosubscribe and autosuggest functionality which
-tries to add your Hubzilla contacts to your roster automatically.
+tries to add your BlaBlaNet contacts to your roster automatically.
 
 Limitations:
  - Jabber passwords can only be encrypted if they are at most 39 characters

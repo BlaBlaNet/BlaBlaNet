@@ -54,7 +54,7 @@ msgid "Post to WordPress by default"
 msgstr ""
 
 #: wppost.php:103
-msgid "Forward comments (requires hubzilla_wp plugin)"
+msgid "Forward comments (requires BlaBlaNet_wp plugin)"
 msgstr ""
 
 #: wppost.php:107

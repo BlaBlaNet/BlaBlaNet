@@ -1,9 +1,9 @@
 Twitter Plugin
 ==============
 
-Original main authors Tobias Diekershoff and Michael Vogel. Adapted for the Hubzilla by Mike Macgirvin.
+Original main authors Tobias Diekershoff and Michael Vogel. Adapted for the BlaBlaNet by Mike Macgirvin.
 
-With this addon for the Hubzilla you can give your hub members the possibility to post
+With this addon for the BlaBlaNet you can give your hub members the possibility to post
 their *public* messages to Twitter. The messages will be strapped their rich
 context and shortened to 140 characters length if necessary. If shortening of
 the message was performed a link will be added to the tweet pointing to the
@@ -15,7 +15,7 @@ There is a similar addon for forwarding public messages to
 Requirements
 ------------
 
-To use this plugin you have to register an application for your Hubzilla
+To use this plugin you have to register an application for your BlaBlaNet
 hub on Twitter with
 
 * read and write access
@@ -35,7 +35,7 @@ message was longer than 140 characters requires it, that you have *PHP5+* and
 Where to find
 -------------
 
-In the [Hubzilla-addons git repository /twitter/](https://github.com/redmatrix/hubzilla-addons/tree/master/twitter). This directory 
+In the [BlaBlaNet-addons git repository /twitter/](https://github.com/redmatrix/BlaBlaNet-addons/tree/master/twitter). This directory 
 contains all required PHP files (including the [Twitter OAuth library][1] by Abraham
 Williams, MIT licensed and the [Slinky library][2] by Beau Lebens, BSD license),
 a CSS file for styling of the user configuration and an image to _Sign in with
@@ -65,7 +65,7 @@ messages to Twitter.
 Alternative Configuration
 -------------------------
 
-* Go to the root of your Hubzilla installation and type after the prompt:
+* Go to the root of your BlaBlaNet installation and type after the prompt:
 
      util/config system addon
 
@@ -95,7 +95,7 @@ After this step was successful the user now has the following config options.
   this button as well. Otherwise they have to enable the relay of their postings
   in the ACL dialog (click the lock button) before posting an entry.
 * **Clear OAuth configuration** If a channel owner wants to remove the currently associated
-  Twitter account from their Hubzilla channel they have to check this box and
+  Twitter account from their BlaBlaNet channel they have to check this box and
   then hit the submit button. The saved settings will be deleted and they have
   to reconfigure the Twitter connector to be able to relay their public
   postings to a Twitter account.

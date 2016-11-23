@@ -1,4 +1,4 @@
-[img][baseurl]/images/hubzilla-banner.png[/img]
+[img][baseurl]/images/BlaBlaNet-banner.png[/img]
 
 [zrl=[baseurl]/help/about][b]Vad är $Projectname?[/b][/zrl]
 $Projectname är en decentraliserad publicerings- och kommunikationsplattform som möjliggör att du behåller kontrollen över dina kommunikationer med hjälp av automatisk kryptering och fininställbar behörighetskontroll. Det är du, och bara du, som beslutar vem som är behörig att ta del av ditt innehåll.
@@ -69,13 +69,12 @@ Zot är en fantastisk ny kommunikationsprotokoll uppfunnit speciellt för $Proje
 
 [h3]Externa resurser[/h3]
 [zrl=[baseurl]/help/external-resource-links]External Resource Links[/zrl]
-[url=https://github.com/friendica/red]Main Website[/url]
-[url=https://github.com/friendica/red-addons]Addon Website[/url]
-[url=https://zothub.com/channel/one]Development Channel[/url]
+[url=https://geditlab.com/blablanet/BlaBlanet]Main Website[/url]
+[url=https://geditlab.com/blablanet/blablanet-addons]Addon Website[/url]
 
 [url=[baseurl]/help/credits]$Projectname Credits[/url]
 
-[h3]About This $Projectname Hub[/h3]
+[h3]About This $Projectname Ants Node[/h3]
 [zrl=[baseurl]/help/TermsOfService]Terms of Service For This Hub[/zrl]
 [zrl=[baseurl]/siteinfo]Hub Information (/siteinfo)[/zrl]
 [zrl=[baseurl]/siteinfo_json]Detailed Technical Hub Information (/siteinfo_json)[/zrl]

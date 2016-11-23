@@ -1455,7 +1455,7 @@ function get_default_profile_photo($size = 300) {
 }
 
 /**
- * @brief Test whether a given identity is NOT a member of the Hubzilla.
+ * @brief Test whether a given identity is NOT a member of the BlaBlaNet.
  *
  * @param string $s;
  *    xchan_hash of the identity in question
@@ -1466,7 +1466,7 @@ function is_foreigner($s) {
 }
 
 /**
- * @brief Test whether a given identity is a member of the Hubzilla.
+ * @brief Test whether a given identity is a member of the BlaBlaNet.
  *
  * @param string $s;
  *    xchan_hash of the identity in question

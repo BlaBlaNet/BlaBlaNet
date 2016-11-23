@@ -175,7 +175,7 @@
                         $('#chess-turn-indicator').html("Your turn");
                         if (chess_notify_turn) {
                             chess_notify_turn = false;
-                            chess_issue_notification("Your turn!", "Hubzilla Chess");
+                            chess_issue_notification("Your turn!", "BlaBlaNet Chess");
                         }
                     } else {
                         $('#chess-turn-indicator').html("Opponent's turn");  

@@ -142,7 +142,7 @@ Els fòrums són típicament canals que poden estar obertes a la participació d
 
 Els Comptes a $Projectname es refereixen com a [i]identitats nómades[/i], perquè la identitat d'un membre no està lligada al concentrador/servidor on es va crear originalment. Per exemple, quan es crea un compte de Facebook o Gmail, que està lligat a aquests serveis. No poden funcionar sense Facebook.com o Gmail.com.  
 
-Per contra, imagina que has creat una identitat a $Projectname anomenada [b]tina@Hubzillahub.com[/b]. Aquesta es pot clonar a un altre hub de $Projectname amb el mateix nom o un altre de diferent: per exemple [b]viuPerSempre@HubzillaHub.info[/b]
+Per contra, imagina que has creat una identitat a $Projectname anomenada [b]tina@BlaBlaNethub.com[/b]. Aquesta es pot clonar a un altre hub de $Projectname amb el mateix nom o un altre de diferent: per exemple [b]viuPerSempre@BlaBlaNetHub.info[/b]
                                                                      
 Tots dos canals estan ara sincronitzats, el que significa que tots els seus contactes i preferències es dupliquen en el teu clon. No importa si s'envia un missatge des del seu hub original o el nou centre. Els missatges/emtrades seran reflectits/des en tots dos comptes.
 
@@ -160,7 +160,7 @@ Es poden crear qualsevol nombre de perfils amb informació diferent i es poden f
 
 [b]Còpies de Seguretat del Compte[/b]
 
-Hubzilla ofereix una còpia de seguretat del compte, amb un simple clic, on pots descarregar una còpia de seguretat completa del teu perfil(s).  
+BlaBlaNet ofereix una còpia de seguretat del compte, amb un simple clic, on pots descarregar una còpia de seguretat completa del teu perfil(s).  
 
 Les còpies de seguretat es poden utilitzar per clonar o restaurar un perfil.
 

@@ -1,6 +1,6 @@
 [h1]Project Roadmap V4[/h1]
 
-[h2]Hubzilla 2.0 - code name "Universal Thunder"[/h2]
+[h2]BlaBlaNet 2.0 - code name "Universal Thunder"[/h2]
 
 [h3]Project Core Development[/h3]
 

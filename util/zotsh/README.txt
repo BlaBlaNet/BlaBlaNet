@@ -14,7 +14,7 @@ Extract somewere and launch zotsh.py
 Description
 -----------
 
-ZotSH is a command line WebDAV client for Hubzilla.
+ZotSH is a command line WebDAV client for BlaBlaNet.
 It knows how to magic-auth to remote hubs using Zot.
 
 ZotSH uses 'easywebdav' library (0) with small modifications

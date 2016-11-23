@@ -156,7 +156,7 @@ function update_inroom(inroom) {
     memberChange = chatRoomMembersChange(inroom); // get list of arrivals and departures
     if(memberChange.membersArriving.length > 0) {
       // Issue pop-up notification if anyone enters the room.
-      chat_issue_notification(JSON.stringify(memberChange.membersArriving.pop().name) + ' entered the room', 'Hubzilla Chat');
+      chat_issue_notification(JSON.stringify(memberChange.membersArriving.pop().name) + ' entered the room', 'BlaBlaNet Chat');
     }
 	$('#chatMembers').html(html);
 }
@@ -197,7 +197,7 @@ function update_chats(chats) {
 		else {
 			newNode.setAttribute('class', 'chat-item clear');
 			$(newNode).html('<img class="chat-item-photo" src="' + item.img + '" alt="' + item.name + '" /><div class="chat-body"><div class="chat-item-title wall-item-ago"><span class="chat-item-name">' + item.name + ' </span><span class="autotime chat-item-time" title="' + item.isotime + '">' + item.localtime + '</span></div><div class="chat-item-text">' + item.text + '</div></div>');
-            chat_issue_notification(item.name + ':\n' + item.text, 'Hubzilla Chat');
+            chat_issue_notification(item.name + ':\n' + item.text, 'BlaBlaNet Chat');
 		}
 		$('#chatLineHolder').append(newNode);
 		$(".autotime").timeago();
@@ -212,7 +212,7 @@ var chat_notify_enabled = false;
 var chat_notify_audio_enabled = false;
 var chat_notify_audio = {};
 // Request notification access from the user
-// TODO: Check Hubzilla member config setting before requesting permission
+// TODO: Check BlaBlaNet member config setting before requesting permission
 function chatNotificationInit() {
   
     if (!("Notification" in window)) {

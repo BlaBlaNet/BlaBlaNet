@@ -3,11 +3,11 @@ by Tobias Diekershoff
    http://diekershoff.homeunix.net/friendika/profile/tobias
    tobias.diekershoff(at)gmx.net
    
-Mike, Thomas, Tony and Jeroen adapted this addon to the Hubzilla.
+Mike, Thomas, Tony and Jeroen adapted this addon to the BlaBlaNet.
 
 Important Note: GNU Social instances with self signed certificates or CA-certificates are currently not supported. You're welcome to fix this.
 
-With this addon to the Hubzilla you can give your user the possibility to post
+With this addon to the BlaBlaNet you can give your user the possibility to post
 their public messages to any GNU social instance (like loadaverage.org for example). 
 The messages will be strapped their rich context and shortened to to the character
 limit of the GNU social instance in question if necessary. If shortening of the
@@ -31,7 +31,7 @@ PHP5+ and curl on your hub.
 
 ___ Where to find ___
 
-In the Hubzilla red-addons git repository /addon/statusnet/, this directory contains all
+In the BlaBlaNet red-addons git repository /addon/statusnet/, this directory contains all
 required PHP files (including the Twitter OAuth library [1] by Abraham Williams,
 MIT licensed and the Slinky library [2] by Beau Lebens, BSD license), a CSS file
 for styling of the user configuration and an image to Sign in with GNU social.
@@ -51,7 +51,7 @@ GNU social pages which will be available for all users of your hub.
 
 __ Alternative Configuration __ 
 
-* Go to the root of your Hubzilla installation and type after the prompt:
+* Go to the root of your BlaBlaNet installation and type after the prompt:
 
      util/config system addon
 
@@ -84,8 +84,8 @@ connect to the GNU social account of choice.
    https://loadaverage.org/api/
  * OAuth Consumer key & secret
 
-To get the OAuth Consumer key pair the user has to (a) ask their Hubzilla admin
-if a pair already exists or (b) has to register the Hubzilla hub as a
+To get the OAuth Consumer key pair the user has to (a) ask their BlaBlaNet admin
+if a pair already exists or (b) has to register the BlaBlaNet hub as a
 client application on the GNU social server. This can be done from the account
 settings under "Connect -> Connections -> Register an OAuth client application
 -> Register a new application".
@@ -94,12 +94,12 @@ During the registration of the OAuth client remember the following:
  * there is no callback url
  * register a desktop client
  * with read & write access
- * the Source URL should be the URL of your Hubzilla hub
+ * the Source URL should be the URL of your BlaBlaNet hub
 
 After the required credentials for the application are stored in the
-configuration you have to actually connect your Hubzilla channel with
+configuration you have to actually connect your BlaBlaNet channel with
 GNU social. To do so follow the Sign in with GNU social button, allow the access
-and copy the security code into the plugin configuration. Hubzilla will then
+and copy the security code into the plugin configuration. BlaBlaNet will then
 try to acquire the final OAuth credentials from the API, if successful the
 plugin settings will allow you to select to post your public messages to your
 GNU social account.

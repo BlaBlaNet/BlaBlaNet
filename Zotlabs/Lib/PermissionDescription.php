@@ -127,7 +127,7 @@ class PermissionDescription  {
 
 			case 0:/* only me */ return 'fa-eye-slash';
 			case PERMS_PUBLIC:   return 'fa-globe';
-			case PERMS_NETWORK:  return 'fa-share-alt-square'; // fa-share-alt-square is very similiar to the hubzilla logo, but we should create our own logo class to use
+			case PERMS_NETWORK:  return 'fa-share-alt-square'; // fa-share-alt-square is very similiar to the BlaBlaNet logo, but we should create our own logo class to use
 			case PERMS_SITE:     return 'fa-sitemap'; 
 			case PERMS_CONTACTS: return 'fa-group'; 
 			case PERMS_SPECIFIC: return 'fa-list';

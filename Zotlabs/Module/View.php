@@ -1,7 +1,7 @@
 <?php
 namespace Zotlabs\Module;
 /**
- * load view/theme/$current_theme/style.php with Hubzilla context
+ * load view/theme/$current_theme/style.php with BlaBlaNet context
  */
  
 

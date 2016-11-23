@@ -27,5 +27,5 @@
 [zrl=[baseurl]/help/dev_beginner]Step-for-step manual for beginning developers[/zrl]
 
 [h3]External Resources[/h3]
-[url=https://grid.reticu.li/channel/hubzilla]Development Channel[/url]
+[url=https://grid.reticu.li/channel/BlaBlaNet]Development Channel[/url]
 [url=https://federated.social/channel/postgres]Postgres-specific $Projectname Admin Support Channel[/url]

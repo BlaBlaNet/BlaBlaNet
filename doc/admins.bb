@@ -2,7 +2,7 @@
 [h3]Deploying your hub[/h3]
 [zrl=[baseurl]/help/install]Install[/zrl]
 [zrl=[baseurl]/help/red2pi]Installing $Projectname on the Raspberry Pi[/zrl]
-[zrl=[baseurl]/help/Hubzilla_on_OpenShift]$Projectname on OpenShift[/zrl]
+[zrl=[baseurl]/help/BlaBlaNet_on_OpenShift]$Projectname on OpenShift[/zrl]
 [h3]Taking care of your hub[/h3]
 [zrl=[baseurl]/help/troubleshooting]Troubleshooting Tips[/zrl]
 [zrl=[baseurl]/help/theme_management]Theme Management[/zrl]

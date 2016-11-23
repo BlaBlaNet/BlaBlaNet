@@ -32,7 +32,7 @@
  * ldap_searchdn = base DN for the search root of the LDAP directory
  * ldap_userattr = the name of the attribute containing the username, e.g. SAMAccountName
  * ldap_group = (optional) DN of group to check membership
- * create_account = (optional) 1 or 0 (default), automatically create Hubzilla accounts based on the LDAP 'mail' attribute
+ * create_account = (optional) 1 or 0 (default), automatically create BlaBlaNet accounts based on the LDAP 'mail' attribute
  *
  */
 

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Name: Hubzilla Crosspost Connector (redred)
- * Description: Relay public postings to another Redmatrix/Hubzilla channel
+ * Name: BlaBlaNet Crosspost Connector (redred)
+ * Description: Relay public postings to another Redmatrix/BlaBlaNet channel
  * Version: 1.0
  * Maintainer: none
  */
  
 /*
- *   Hubzilla to Hubzilla
+ *   BlaBlaNet to BlaBlaNet
  */
 
 require_once('include/permissions.php');
@@ -92,31 +92,31 @@ function redred_settings(&$a,&$s) {
 	$defchecked = (($defenabled) ? 1 : false);
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
-		'$field'	=> array('redred_enable', t('Allow posting to another Hubzilla Channel'), $checked, '', array(t('No'),t('Yes'))),
+		'$field'	=> array('redred_enable', t('Allow posting to another BlaBlaNet Channel'), $checked, '', array(t('No'),t('Yes'))),
 	));
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
-		'$field'	=> array('redred_default', t('Send public postings to Hubzilla channel by default'), $defchecked, '', array(t('No'),t('Yes'))),
+		'$field'	=> array('redred_default', t('Send public postings to BlaBlaNet channel by default'), $defchecked, '', array(t('No'),t('Yes'))),
 	));
 
 	$sc .= replace_macros(get_markup_template('field_input.tpl'), array(
-		'$field'	=> array('redred_baseapi', t('Hubzilla API Path'), $api, t('https://{sitename}/api'))
+		'$field'	=> array('redred_baseapi', t('BlaBlaNet API Path'), $api, t('https://{sitename}/api'))
 	));
 
 	$sc .= replace_macros(get_markup_template('field_input.tpl'), array(
-		'$field'	=> array('redred_username', t('Hubzilla login name'), $username, t('Email'))
+		'$field'	=> array('redred_username', t('BlaBlaNet login name'), $username, t('Email'))
 	));
 
 	$sc .= replace_macros(get_markup_template('field_input.tpl'), array(
-		'$field'	=> array('redred_channel', t('Hubzilla channel name'), $channel, t('Nickname'))
+		'$field'	=> array('redred_channel', t('BlaBlaNet channel name'), $channel, t('Nickname'))
 	));
 
 	$sc .= replace_macros(get_markup_template('field_password.tpl'), array(
-		'$field'	=> array('redred_password', t('Hubzilla password'), $password, '')
+		'$field'	=> array('redred_password', t('BlaBlaNet password'), $password, '')
 	));
 
 	$s .= replace_macros(get_markup_template('generic_addon_settings.tpl'), array(
-		'$addon' 	=> array('redred', '<img src="images/hz-32.png" style="width:auto; height:1em; margin:-3px 5px 0px 0px;">' . t('Hubzilla Crosspost Settings'), '', t('Submit')),
+		'$addon' 	=> array('redred', '<img src="images/hz-32.png" style="width:auto; height:1em; margin:-3px 5px 0px 0px;">' . t('BlaBlaNet Crosspost Settings'), '', t('Submit')),
 		'$content'	=> $sc
 	));
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Name: Hubzilla-to-Friendica Connector (rtof)
+ * Name: BlaBlaNet-to-Friendica Connector (rtof)
  * Description: Relay public postings to a connected Friendica account
  * Version: 1.0
  * Maintainer: none
@@ -98,7 +98,7 @@ function rtof_settings(&$a,&$s) {
 	));
 
 	$s .= replace_macros(get_markup_template('generic_addon_settings.tpl'), array(
-		'$addon' 	=> array('rtof', '<img src="addon/rtof/friendica.png" style="width:auto; height:1em; margin:-3px 5px 0px 0px;">' . t('Hubzilla to Friendica Post Settings'), '', t('Submit')),
+		'$addon' 	=> array('rtof', '<img src="addon/rtof/friendica.png" style="width:auto; height:1em; margin:-3px 5px 0px 0px;">' . t('BlaBlaNet to Friendica Post Settings'), '', t('Submit')),
 		'$content'	=> $sc
 	));
 }
@@ -152,7 +152,7 @@ function rtof_post_hook(&$a,&$b) {
 	if(! strstr($b['postopts'],'rtof'))
 		return;
 
-	logger('Hubzilla-to-Friendica post invoked');
+	logger('BlaBlaNet-to-Friendica post invoked');
 
 	load_pconfig($b['uid'], 'rtof');
 
@@ -165,7 +165,7 @@ function rtof_post_hook(&$a,&$b) {
 
 	$msg = $b['body'];
 
-	$postdata = array('status' => $b['body'], 'title' => $b['title'], 'message_id' => $b['mid'], 'source' => 'Hubzilla');
+	$postdata = array('status' => $b['body'], 'title' => $b['title'], 'message_id' => $b['mid'], 'source' => 'BlaBlaNet');
 
 	if(strlen($b['body'])) {
 		$ret = z_post_url($api . 'statuses/update', $postdata, 0, array('http_auth' => $username . ':' . $password, 'novalidate' => 1));

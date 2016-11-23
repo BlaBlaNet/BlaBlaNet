@@ -2,7 +2,7 @@
 
 Roadmap for $Projectname V3
 
-*HZ = Hubzilla repository
+*HZ = BlaBlaNet repository
 
 
 Crypto
@@ -45,5 +45,5 @@ Evangelism
 	Libzot
 
 DNS abstraction for V3
-	Allow a channel to live in an arbitrary "DNS" namespace, for instance "mike@core.hubzilla". Use our directories and zot to find the actual DNS location via redirection. This could potentially allow hubs to be hidden behind tor or alt-roots and accessible only via the matrix.
+	Allow a channel to live in an arbitrary "DNS" namespace, for instance "mike@core.BlaBlaNet". Use our directories and zot to find the actual DNS location via redirection. This could potentially allow hubs to be hidden behind tor or alt-roots and accessible only via the matrix.
  

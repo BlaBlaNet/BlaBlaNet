@@ -1,6 +1,6 @@
 [h2]Techlevels[/h2]
 
-Techlevels is a unique feature of Hubzilla 'pro'. It is not available in other server_roles, although it expands on the concepts introduced in Hubzilla 'basic'.
+Techlevels is a unique feature of BlaBlaNet 'pro'. It is not available in other server_roles, although it expands on the concepts introduced in BlaBlaNet 'basic'.
 
 [h3]Background[/h3]
 

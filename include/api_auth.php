@@ -86,7 +86,7 @@ function api_login(&$a){
 
 
 function retry_basic_auth() {
-	header('WWW-Authenticate: Basic realm="Hubzilla"');
+	header('WWW-Authenticate: Basic realm="BlaBlaNet"');
 	header('HTTP/1.0 401 Unauthorized');
 	echo('This api requires login');
 	killme();

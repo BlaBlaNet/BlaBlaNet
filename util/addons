@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-// Hubzilla plugin management utility
+// BlaBlaNet plugin management utility
 
 function usage() {
 echo <<< EOT

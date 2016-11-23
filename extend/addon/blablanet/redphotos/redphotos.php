@@ -2,7 +2,7 @@
 
 /**
  * Name: Redmatrix Photo Migrator
- * Description: Migrate photo albums from Redmatrix to Hubzilla
+ * Description: Migrate photo albums from Redmatrix to BlaBlaNet
  * Version: 1.0
  * Author: Mike Macgirvin
  * Maintainer: Mike Macgirvin <mike@macgirvin.com>

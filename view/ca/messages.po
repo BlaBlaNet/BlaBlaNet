@@ -8119,9 +8119,9 @@ msgstr "Correguent en el lloc web"
 
 #: ../../mod/siteinfo.php:164
 msgid ""
-"Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more "
+"Please visit <a href=\"http://BlaBlaNet.org\">BlaBlaNet.org</a> to learn more "
 "about $Projectname."
-msgstr "Visita <a href=\"http://hubzilla.org\">hubzilla.org</a> per saber-ne més de $Projectname."
+msgstr "Visita <a href=\"http://BlaBlaNet.org\">BlaBlaNet.org</a> per saber-ne més de $Projectname."
 
 #: ../../mod/siteinfo.php:165
 msgid "Bug reports and issues: please visit"

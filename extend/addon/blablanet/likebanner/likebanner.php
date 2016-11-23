@@ -2,7 +2,7 @@
 
 /**
  * Name: Like Banner
- * Description: Creates a "like us on hubzilla" banner 
+ * Description: Creates a "like us on BlaBlaNet" banner 
  * Version: 1.1
  * Author: Mike Macgirvin
  * Maintainer: none
@@ -67,7 +67,7 @@ function likebanner_content(&$a) {
 				$link = z_root() . '/like/profile/' . $p[0]['profile_guid'] . '?f=&verb=like&interactive=1';
 				$o .= EOL . EOL . t('Link:') . EOL . '<input type="text" size="64" onclick="this.select();" value="' . $link . '" />';
 
-				$html = '<a href="' . $link . '" ><img src="' . z_root() . '/likebanner?f=&addr=' . $def . '&size=' . $_REQUEST['size'] . '" alt="' . t('Like us on Hubzilla') . '" /></a>';
+				$html = '<a href="' . $link . '" ><img src="' . z_root() . '/likebanner?f=&addr=' . $def . '&size=' . $_REQUEST['size'] . '" alt="' . t('Like us on BlaBlaNet') . '" /></a>';
 
 				$o .= EOL . EOL . t('Embed:') . EOL . '<input type="text" size="64" onclick="this.select();" value="' . htmlspecialchars($html,ENT_QUOTES,'UTF-8') . '" />'; 
 

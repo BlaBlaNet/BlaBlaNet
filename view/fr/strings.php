@@ -1918,7 +1918,7 @@ App::$strings["This is a hub of \$Projectname - a global cooperative network of 
 App::$strings["Tag: "] = "Tag:";
 App::$strings["Last background fetch: "] = "Dernière récupération en tâche de fond&nbsp;:";
 App::$strings["Running at web location"] = "Installée sur";
-App::$strings["Please visit <a href=\"http://hubzilla.org\">hubzilla.org</a> to learn more about \$Projectname."] = "Merci de visiter <a href=\"http://hubzilla.org\">hubzilla.org</a> pour en apprendre davantage sur \$Projectname.";
+App::$strings["Please visit <a href=\"http://BlaBlaNet.org\">BlaBlaNet.org</a> to learn more about \$Projectname."] = "Merci de visiter <a href=\"http://BlaBlaNet.org\">BlaBlaNet.org</a> pour en apprendre davantage sur \$Projectname.";
 App::$strings["Bug reports and issues: please visit"] = "Pour remonter bogues et problèmes, merci de visiter";
 App::$strings["\$projectname issues"] = "Problèmes \$projectname";
 App::$strings["Suggestions, praise, etc. - please email \"redmatrix\" at librelist - dot com"] = "Suggestions, demandes, etc. - merci de vous adresser à \"redmatrix\" à librelist - point com";

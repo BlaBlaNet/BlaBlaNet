@@ -11,7 +11,7 @@ class Ffsapi extends \Zotlabs\Web\Controller {
 		$name = get_config('system','sitename');
 		$description = t('Share content from Firefox to $Projectname');
 		$author = 'Mike Macgirvin';
-		// $homepage = 'http://hubzilla.org';
+		// $homepage = 'http://BlaBlaNet.org';
 		$activate = t('Activate the Firefox $Projectname provider');
 	
 	$s = <<< EOT

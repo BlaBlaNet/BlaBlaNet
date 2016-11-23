@@ -2,7 +2,7 @@
 
 /**
  * Name: Redmatrix File Migrator
- * Description: Migrate cloud storage from Redmatrix to Hubzilla
+ * Description: Migrate cloud storage from Redmatrix to BlaBlaNet
  * Version: 1.0
  * Author: Mike Macgirvin
  * Maintainer: Mike Macgirvin <mike@macgirvin.com>

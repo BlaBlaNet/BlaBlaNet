@@ -38,7 +38,7 @@ When a connection is made, we generally call the notifier (include/notifier.php)
 
 Notes: The first stage zot lookup will be replaced with a webfinger lookup. This work is in progress. A separate lookup was required initially as webfinger does not allow non-SSL connections. We will provide non-SSL zot lookups (usually test and development sites) via the "old" XRD based webfinger to avoid this limitation. 
 
-The core application will attempt to create xchan records for projects identified as members of the "open web"; currently Hubzilla, Friendica, Diaspora, GNU-Social and Pump.io. This is so that comments can be passed amongst project sites and the network correctly identified. A federation plugin is required to fully federate with other networks, but comments may be passed to sites without such a plugin installed so that there are no unexplained holes in conversations.
+The core application will attempt to create xchan records for projects identified as members of the "open web"; currently BlaBlaNet, Friendica, Diaspora, GNU-Social and Pump.io. This is so that comments can be passed amongst project sites and the network correctly identified. A federation plugin is required to fully federate with other networks, but comments may be passed to sites without such a plugin installed so that there are no unexplained holes in conversations.
 
 The core application must also provide signing ability for Diaspora comments since they require a special signing format and must be signed by the comment author regardless of whether that channel federates with Diaspora. The owner of the conversation may federate with Diaspora so the comments must be signed. This is unfortunate but necessary.   
 

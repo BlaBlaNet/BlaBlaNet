@@ -56,11 +56,11 @@ msgstr ""
 
 #: statusnet.php:329
 msgid ""
-"No consumer key pair for GNU social found. Register your Hubzilla Account as "
+"No consumer key pair for GNU social found. Register your BlaBlaNet Account as "
 "an desktop client on your GNU social account, copy the consumer key pair "
 "here and enter the API base root.<br />Before you register your own OAuth "
 "key pair ask the administrator if there is already a key pair for this "
-"Hubzilla installation at your favourite GNU social installation."
+"BlaBlaNet installation at your favourite GNU social installation."
 msgstr ""
 
 #: statusnet.php:333

@@ -35,7 +35,7 @@
  *
  */
  
-/*   Twitter Plugin for Hubzilla
+/*   Twitter Plugin for BlaBlaNet
  *
  *   Author: Tobias Diekershoff
  *           tobias.diekershoff@gmx.net
@@ -46,7 +46,7 @@
  *     To use this plugin you need a OAuth Consumer key pair (key & secret)
  *     you can get it from Twitter at https://twitter.com/apps
  *
- *     Register your Hubzilla site as "Client" application with "Read & Write" access
+ *     Register your BlaBlaNet site as "Client" application with "Read & Write" access
  *     we do not need "Twitter as login". When you've registered the app you get the
  *     OAuth Consumer key and secret pair for your application/site.
  *
@@ -202,7 +202,7 @@ function twitter_settings(&$a,&$s) {
 			 */
 
 			$sc .= '<div class="section-content-info-wrapper">';
-			$sc .= t('At this Hubzilla instance the Twitter plugin was enabled but you have not yet connected your account to your Twitter account. To do so click the button below to get a PIN from Twitter which you have to copy into the input box below and submit the form. Only your <strong>public</strong> posts will be posted to Twitter.');
+			$sc .= t('At this BlaBlaNet instance the Twitter plugin was enabled but you have not yet connected your account to your Twitter account. To do so click the button below to get a PIN from Twitter which you have to copy into the input box below and submit the form. Only your <strong>public</strong> posts will be posted to Twitter.');
 			$sc .= '</div>';
 			$sc .= '<a href="'.$connection->getAuthorizeURL($token).'" target="_twitter"><img src="addon/twitter/lighter.png" class="form-group" alt="'.t('Log in with Twitter').'"></a>';
 

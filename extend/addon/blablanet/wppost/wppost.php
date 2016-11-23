@@ -106,7 +106,7 @@ function wppost_settings(&$a,&$s) {
 	));
 
 	$sc .= replace_macros(get_markup_template('field_checkbox.tpl'), array(
-		'$field'	=> array('wp_forward_comments', t('Forward comments (requires hubzilla_wp plugin)'), $fwd_checked, '', array(t('No'),t('Yes'))),
+		'$field'	=> array('wp_forward_comments', t('Forward comments (requires BlaBlaNet_wp plugin)'), $fwd_checked, '', array(t('No'),t('Yes'))),
 	));
 
 	$s .= replace_macros(get_markup_template('generic_addon_settings.tpl'), array(

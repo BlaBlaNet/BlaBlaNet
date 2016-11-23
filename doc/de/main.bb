@@ -1,4 +1,4 @@
-[img][baseurl]/images/hubzilla-banner.png[/img]
+[img][baseurl]/images/BlaBlaNet-banner.png[/img]
 
 [zrl=[baseurl]/help/about]Was ist $Projectname?[/zrl]
 $Projectname ist eine dezentrale Kommunikations- und Publishing-Plattform. Es ermöglicht Dir die volle Kontrolle über all Deine Kommunikation mit Hilfe von automatischer Verschlüsselung und detaillierter Zugriffskontrolle. Du, und [i]nur[/i] Du, entscheidest, wer Deine Beiträge sehen darf. $Projectname ist der Nachfolger, der seit einigen Jahren erfolgreichen Plattformen Friendica und RedMatrix. 

@@ -11,7 +11,7 @@
 require_once('include/permissions.php');
 require_once('include/queue_fn.php');
  
-/*   GNU social Plugin for Hubzilla
+/*   GNU social Plugin for BlaBlaNet
  *
  *   Author: Tobias Diekershoff
  *           tobias.diekershoff@gmx.net
@@ -56,7 +56,7 @@ class StatusNetOAuth extends TwitterOAuth {
    *
    * @return API results
    *
-   * Copied here from the twitteroauth library and complemented by applying the proxy settings of Hubzilla
+   * Copied here from the twitteroauth library and complemented by applying the proxy settings of BlaBlaNet
    */
 
 function http($url, $method, $postfields = NULL) {
@@ -326,7 +326,7 @@ function statusnet_settings(&$a,&$s) {
 
 		$sc .= '<h3>' . t('Provide your own OAuth Credentials') . '</h3>';
 		$sc .= '<div class="section-content-info-wrapper">';
-		$sc .= t('No consumer key pair for GNU social found. Register your Hubzilla Account as an desktop client on your GNU social account, copy the consumer key pair here and enter the API base root.<br />Before you register your own OAuth key pair ask the administrator if there is already a key pair for this Hubzilla installation at your favourite GNU social installation.');
+		$sc .= t('No consumer key pair for GNU social found. Register your BlaBlaNet Account as an desktop client on your GNU social account, copy the consumer key pair here and enter the API base root.<br />Before you register your own OAuth key pair ask the administrator if there is already a key pair for this BlaBlaNet installation at your favourite GNU social installation.');
 		$sc .= '</div>';
 
 		$sc .= replace_macros(get_markup_template('field_input.tpl'), array(

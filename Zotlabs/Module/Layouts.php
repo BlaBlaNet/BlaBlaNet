@@ -102,7 +102,7 @@ class Layouts extends \Zotlabs\Web\Controller {
 				dbesc(argv(3))
 			);
 			if($r) {
-				header('Content-type: application/x-hubzilla-layout');
+				header('Content-type: application/x-BlaBlaNet-layout');
 				header('Content-disposition: attachment; filename="' . $r[0]['sid'] . '.pdl"');
 				echo json_encode($r);
 				killme();

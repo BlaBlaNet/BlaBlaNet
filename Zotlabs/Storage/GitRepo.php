@@ -7,7 +7,7 @@ use PHPGit\Git as PHPGit;
 require __DIR__ . '/../../library/PHPGit.autoload.php'; // Load PHPGit dependencies
 
 /**
- * Wrapper class for PHPGit class for git repositories managed by Hubzilla
+ * Wrapper class for PHPGit class for git repositories managed by BlaBlaNet
  *
  * @author Andrew Manning <andrewmanning@grid.reticu.li>
  */

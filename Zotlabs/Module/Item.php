@@ -542,7 +542,7 @@ class Item extends \Zotlabs\Web\Controller {
 			}
 	
 			/**
-			 * fix naked links by passing through a callback to see if this is a hubzilla site
+			 * fix naked links by passing through a callback to see if this is a BlaBlaNet site
 			 * (already known to us) which will get a zrl, otherwise link with url, add bookmark tag to both.
 			 * First protect any url inside certain bbcode tags so we don't double link it.
 			 */

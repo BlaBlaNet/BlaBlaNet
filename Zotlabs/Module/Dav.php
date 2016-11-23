@@ -3,7 +3,7 @@
 namespace Zotlabs\Module;
 /**
  * @file mod/dav.php
- * @brief Initialize Hubzilla's cloud (SabreDAV).
+ * @brief Initialize BlaBlaNet's cloud (SabreDAV).
  *
  * Module for accessing the DAV storage area from a DAV client.
  */
@@ -71,7 +71,7 @@ class Dav extends \Zotlabs\Web\Controller {
 	
 		$server->addPlugin($lockPlugin);
 	
-		// provide a directory view for the cloud in Hubzilla
+		// provide a directory view for the cloud in BlaBlaNet
 		$browser = new \Zotlabs\Storage\Browser($auth);
 		$auth->setBrowserPlugin($browser);
 	

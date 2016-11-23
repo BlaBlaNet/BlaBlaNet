@@ -204,7 +204,7 @@ function ijpost_send(&$a,&$b) {
 <member><name>ver</name><value><int>1</int></value></member>
 <member><name>props</name>
 <value><struct>
-<member><name>useragent</name><value><string>Hubzilla</string></value></member>
+<member><name>useragent</name><value><string>BlaBlaNet</string></value></member>
 <member><name>taglist</name><value><string>$tags</string></value></member>
 </struct></value></member>
 </struct></value>

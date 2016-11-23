@@ -76,7 +76,7 @@ function flattrwidget_settings_post($a,$s) {
     set_pconfig( local_channel(), 'flattrwidget', 'user', $_POST['flattrwidget-user']);
     $ftitle = $_POST['flattrwidget-thingtitle'];
     if ($ftitle == '') {
-	$ftitle = $c['channel_name'].' on The Hubzilla';
+	$ftitle = $c['channel_name'].' on The BlaBlaNet';
     }
     set_pconfig( local_channel(), 'flattrwidget', 'title', $ftitle);
     set_pconfig( local_channel(), 'flattrwidget', 'enable', intval($_POST['flattrwidget-enable']));
@@ -105,7 +105,7 @@ function flattrwidget_settings(&$a,&$s) {
 	));
 
 	$sc .= replace_macros(get_markup_template('field_input.tpl'), array(
-		'$field'	=> array('flattrwidget-thingtitle', t('Title of the Thing to flattr'), $ftitle, t('If empty "channel name on The Hubzilla" will be used'))
+		'$field'	=> array('flattrwidget-thingtitle', t('Title of the Thing to flattr'), $ftitle, t('If empty "channel name on The BlaBlaNet" will be used'))
 	));
 
 	$sc .= replace_macros(get_markup_template('field_select.tpl'), array(

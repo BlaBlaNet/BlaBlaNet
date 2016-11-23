@@ -90,7 +90,7 @@ function irc_content(&$a) {
 	if($sitechats)
 		$chats = explode(',',$sitechats);
 	else
-		$chats = array('hubzilla','friendica','chat','chatback','hottub','ircbar','dateroom','debian');
+		$chats = array('BlaBlaNet','friendica','chat','chatback','hottub','ircbar','dateroom','debian');
 
 
 	App::$page['aside'] .= '<div class="widget"><h3>' . t('Popular Channels') . '</h3><ul>';
@@ -104,7 +104,7 @@ function irc_content(&$a) {
 	if($autochans)
 		$channels = $autochans;
 	else
-		$channels = ((x($_GET,'channels')) ? $_GET['channels'] : 'hubzilla');
+		$channels = ((x($_GET,'channels')) ? $_GET['channels'] : 'BlaBlaNet');
 
 /* add the chatroom frame and some html */
   $o .= <<< EOT

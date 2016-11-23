@@ -578,9 +578,9 @@ function attribute_contains($attr, $s) {
 }
 
 /**
- * @brief Logging function for Hubzilla.
+ * @brief Logging function for BlaBlaNet.
  *
- * Logging output is configured through Hubzilla's system config. The log file
+ * Logging output is configured through BlaBlaNet's system config. The log file
  * is set in system logfile, log level in system loglevel and to enable logging
  * set system debugging.
  *
@@ -798,7 +798,7 @@ function get_tags($s) {
 	// make sure the longer tags are returned first so that if two or more have common substrings
 	// we'll replace the longest ones first. Otherwise the common substring would be found in
 	// both strings and the string replacement would link both to the shorter strings and 
-	// fail to link the longer string. Hubzilla github issue #378
+	// fail to link the longer string. BlaBlaNet github issue #378
  
 	usort($ret,'tag_sort_length');
 
@@ -1142,7 +1142,7 @@ function list_smilies() {
 		':facepalm',
 		':like',
 		':dislike',
-		':hubzilla'
+		':BlaBlaNet'
 	);
 
 	$icons = array(
@@ -2422,7 +2422,7 @@ function handle_tag($a, &$body, &$access_tag, &$str_tags, $profile_uid, $tag, $d
 		}
 		if($tag == '#getzot') {
 			$basetag = 'getzot'; 
-			$url = 'http://hubzilla.org';
+			$url = 'http://BlaBlaNet.org';
 			$newtag = '#[zrl=' . $url . ']' . $basetag . '[/zrl]';
 			$body = str_replace($tag,$newtag,$body);
 			$replaced = true;

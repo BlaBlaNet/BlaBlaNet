@@ -2,7 +2,7 @@
 
 [h3]Erste Schritte[/h3]
 [zrl=[baseurl]/help/registration]Ein Konto registrieren[/zrl]
-[zrl=[baseurl]/help/accounts_profiles_channels_basics]Du im Hubzilla-Netzwerk: Konten, Profile und Kanäle kurz erklärt[/zrl]
+[zrl=[baseurl]/help/accounts_profiles_channels_basics]Du im BlaBlaNet-Netzwerk: Konten, Profile und Kanäle kurz erklärt[/zrl]
 [zrl=[baseurl]/help/profiles]Profile[/zrl]
 [zrl=[baseurl]/help/channels]Kanäle[/zrl]
 [zrl=[baseurl]/help/roles]Zugriffsrechte-Kategorien und Kanaltypen[/zrl]

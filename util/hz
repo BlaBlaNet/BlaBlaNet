@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Simple, minimalist command line tool to post status to hubzilla via the API. Requires curl.
+# Simple, minimalist command line tool to post status to BlaBlaNet via the API. Requires curl.
 # Put it in your path, and sneeze your statuses to the zot network from your shell.
 
-CONF=${HOME}/.hubzilla
+CONF=${HOME}/.BlaBlaNet
 
 usage () {
 echo "usage: hz [conffile]"
-echo "Create a conf file, either in .hubzilla in your home directory, or supplied as an arg"
+echo "Create a conf file, either in .BlaBlaNet in your home directory, or supplied as an arg"
 echo " USER=youruserame "
 echo " PASS=yourpass"
 echo " HUB=your.hub.domain.org"

@@ -27,7 +27,7 @@
 [/td][/tr]
 [tr][td]is_photo[/td][td]if 1, a photo is linked to this resource[/td][td]tinyint[/td][td]NO[/td][td]MUL[/td][td]0[/td][td]
 [/td][/tr]
-[tr][td]os_storage[/td][td]if 0, data contains content; if 1 data contains path to content (always 1 in hubzilla)[/td][td]tinyint[/td][td]NO[/td][td]MUL[/td][td]0[/td][td]
+[tr][td]os_storage[/td][td]if 0, data contains content; if 1 data contains path to content (always 1 in BlaBlaNet)[/td][td]tinyint[/td][td]NO[/td][td]MUL[/td][td]0[/td][td]
 [/td][/tr]
 [tr][td]os_path[/td][td]under construction, store the system path[/td][td]mediumtext[/td][td]NO[/td][td]MUL[/td][td]0[/td][td]
 [/td][/tr]

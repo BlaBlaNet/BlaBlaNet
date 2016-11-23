@@ -704,7 +704,7 @@ function diaspora_post_local(&$a,&$item) {
 	/**
 	 * If all the conditions are met, generate an instance of the Diaspora Comment Virus
 	 *
-	 * Previously all comments from any Hubzilla source (including those who have not opted in to
+	 * Previously all comments from any BlaBlaNet source (including those who have not opted in to
 	 * Diaspora federation), were required to locally generate a Diaspora comment signature.
 	 * The only exception was wall-to-wall posts which have no local signing authority.
 	 *

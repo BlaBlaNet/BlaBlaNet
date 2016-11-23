@@ -13,7 +13,7 @@ require_once('include/api_auth.php');
 
 	/*
 	 *
-	 * Hubzilla API. Loosely based on and possibly compatible with Twitter-Like (v1.0) API but all similarities end there. 
+	 * BlaBlaNet API. Loosely based on and possibly compatible with Twitter-Like (v1.0) API but all similarities end there. 
 	 *
 	 */
 
@@ -2052,7 +2052,7 @@ require_once('include/api_auth.php');
 			return false;
 		}
 		
-// @fixme - update for hubzilla extensible perms using abconfig or find a better way to do it
+// @fixme - update for BlaBlaNet extensible perms using abconfig or find a better way to do it
 		// For Red, the closest thing we can do to figure out if you're friends is if both of you are sending each other your streams.
 		// This won't work if either of you send your stream to everybody on the network
 		if($qtype == 'friends')
@@ -2113,7 +2113,7 @@ require_once('include/api_auth.php');
 			'broughtbyurl' => '', 'timezone' => 'UTC', 'closed' => $closed, 'inviteonly' => 'false',
 			'private' => $private, 'textlimit' => $textlimit, 'sslserver' => $sslserver, 'ssl' => $ssl,
 			'shorturllength' => '30',
-        	'hubzilla' => array(
+        	'BlaBlaNet' => array(
 				'PLATFORM_NAME' => Zotlabs\Lib\System::get_platform_name(),
 				'STD_VERSION' => Zotlabs\Lib\System::get_project_version(),
 				'ZOT_REVISION' => ZOT_REVISION,

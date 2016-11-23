@@ -8,7 +8,7 @@ type &quot;davs://&lt;domain_name&gt;/dav/&lt;your_channelname&gt;&quot; in the 
 2nd way
 Menu &gt; file &gt; connect to server
 Fill the dialog
-- Server: hubzilla_domain_name
+- Server: BlaBlaNet_domain_name
 - Type: Secure WebDAV (https)
 - Folder: /dav
 - Username: yourchannelname

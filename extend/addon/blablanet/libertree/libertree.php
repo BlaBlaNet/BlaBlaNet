@@ -153,7 +153,7 @@ function libertree_send(&$a,&$b) {
 	$ltree_url = get_pconfig($b['uid'],'libertree','libertree_url');
 	$ltree_blog = "$ltree_url/api/v1/posts/create/?token=$ltree_api_token";
 	$ltree_source = "[".App::$config['system']['sitename']."](".z_root().")";
-	// $ltree_source = "Hubzilla";
+	// $ltree_source = "BlaBlaNet";
 	logger('sitename: ' . print_r($ltree_source,true));
 	if($ltree_url && $ltree_api_token && $ltree_blog && $ltree_source) {
 

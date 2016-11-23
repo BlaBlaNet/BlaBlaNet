@@ -59,7 +59,7 @@ function find_diaspora_person_by_handle($handle) {
 	if((! $person) || ($refresh)) {
 
 		// try webfinger. Make sure to distinguish between diaspora, 
-		// hubzilla w/diaspora protocol and friendica w/diaspora protocol.
+		// BlaBlaNet w/diaspora protocol and friendica w/diaspora protocol.
 
 		$result = discover_by_webbie($handle);
 		if($result) {

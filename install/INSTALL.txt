@@ -1,23 +1,23 @@
-Hubzilla Installation
+BlaBlaNet Installation
 
-We've tried very hard to ensure that Hubzilla will run on commodity
+We've tried very hard to ensure that BlaBlaNet will run on commodity
 hosting platforms - such as those used to host Wordpress blogs and Drupal 
 websites. It will run on most any Linux VPS system. Windows LAMP platforms
 such as XAMPP and WAMP are not officially supported at this time - however 
 we welcome patches if you manage to get it working. 
 
-Be aware that the Hubzilla is more than a simple web application. It is a 
+Be aware that the BlaBlaNet is more than a simple web application. It is a 
 complex communications system which more closely resembles an email server 
 than a web server. For reliability and performance, messages are delivered in
 the background and are queued for later delivery when sites are down. This
 kind of functionality requires a bit more of the host system than the typical
 blog. Not every PHP/MySQL hosting provider will be able to support the 
-Hubzilla. Many will - but please review the requirements and confirm these 
+BlaBlaNet. Many will - but please review the requirements and confirm these 
 with your hosting provider prior to installation. (And preferably before 
 entering into a long-term contract.)
 
 If you encounter installation issues, please let us know via the Github issue 
-tracker (https://github.com/redmatrix/hubzilla/issues). Please be as clear as you 
+tracker (https://github.com/redmatrix/BlaBlaNet/issues). Please be as clear as you 
 can about your operating environment and provide as much detail as possible
 about any error messages you may see, so that we can prevent it from happening 
 in the future. Due to the large variety of operating systems and PHP platforms 
@@ -29,7 +29,7 @@ issues.
 
 Before you begin: Choose a domain name or subdomain name for your server.
 
-Hubzilla can only be installed into the root of a domain or
+BlaBlaNet can only be installed into the root of a domain or
 sub-domain, and can not be installed using alternate TCP ports. 
 
 Decide if you will use SSL and obtain an SSL certificate before software
@@ -58,14 +58,14 @@ and LetsEncrypt.
 
 If you do NOT use SSL, there may be a delay of up to a minute for the initial
 install script - while we check the SSL port to see if anything responds there.
-When communicating with new sites, Hubzilla always attempts connection on the
+When communicating with new sites, BlaBlaNet always attempts connection on the
 SSL port first, before falling back to a less secure connection.  If you do not
 use SSL, your webserver MUST NOT listen on port 443 at all.
 
 If you use LetsEncrypt to provide certificates and create a file under 
 .well-known/acme-challenge so that LetsEncrypt can verify your domain ownership, 
 please remove or rename the .well-known directory as soon as the certificate is 
-generated. Hubzilla will provide its own handler for ".well-known" services when
+generated. BlaBlaNet will provide its own handler for ".well-known" services when
 it is installed, and an existing directory in this location may prevent some of 
 these services from working correctly. This should not be a problem with Apache,
 but may be an issue with nginx or other web server platforms.
@@ -96,7 +96,7 @@ but may be an issue with nginx or other web server platforms.
     - Installation into a top-level domain or sub-domain (without a 
     directory/path component in the URL) is REQUIRED.
 
-2. Unpack the Hubzilla files into the root of your web server document area.
+2. Unpack the BlaBlaNet files into the root of your web server document area.
     
      If you copy the directory tree to your webserver, make sure that you 
     also copy .htaccess - as "dot" files are often hidden and aren't normally 
@@ -107,7 +107,7 @@ but may be an issue with nginx or other web server platforms.
     software much easier to update. The Linux command to clone the repository 
     into a directory "mywebsite" would be
 
-        git clone https://github.com/redmatrix/hubzilla.git mywebsite
+        git clone https://github.com/redmatrix/BlaBlaNet.git mywebsite
 
     - and then you can pick up the latest changes at any time with
 
@@ -135,10 +135,10 @@ but may be an issue with nginx or other web server platforms.
             cd mywebsite
 
     - Then you should clone the addon repository (separately). We'll give this repository
-         a nickname of 'hzaddons'. You can pull in other hubzilla addon repositories by 
+         a nickname of 'hzaddons'. You can pull in other BlaBlaNet addon repositories by 
          giving them different nicknames.
 
-            util/add_addon_repo https://github.com/redmatrix/hubzilla-addons.git hzaddons
+            util/add_addon_repo https://github.com/redmatrix/BlaBlaNet-addons.git hzaddons
 
     - For keeping the addon tree updated, you should be on your top level website 
 		directory and issue an update command for that repository.
@@ -217,7 +217,7 @@ one shown, substituting for your unique paths and settings:
 
 You can generally find the location of PHP by executing "which php". If you 
 have troubles with this section please contact your hosting provider for 
-assistance. Hubzilla will not work correctly if you cannot perform this step.
+assistance. BlaBlaNet will not work correctly if you cannot perform this step.
 
 You should also be sure that App::$config['system']['php_path'] is set correctly 
 in your .htconfig.php file, it should look like (changing it to the correct 
@@ -265,7 +265,7 @@ generally be world-readable.
 
 Ensure that mod-rewite is installed and working, and that your
 .htaccess file is being used. To verify the latter, create a file test.out
-containing the word "test" in the top directory of the Hubzilla, make it world 
+containing the word "test" in the top directory of the BlaBlaNet, make it world 
 readable and point your web browser to
 
 http://yoursitenamehere.com/test.out
@@ -315,7 +315,7 @@ Retry the installation. As soon as the database has been created,
 
 #####################################################################
 - Some configurations with "suhosin" security are configured without
-an ability to run external processes. Hubzilla requires this ability.
+an ability to run external processes. BlaBlaNet requires this ability.
 Following are some notes provided by one of our members.
 #####################################################################
 
@@ -325,26 +325,26 @@ certain functions like proc_open, as configured in /etc/php5/conf.d/suhosin.ini:
 
  suhosin.executor.func.blacklist = proc_open, ...
 
-For those sites like Hubzilla that really need these functions they can be
-enabled, e.g. in /etc/apache2/sites-available/hubzilla:
+For those sites like BlaBlaNet that really need these functions they can be
+enabled, e.g. in /etc/apache2/sites-available/BlaBlaNet:
 
- <Directory /var/www/hubzilla/>
+ <Directory /var/www/BlaBlaNet/>
   php_admin_value suhosin.executor.func.blacklist none
   php_admin_value suhosin.executor.eval.blacklist none
  </Directory>
 
-This enables every function for Hubzilla if accessed via browser, but not for
+This enables every function for BlaBlaNet if accessed via browser, but not for
 the cronjob that is called via php command line. I attempted to enable it for
 cron by using something like
 
- */10 * * * * cd /var/www/hubzilla/ && sudo -u www-data /usr/bin/php
+ */10 * * * * cd /var/www/BlaBlaNet/ && sudo -u www-data /usr/bin/php
 -d suhosin.executor.func.blacklist=none -d suhosin.executor.eval.blacklist=none
 -f include/poller.php
 
 This worked well for simple test cases, but the cron job still failed with
 a fatal error:
 suhosin[22962]: ALERT - function within blacklist called: proc_open() (attacker
-'REMOTE_ADDR not set', file '/var/www/hubzilla/boot.php', line 1341)
+'REMOTE_ADDR not set', file '/var/www/BlaBlaNet/boot.php', line 1341)
 
 After a while I noticed, that include/poller.php calls further php script via
 proc_open. These scripts themselves also use proc_open and fail, because they
@@ -397,7 +397,7 @@ However, in /etc/mysql/my.cnf the maximum number of connection is set to
 150 workers are a lot and probably too much for small servers. However you
 set those values, make sure that the number of Apache workers is smaller
 than the number of connections MySQL accepts, leaving some room for other
-stuff on your server that might access MySQL, and Hubzilla's poller which
+stuff on your server that might access MySQL, and BlaBlaNet's poller which
 needs MySQL access, too. A good setting for a medium-sized hub might be to
 keep MySQL's max_connections at 100 and set mpm_prefork's
 MaxRequestWorkers to 70.

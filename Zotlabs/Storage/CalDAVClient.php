@@ -2,7 +2,7 @@
 
 namespace Zotlabs\Storage;
 
-// The Hubzilla CalDAV client will store calendar information in the 'cal' DB table. 
+// The BlaBlaNet CalDAV client will store calendar information in the 'cal' DB table. 
 // Event information will remain in the 'event' table. In order to implement CalDAV on top of our
 // existing system, there is an event table column called vdata. This will hold the "one true record"
 // of the event in VCALENDAR format. When we receive a foreign event, we will pick out the fields
@@ -15,7 +15,7 @@ namespace Zotlabs\Storage;
 // I'm currently anticipating separating tasks/to-do items from events, so each new account wil get two default calendars.  
 
 // We will eventually provide for magic-auth or cookie login of the CURL process so we won't be required to 
-// store our hubzilla password. Currently for testing we are using HTTP BASIC-AUTH and must initialise the 
+// store our BlaBlaNet password. Currently for testing we are using HTTP BASIC-AUTH and must initialise the 
 // username/password correctly to make the connection. 
 
 // Repeating events will be awkward because every instance has the same UUID. This would make it difficult to 

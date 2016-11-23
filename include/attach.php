@@ -395,7 +395,7 @@ function attach_by_hash_nodata($hash, $observer_hash, $rev = 0) {
  * file was stored as a DAV directory object or updated as a file object. One of these 
  * is essentially an update and the other is basically an upload, but doesn't use the traditional PHP
  * upload workflow. 
- * Then came hubzilla and we tried to merge photo functionality with the file storage. Most of
+ * Then came BlaBlaNet and we tried to merge photo functionality with the file storage. Most of
  * that integration occurs within this function. 
  * This required overlap with the old photo_upload stuff and photo albums were
  * completely different concepts from directories which needed to be reconciled somehow.
