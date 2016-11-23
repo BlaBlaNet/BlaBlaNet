@@ -47,8 +47,6 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
     - make sure folders *store/[data]/smarty3* and *store* exist and are 
     writable by the webserver
 
-        mkdir -p "store/[data]/smarty3"
-
         chmod -R 777 store
 
         [This permission (777) is very dangerous and if you have sufficient
