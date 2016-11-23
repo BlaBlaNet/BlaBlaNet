@@ -333,9 +333,9 @@ class Setup extends \GeditLab\Web\Controller {
 				$timezone = ((x($_POST,'timezone')) ? ($_POST['timezone']) : 'America/Los_Angeles');
 	
 				$server_roles = [
-					'basic'    => t('Basic/Minimal Social Networking'),
+					// 'basic'    => t('Basic/Minimal Social Networking'),
 					'standard' => t('Standard Configuration (default)'),
-					'pro'      => t('Professional')
+					// 'pro'      => t('Professional')
 				];
 
 				$tpl = get_markup_template('install_settings.tpl');
