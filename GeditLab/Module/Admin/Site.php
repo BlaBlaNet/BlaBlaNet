@@ -239,9 +239,9 @@ class Site {
 		$discover_tab = (1 - $discover_tab);
 	
 		$server_roles = [
-			'basic'    => t('Basic/Minimal Social Networking'),
+			// 'basic'    => t('Basic/Minimal Social Networking'),
 			'standard' => t('Standard Configuration (default)'),
-			'pro'      => t('Professional')
+			// 'pro'      => t('Professional')
 		];
 
 

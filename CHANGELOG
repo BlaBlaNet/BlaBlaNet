@@ -14,3 +14,4 @@ BlaBlaNet 1.15 (2016-10-01)
         - Remove Load Average front GeditLab/Module/Siteinfo.php Dangerous server Information not need to be release
         - Some more Test with Smarty
         - Ant Nodes Set to Standar Setup "GeditLab/Module/Setup.php" Compatibility with Foss 
+        - Remove Server Roles front Admin Section - Compatibility with Foss GeditLab/Module/Admin/Site.php
