@@ -1,11 +1,11 @@
 [b]BlaBlaNet on OpenShift[/b]
-You will notice a new .openshift folder when you fetch from upstream, i.e. from [url=https://github.com/redmatrix/BlaBlaNet.git]https://github.com/redmatrix/BlaBlaNet.git[/url] , which contains a deploy script to set up BlaBlaNet on OpenShift with plugins and extra themes.
+You will notice a new .openshift folder when you fetch from upstream, i.e. from [url=https://geditlab.com/blablanet/BlaBlanet.git]https://geditlab.com/blablanet/BlaBlanet.git[/url] , which contains a deploy script to set up BlaBlaNet on OpenShift with plugins and extra themes.
 
 As of this writing, 2015-10-28, you do not have to pay for OpenShift on the Free plan, which gives you three gears at no cost. The Bronze plan gives you three gears at no cost too, but you can expand to 16 gears by paying, and this requires you to register your payment card. The three gears can give three instances of BlaBlaNet with one gear each, or you can combine two gears into one high-availability BlaBlaNet instance and one extra gear. The main difference to be aware of is this: gears on the Free plan will go into hibernation if left idle for too long, this does not happen on the Bronze plan. 
 
 Create an account on OpenShift, then use the registration e-mail and password to create your first BlaBlaNet instance. Install git and RedHat's command line tools - rhc - if you have not already done so. See for example https://developers.openshift.com/en/getting-started-debian-ubuntu.html on how to do this on Debian GNU/Linux, or in the menu on that page for other GNU/Linux distributions or other operating systems. 
 
-[code]rhc app-create your_app_name php-5.4 mysql-5.5 cron phpmyadmin --namespace your_domain --from-code https://github.com/redmatrix/BlaBlaNet.git -l your@email.address -p your_account_password
+[code]rhc app-create your_app_name php-5.4 mysql-5.5 cron phpmyadmin --namespace your_domain --from-code https://geditlab.com/blablanet/BlaBlanet.git -l your@email.address -p your_account_password
 [/code]
 
 Make a note of the database username and password OpenShift creates for your instance, and use these at [url=https://your_app_name-your_domain.rhcloud.com/]https://your_app_name-your_domain.rhcloud.com/[/url] to complete the setup. You MUST change server address from 127.0.0.1 to localhost.

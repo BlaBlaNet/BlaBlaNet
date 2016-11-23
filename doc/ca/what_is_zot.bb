@@ -51,11 +51,6 @@ L'accés pot ser concedit o negat per a qualsevol recurs, a qualsevol canal, o q
 
 Per més detalla, informació tècnica sobre Zot, clica sobre algún dels següents enllaços: 
 
- - [url=https://github.com/friendica/red/wiki/Zot---A-High-Level-Overview]Vista per experts (en anglès)[/url]
-
- - [url=https://github.com/friendica/red/wiki/zot]Especificació pel desenvolupament de Zot (en anglès)[/url]
-
- - [url=https://github.com/redmatrix/BlaBlaNet/blob/master/include/zot.php]Referència per la implementació de Zot en PHP (en anglès)[/url]
-
+ - 
 
 #include doc/macros/main_footer.bb;

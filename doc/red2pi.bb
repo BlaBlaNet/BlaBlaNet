@@ -239,10 +239,10 @@ Cleanup: Remove the directory www/ (Git will not create files and folders in dir
 Remove directory[code]pi@pi /var $ sudo rm -rf www/[/code]
 
 Download the sources of $Projectname from GIT
-[code]pi@pi /var $ sudo git clone https://github.com/redmatrix/BlaBlaNet.git www[/code]
+[code]pi@pi /var $ sudo git clone https://geditlab.com/blablanet/BlaBlanet.git www[/code]
 
 Download the sources of the addons from GIT
-[code]pi@pi /var/www $ sudo git clone https://github.com/redmatrix/BlaBlaNet-addons.git addon[/code]
+[code]pi@pi /var/www $ sudo git clone https://geditlab.com/blablanet/BlaBlanet-addons.git addon[/code]
 
 Make user www-data the owner of the whole web directory (including subdirectories and files)
 (TODO: This step has to be proofed by the next installation.)

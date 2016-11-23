@@ -94,7 +94,7 @@ function widget_chess_controls() {
         '$gameinfo' => $gameinfo,
         '$historyviewer' => $historyviewer,
         '$settings' => chess_game_settings(),
-        '$version' => '<a href="https://github.com/redmatrix/BlaBlaNet-addons/">v'.chess_get_version().'</a>'
+        '$version' => '<a href="https://geditlab.com/blablanet/BlaBlanet-addons/">v'.chess_get_version().'</a>'
     ));
     return $o;
 }

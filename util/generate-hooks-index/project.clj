@@ -1,6 +1,6 @@
 (defproject generate-hooks-index "0.1.0-SNAPSHOT"
   :description "Generates Hooks docs for BlaBlaNet"
-  :url "https://github.com/redmatrix/BlaBlaNet"
+  :url "https://geditlab.com/blablanet/BlaBlanet"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]

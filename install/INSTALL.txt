@@ -107,7 +107,7 @@ but may be an issue with nginx or other web server platforms.
     software much easier to update. The Linux command to clone the repository 
     into a directory "mywebsite" would be
 
-        git clone https://github.com/redmatrix/BlaBlaNet.git mywebsite
+        git clone https://geditlab.com/blablanet/BlaBlanet.git mywebsite
 
     - and then you can pick up the latest changes at any time with
 
@@ -138,7 +138,7 @@ but may be an issue with nginx or other web server platforms.
          a nickname of 'hzaddons'. You can pull in other BlaBlaNet addon repositories by 
          giving them different nicknames.
 
-            util/add_addon_repo https://github.com/redmatrix/BlaBlaNet-addons.git hzaddons
+            util/add_addon_repo https://geditlab.com/blablanet/BlaBlanet-addons.git hzaddons
 
     - For keeping the addon tree updated, you should be on your top level website 
 		directory and issue an update command for that repository.

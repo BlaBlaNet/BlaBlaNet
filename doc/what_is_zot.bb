@@ -51,11 +51,6 @@ Access can be granted or denied for any resource, to any channel, or any group o
 
 For more detailed, technical information about Zot, check out the following links: 
 
- - [url=https://github.com/friendica/red/wiki/Zot---A-High-Level-Overview]A high level overview[/url]
-
- - [url=https://github.com/friendica/red/wiki/zot]Zot development specification[/url]
-
- - [url=https://github.com/redmatrix/BlaBlaNet/blob/master/include/zot.php]Zot reference implementation in PHP[/url]
-
+ 
 
 #include doc/macros/main_footer.bb;

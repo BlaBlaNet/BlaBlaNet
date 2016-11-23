@@ -14,7 +14,7 @@ Once you've done that, cd into the directory, and add an upstream.
 
 [code]
 cd red
-git remote add upstream https://github.com/redmatrix/BlaBlaNet
+git remote add upstream https://geditlab.com/blablanet/BlaBlanet
 [/code]
 
 From now on, you can pull upstream changes with the command

@@ -103,6 +103,6 @@ function testdrive_enotify(&$a, &$b) {
         $b['itemlink'] = z_root();
         $b['epreamble'] = $b['preamble'] = sprintf( t('Your account on %s will expire in a few days.'), get_config('system','sitename'));
         $b['subject'] = t('Your $Productname test account is about to expire.');
-        $b['body'] = sprintf( t("Hi %1\$s,\n\nYour test account on %2\$s will expire in less than five days. We hope you enjoyed this test drive and use this opportunity to find or install a permanent hub and migrate your account to it. A list of public hubs is available at https://BlaBlaNet.org/pubsites - and for more information on setting up your own $Projectname hub please see the project website at https://github.com/redmatrix/BlaBlaNet ."), $b['recipient']['xchan_name'], "[url=" . z_root() . "]" . $b['sitename'] . "[/url]");
+        $b['body'] = sprintf( t("Hi %1\$s,\n\nYour test account on %2\$s will expire in less than five days. We hope you enjoyed this test drive and use this opportunity to find or install a permanent hub and migrate your account to it. A list of public hubs is available at https://BlaBlaNet.org/pubsites - and for more information on setting up your own $Projectname hub please see the project website at https://geditlab.com/blablanet/BlaBlanet ."), $b['recipient']['xchan_name'], "[url=" . z_root() . "]" . $b['sitename'] . "[/url]");
     }
 }

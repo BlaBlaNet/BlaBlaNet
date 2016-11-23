@@ -10,7 +10,7 @@ Next, click the link to Register a new application. That brings up the new appli
 
 Icon. I uploaded $Projectname icon located at this link, after saving it to my computer:
 
-https://github.com/redmatrix/BlaBlaNet/blob/master/images/rm-32.png
+
 
 Name. Give the application an appropriate name. I called mine BlaBlaNet. You might prefer r2g.
 
