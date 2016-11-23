@@ -19,7 +19,7 @@
 	<tr><td style="padding-right:22px;">{{$htmlversion}}</td></tr>
 	<tr><td style="padding-top:11px;" colspan="2">{{$hsitelink}}</td></tr>
 	<tr><td style="padding:11px 0;" colspan="2">{{$hitemlink}}</td></tr>
-	<tr><td></td><td>{{$siteurl}}/settings</td></tr>
+	<tr><td></td><td>Mail Opt-out<td style="padding-top:22px;"><a href="{{$siteurl}}/settings"></a></td></tr>
         <tr><td></td><td>{{$thanks}}</td></tr>
 	<tr><td></td><td>{{$site_admin}}</td></tr>
 	</tbody>
