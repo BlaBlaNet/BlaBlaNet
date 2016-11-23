@@ -5,7 +5,7 @@
  * Description: use phpmailer instead of built-in mail() function
  * Version: 1.0
  * Author: Mike Macgirvin <mike@macgirvin.com>
- * Maintainer: Mike Macgirvin <mike@macgirvin.com>
+ * Maintainer:
  */
 
 

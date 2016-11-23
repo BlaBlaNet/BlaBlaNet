@@ -6,7 +6,7 @@
  * Description: block people
  * Version: 1.0
  * Author: Mike Macgirvin
- * Maintainer: Mike Macgirvin <mike@macgirvin.com> 
+ * Maintainer: 
  * MinVersion: 1.1.3
  */
 

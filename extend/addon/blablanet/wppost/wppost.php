@@ -5,7 +5,7 @@
  * Description: Post to WordPress (or anything else which uses the wordpress XMLRPC API)
  * Version: 1.0
  * Author: Mike Macgirvin <zot:mike@zothub.com>
- * Maintainer: Mike Macgirvin <mike@macgirvin.com>
+ * Maintainer:
  */
 
 require_once('include/permissions.php');

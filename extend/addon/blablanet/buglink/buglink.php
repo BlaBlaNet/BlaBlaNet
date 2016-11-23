@@ -4,7 +4,7 @@
  * Description: Show link to project bug site at bottom of page
  * Version: 1.0
  * Author: Mike Macgirvin <mike@macgirvin.com>
- * Maintainer: Mike Macgirvin <mike@macgirvin.com>
+ * Maintainer:
  * MinVersion: 1.0
  */
 
