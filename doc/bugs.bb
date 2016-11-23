@@ -21,7 +21,7 @@ If you get a blank white screen when doing something, this is almost always a co
 
 At this point it might be worthwhile discussing the issue on one of the online forums. There may be several of these and some may be more suited to your spoken language. As a last resort, try "Channel One", which is in English.
 
-If the community developers can't help you right away, understand that they are volunteers and may have a lot of other work and demands on their time. At this point you need to file a bug report. You will need an account on github.com to do this. So register, and then visit https://github.com/redmatrix/BlaBlaNet/issues
+If the community developers can't help you right away, understand that they are volunteers and may have a lot of other work and demands on their time. At this point you need to file a bug report. You will need an account on github.com to do this. So register, and then visit https://geditlab.com/blablanet/BlaBlanet/issues
 . Create an issue here and provide all the same information that you provided online. Don't leave out anything. 
 
 Then you wait. If it's a high profile issue, it may get fixed quickly. But nobody is in charge of fixing bugs. If it lingers without resolution, please spend some more time investigating the problem. Ask about anything you don't understand related to the behaviour. You will learn more about how the software works and quite possibly figure out why it isn't working now. Ultimately it is somebody in the community who is going to fix this and you are a member of the community; and this is how the open source process works.
