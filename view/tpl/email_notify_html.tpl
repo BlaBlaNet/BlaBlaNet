@@ -19,9 +19,12 @@
 	<tr><td style="padding-right:22px;">{{$htmlversion}}</td></tr>
 	<tr><td style="padding-top:11px;" colspan="2">{{$hsitelink}}</td></tr>
 	<tr><td style="padding:11px 0;" colspan="2">{{$hitemlink}}</td></tr>
-	<tr><td style="font-weight:bold;padding-bottom:5px;">Mail Opt-out<a href="{{$siteurl}}/settings"></a></td></tr>
         <tr><td></td><td>{{$thanks}}</td></tr>
 	<tr><td></td><td>{{$site_admin}}</td></tr>
+<td
+        style="text-align:center;margin-left:auto;margin-right:auto;"><strong><a
+        href="{{$siteurl}}/settings">Mail Opt-out </a></strong></td>
+      <td></tr>
 	</tbody>
 </table>
 </body>
