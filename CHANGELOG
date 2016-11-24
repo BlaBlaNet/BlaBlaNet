@@ -15,3 +15,5 @@ BlaBlaNet 1.15 (2016-10-01)
         - Some more Test with Smarty
         - Ant Nodes Set to Standar Setup "GeditLab/Module/Setup.php" Compatibility with Foss 
         - Remove Server Roles front Admin Section - Compatibility with Foss GeditLab/Module/Admin/Site.php
+        - Add Email Notifications removal Link - Not need write a History Book only a simple Link. You Know? ;)
+        
