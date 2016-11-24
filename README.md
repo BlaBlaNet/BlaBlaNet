@@ -46,6 +46,12 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
 
     - make sure folders *store/[data]/smarty3* and *store* exist and are 
     writable by the webserver
+    
+    - If you have all the files with user www-data normally will be fine you can do:
+
+      chmod -R www-data:www-data BlablanetNodeNAme "or folder name"
+
+   if fail the easy but not recomend way is:
 
         chmod -R 777 store
 
@@ -64,11 +70,11 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
             cd mywebsite
 
     - Then you should clone the addon repository (separately). We'll give this repository
-         a nickname of 'hzaddons'. You can pull in other BlaBlanet addons repositories by 
+         a nickname of 'Bbaddons'. You can pull in other BlaBlanet addons repositories by 
          giving them different nicknames. We not Guranty Further Versions be compatible with 
          BlaBlaNet Addons.
               
-              util/add_addon_repo blablanet
+              util/update_addon_repo blablanet
         
         That will update the Main Addons 
         
@@ -154,14 +160,14 @@ using web forms.
 8. Set up a cron job or scheduled task to run the Cron manager once every 10-15 
 minutes to perform background processing and maintenance. Example:
 
-	cd /base/directory; /path/to/php GeditLab/Daemon/Master.php Cron
+	cd /base/directory; /path/to/php  /usr/bin/php include/poller.php Cron
 
 Change "/base/directory", and "/path/to/php" as appropriate for your situation.
 
 If you are using a Linux server, run "crontab -e" and add a line like the 
 one shown, substituting for your unique paths and settings:
 
-*/10 * * * *	cd /home/myname/mywebsite; /usr/bin/php GeditLab/Daemon/Master.php Cron
+*/10 * * * *	cd /home/myname/mywebsite; /usr/bin/php  /usr/bin/php include/poller.php
 
 You can generally find the location of PHP by executing "which php". If you 
 have troubles with this section please contact your hosting provider for 
