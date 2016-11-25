@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Blablanet by BlaBlaNet</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Blablanet</h1>
+        <p>BlaBlaNet Social Network Source Code</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/BlaBlaNet/BlaBlaNet" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/BlaBlaNet/BlaBlaNet/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/BlaBlaNet/BlaBlaNet/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="blablanet--social-network-kit" class="anchor" href="#blablanet--social-network-kit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BlaBlaNet- Social Network Kit</h1>
+
+<p>[<img src="https://geditlab.com/blablanet/BlaBlanet" alt="Build Status">]</p>
+
+<p>BlaBlaNet is a feature rich and highly flexible OpenSource Social Network Kit written in PHP.</p>
+
+<p>It's perfect for individual:</p>
+
+<ul>
+<li>Social Intranets</li>
+<li>Enterprise Social Networks</li>
+<li>Private Social Networks</li>
+</ul>
+
+<p>More information:</p>
+
+<ul>
+<li><a href="https://blablanet.com">Homepage &amp; Demo</a></li>
+<li><a href="https://blablanet.com/help/develop">Documentation &amp; Class Reference</a></li>
+<li><a href="https://github.com/BlaBlaNet/BlaBlaNet/blob/master/LICENSE">Licence</a></li>
+</ul>
+
+<h1>
+<a id="blablanet-social-network-install" class="anchor" href="#blablanet-social-network-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BlaBlaNet-Social-Network install:</h1>
+
+<p>BaBlaNet Social Network is a decentralized Social Network with new improvements and advance add-ons 
+You can BlaBlaNet Social Network Working in <a href="https://blablanet.com">https://blablanet.com</a></p>
+
+<ol>
+<li>
+<p>Requirements</p>
+
+<ul>
+<li><p>Apache with mod-rewrite enabled and "AllowOverride All" so you can use a 
+local .htaccess file. Some folks have successfully used nginx and lighttpd.
+Example config scripts are available for these platforms in doc/install.
+Apache and nginx have the most support. </p></li>
+<li><p>PHP 5.5 or later. </p></li>
+<li><p>PHP <em>command line</em> access with register_argc_argv set to true in the 
+php.ini file - and with no hosting provider restrictions on the use of 
+exec() and proc_open().</p></li>
+<li><p>curl, gd (with at least jpeg and png support), mysqli, mbstring, xml,
+and openssl extensions. The imagick extension MAY be used instead of gd,
+but is not required and MAY also be disabled via configuration option. </p></li>
+<li><p>some form of email server or email gateway such that PHP mail() works.</p></li>
+<li><p>Mysql 5.x or MariaDB or postgres database server.</p></li>
+<li><p>ability to schedule jobs with cron.</p></li>
+<li><p>Installation into a top-level domain or sub-domain (without a 
+directory/path component in the URL) is REQUIRED.</p></li>
+</ul>
+</li>
+<li><p>Unpack the BlaBlaNet files into the root of your web server document area.</p></li>
+</ol>
+
+<p>You can download last release front: <a href="https://github.com/BlaBlaNet/BlaBlaNet/releases">https://github.com/BlaBlaNet/BlaBlaNet/releases</a></p>
+
+<p>Unzip in a folder and go to Point 2A and continue the install There</p>
+
+<p>If you like to use GIt install GIT first in your server</p>
+
+<p>The stable Version is in :</p>
+
+<pre><code>    git clone https://github.com/BlaBlaNet/BlaBlaNet.git
+</code></pre>
+
+<p>The Developer Testing Versions is in Geditlab there also other versions not public only 
+for developers a working in mayor features :</p>
+
+<pre><code>    git clone https://geditlab.com/blablanet/BlaBlanet
+
+- and then you can pick up the latest changes at any time with
+
+    git pull
+
+- make sure folders *store/[data]/smarty3* and *store* exist and are 
+writable by the webserver
+
+- If you have all the files with user www-data normally will be fine you can do:
+
+  chmod -R www-data:www-data BlablanetNodeNAme "or folder name"
+</code></pre>
+
+<p>if fail the easy but not recomend way is:</p>
+
+<pre><code>    chmod -R 777 store
+
+    [This permission (777) is very dangerous and if you have sufficient
+    privilege and knowledge you should make these directories writeable
+    only by the webserver and, if different, the user that will run the
+    cron job (see below). In many shared hosting environments this may be
+    difficult without opening a trouble ticket with your provider. The
+    above permissions will allow the software to work, but are not
+    optimal.]
+</code></pre>
+
+<p>2A   - For installing addons front other Repository after finish the Browser Install</p>
+
+<pre><code>    - First you should be **on** your website folder
+
+        cd mywebsite
+
+- Then you should clone the addon repository (separately). We'll give this repository
+     a nickname of 'Bbaddons'. You can pull in other BlaBlanet addons repositories by 
+     giving them different nicknames. We not Guranty Further Versions be compatible with 
+     BlaBlaNet Addons.
+
+          util/update_addon_repo blablanet
+
+    That will update the Main Addons 
+
+    And for add New Addons:
+
+        util/add_addon_repo URL + ADDON NAME + insecure
+
+- For keeping the addon tree updated, you should be on your top level website 
+    directory and issue an update command for that repository.
+
+        cd mywebsite
+        util/update_addon_repo blablanet
+
+- Create searchable representations of the online documentation. You may do this any time
+    that the documentation is updated.
+
+        cd mywebsite
+        util/importdoc
+</code></pre>
+
+<ol>
+<li>Create an empty database and note the access details (hostname, username, 
+password, database name). The MySQL client libraries will fallback to socket 
+communication if the hostname is 'localhost' and some people have reported
+issues with the socket implementation. Use it if your requirements mandate. 
+Otherwise if the database is served on the local server, use '127.0.0.1' for
+the hostname. If you Use Debian or Ubuntu you can Install or MariaDB 10.01 Sources
+########## MARIADB 10.0.1</li>
+</ol>
+
+<p>Run this command: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db</p>
+
+<p>After: nano /etc/apt/sources.list</p>
+
+<p>And add this line to the end of your sources:</p>
+
+<p>deb [arch=amd64,i386] <a href="http://blablanet.stream/mariadb/repo/10.1/debian">http://blablanet.stream/mariadb/repo/10.1/debian</a> jessie main</p>
+
+<p>Execute after: apt-get upgrade</p>
+
+<p>And them: apt-get install mariadb-server</p>
+
+<ol>
+<li><p>If you know in advance that it will be impossible for the web server to 
+write or create files in your web directory, create an empty file called 
+.htconfig.php and make it writable by the web server.</p></li>
+<li><p>Visit your website with a web browser and follow the instructions. Please 
+note any error messages and correct these before continuing. If you are using
+SSL with a known signature authority, use the https: link to your
+website. </p></li>
+<li>
+<p><em>If</em> the automated installation fails for any reason, check the following:</p>
+
+<ul>
+<li>".htconfig.php" exists 
+If not, edit htconfig.php and change system settings. Rename 
+to .htconfig.php</li>
+<li> Database is populated.
+If not, import the contents of "install/schema_xxxxx.sql" with phpmyadmin 
+or mysql command line (replace 'xxxxx' with your DB type).</li>
+</ul>
+</li>
+<li><p>At this point visit your website again, and register your personal account. 
+Registration errors should all be recoverable automatically. 
+If you get any <em>critical</em> failure at this point, it generally indicates the
+database was not installed correctly. You might wish to move/rename 
+.htconfig.php to another name and empty (called 'dropping') the database 
+tables, so that you can start fresh.</p></li>
+</ol>
+
+<p>In order for your account to be given administrator access, it should be the
+first account created, and the email address provided during registration
+must match the "administrator email" address you provided during 
+installation. Otherwise to give an account administrator access,
+add 4096 to the account_roles for that account in the database. </p>
+
+<p>For your site security there is no way to provide administrator access
+using web forms. </p>
+
+<hr>
+
+<hr>
+
+<p>********          THIS NEXT STEP IS IMPORTANT!!!!                ***********</p>
+
+<hr>
+
+<hr>
+
+<ol>
+<li>
+<p>Set up a cron job or scheduled task to run the Cron manager once every 10-15 
+minutes to perform background processing and maintenance. Example:</p>
+
+<p>cd /base/directory; /path/to/php /usr/bin/php GeditLab/Daemon/Master.php Cron</p>
+</li>
+</ol>
+
+<p>Change "/base/directory", and "/path/to/php" as appropriate for your situation.</p>
+
+<p>If you are using a Linux server, run "crontab -e" and add a line like the 
+one shown, substituting for your unique paths and settings:</p>
+
+<p>*/10 * * * *    cd /home/myname/mywebsite; /usr/bin/php GeditLab/Daemon/Master.php Cron</p>
+
+<p>You can generally find the location of PHP by executing "which php". If you 
+have troubles with this section please contact your hosting provider for 
+assistance. BlaBlaNet will not work correctly if you cannot perform this step.</p>
+
+<p>You should also be sure that App::$config['system']['php_path'] is set correctly 
+in your .htconfig.php file, it should look like (changing it to the correct 
+PHP location):</p>
+
+<p>App::$config['system']['php_path'] = '/usr/local/php55/bin/php';</p>
+
+<h6></h6>
+
+<h6></h6>
+
+<ul>
+<li>Apache processes hanging, using as much CPU as they can
+#####################################################################</li>
+</ul>
+
+<p>This seems to happen sometimes if you use mpm_prefork and the PHP process
+started by Apache cannot get database access.</p>
+
+<p>Consider the following settings:</p>
+
+<p>In /etc/apache2/mods-enabled/mpm_prefork.conf (Debian, path and file name
+may vary depending on your OS and distribution), set</p>
+
+<p>GracefulShutdownTimeout 300</p>
+
+<p>This makes sure that Apache processes that are running wild will not do so
+forever, but will be killed if they didn't stop five minutes after a
+shutdown command was sent to the process.</p>
+
+<p>If you expect high load on your server (public servers, e.g.), also make
+sure that Apache will not spawn more processes than MySQL will accept
+connections.</p>
+
+<p>In the default Debian configuration, in
+/etc/apache2/mods-enabled/mpm_prefork.conf the maximum number of workers
+is set to 150:</p>
+
+<p>MaxRequestWorkers 150</p>
+
+<p>However, in /etc/mysql/my.cnf the maximum number of connection is set to
+100:</p>
+
+<p>max_connections = 100</p>
+
+<p>150 workers are a lot and probably too much for small servers. However you
+set those values, make sure that the number of Apache workers is smaller
+than the number of connections MySQL accepts, leaving some room for other
+stuff on your server that might access MySQL, and BlaBlaNet's poller which
+needs MySQL access, too. A good setting for a medium-sized hub might be to
+keep MySQL's max_connections at 100 and set mpm_prefork's
+MaxRequestWorkers to 70.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/BlaBlaNet">BlaBlaNet</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
