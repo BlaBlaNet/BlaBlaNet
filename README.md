@@ -12,7 +12,7 @@ More information:
 - [Homepage & Demo](https://blablanet.com)
 - [Documentation & Class Reference](https://blablanet.com/help/develop)
 - [Licence](https://github.com/BlaBlaNet/BlaBlaNet/blob/master/LICENSE)
-
+- [Community Support](https://blablanet.com/channel/blablanet_support)
 
 [![Build Status]
 (https://github.com/BlaBlaNet/BlaBlaNet/blob/master/images/screen.png)
