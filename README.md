@@ -1,4 +1,21 @@
-# BlaBlaNet-Social-Network
+HumHub - Social Network Kit
+===========================
+
+[![Build Status](https://geditlab.com/blablanet/BlaBlanet)](https://travis-ci.org/humhub/humhub)
+
+BlaBlaNet is a feature rich and highly flexible OpenSource Social Network Kit written in PHP.
+
+It's perfect for individual:
+- Social Intranets
+- Enterprise Social Networks
+- Private Social Networks
+
+More information:
+- [Homepage & Demo](https://blablanet.com)
+- [Documentation & Class Reference](https://blablanet.com/help/develop)
+- [Licence](https://github.com/BlaBlaNet/BlaBlaNet/blob/master/LICENSE)
+
+# BlaBlaNet-Social-Network install:
 BaBlaNet Social Network is a decentralized Social Network with new improvements and advance add-ons 
 You can BlaBlaNet Social Network Working in https://blablanet.com
 
