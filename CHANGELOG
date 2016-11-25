@@ -17,3 +17,4 @@ BlaBlaNet 1.15 (2016-10-01)
         - Remove Server Roles front Admin Section - Compatibility with Foss GeditLab/Module/Admin/Site.php
         - Add Email Notifications removal Link - Not need write a History Book only a simple Link. You Know? ;)
         - Email Channel Notification Utility
+        - Add Captcha to recovery Password.
