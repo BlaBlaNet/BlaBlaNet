@@ -29,15 +29,19 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
 
 2. Unpack the BlaBlaNet files into the root of your web server document area.
     
-     If you copy the directory tree to your webserver, make sure that you 
-    also copy .htaccess - as "dot" files are often hidden and aren't normally 
-    copied.
+You can download last release front: https://github.com/BlaBlaNet/BlaBlaNet/releases
 
-    - If you are able to do so, we recommend using git to clone the source 
-    repository rather than to use a packaged tar or zip file.  This makes the 
-    software much easier to update. The Linux command to clone the repository 
-    into a directory "mywebsite" would be
+Unzip in a folder and go to Point 2A and continue the install There
 
+If you like to use GIt install GIT first in your server
+
+The stable Version is in :
+         
+        git clone https://github.com/BlaBlaNet/BlaBlaNet.git
+
+The Developer Testing Versions is in Geditlab there also other versions not public only 
+for developers a working in mayor features :
+        
         git clone https://geditlab.com/blablanet/BlaBlanet
 
     - and then you can pick up the latest changes at any time with
@@ -63,7 +67,7 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
         above permissions will allow the software to work, but are not
         optimal.]
  
-    - For installing addons front other Repository after finish the Browser Install
+ 2A   - For installing addons front other Repository after finish the Browser Install
 
         - First you should be **on** your website folder
 
@@ -149,7 +153,7 @@ installation. Otherwise to give an account administrator access,
 add 4096 to the account_roles for that account in the database. 
 
 For your site security there is no way to provide administrator access
-using web forms.
+using web forms. 
 
 ****************************************************************************
 ****************************************************************************
