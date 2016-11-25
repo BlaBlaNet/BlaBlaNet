@@ -1,7 +1,7 @@
-HumHub - Social Network Kit
+BlaBlaNet- Social Network Kit
 ===========================
 
-[![Build Status](https://geditlab.com/blablanet/BlaBlanet)](https://travis-ci.org/humhub/humhub)
+[![Build Status](https://geditlab.com/blablanet/BlaBlanet)]
 
 BlaBlaNet is a feature rich and highly flexible OpenSource Social Network Kit written in PHP.
 
