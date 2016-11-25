@@ -13,6 +13,10 @@ More information:
 - [Documentation & Class Reference](https://blablanet.com/help/develop)
 - [Licence](https://github.com/BlaBlaNet/BlaBlaNet/blob/master/LICENSE)
 
+
+[![Build Status]
+(https://github.com/BlaBlaNet/BlaBlaNet/blob/master/images/screen.png)
+
 # BlaBlaNet-Social-Network install:
 BaBlaNet Social Network is a decentralized Social Network with new improvements and advance add-ons 
 You can BlaBlaNet Social Network Working in https://blablanet.com
