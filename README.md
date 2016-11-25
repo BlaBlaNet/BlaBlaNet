@@ -1,8 +1,6 @@
 BlaBlaNet- Social Network Kit
 ===========================
 
-[![Build Status](https://geditlab.com/blablanet/BlaBlanet)]
-
 BlaBlaNet is a feature rich and highly flexible OpenSource Social Network Kit written in PHP.
 
 It's perfect for individual:
@@ -37,7 +35,7 @@ You can BlaBlaNet Social Network Working in https://blablanet.com
 
     - some form of email server or email gateway such that PHP mail() works.
 
-    - Mysql 5.x or MariaDB or postgres database server.
+    - MariaDB or Postgres database server. Comming soon MongoDB
     
     - ability to schedule jobs with cron.
 
@@ -56,12 +54,7 @@ The stable Version is in :
          
         git clone https://github.com/BlaBlaNet/BlaBlaNet.git
 
-The Developer Testing Versions is in Geditlab there also other versions not public only 
-for developers a working in mayor features :
-        
-        git clone https://geditlab.com/blablanet/BlaBlanet
-
-    - and then you can pick up the latest changes at any time with
+and them
 
         git pull
 
