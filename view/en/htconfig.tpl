@@ -117,3 +117,23 @@ App::$config['system']['theme'] = 'suckerberg';
 //ini_set('error_log','php.out'); 
 //ini_set('log_errors','1'); 
 //ini_set('display_errors', '0');
+
+///////////////META TAGS CONFIGURATION HOME BASE////////////////////////////////
+//App::$config['metatag']['hreflang'] = '<link rel="alternate" href="https://blablanet.com/" hreflang="en" />';
+App::$config['metatag']['description'] = '<meta name="description" content="BlaBlanet the social network service. Connect with friends, family . Share photos and videos, send messages and chat with people you know." />
+';
+App::$config['metatag']['robots'] = '<meta name="robots" content="index" />';
+App::$config['metatag']['keywords'] = '<meta name="keywords" content="social, network, networking, service, friends, family, vpn, blogs, photos, videos, files, directory, encryption" />';
+//////Registration Description
+App::$config['metatag']['descriptionR'] = '<meta name="description" content="Register in BlaBlanet the decentralized social network service here you own your privacy and your data." />';
+//////Login Description
+App::$config['metatag']['descriptionL'] = '<meta name="description" content="Login in BlaBlanet enjoy with Friend share your ideas and feelings." />';
+/////Directory Description
+App::$config['metatag']['descriptionD'] = '<meta name="description" content="Here you will find the latest friends Join BlablaNet Social Network." />';
+////Directory PUBLIC
+App::$config['metatag']['descriptionP'] = '<meta name=" The latest Public Sites by BlaBlaNet." />';
+///Directory APPS
+App::$config['metatag']['descriptionA'] = '<meta name="description" content="BlaBlanet Social Network Lastes Applications, Apps, utils and extras for enjoy." />';
+////Latest News
+App::$config['metatag']['descriptionN'] = '<meta name=" The latest News Around the World update 24 hours in BlaBlaNet Social Network." />';
+

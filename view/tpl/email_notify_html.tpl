@@ -21,6 +21,7 @@
 	<tr><td style="padding:11px 0;" colspan="2">{{$hitemlink}}</td></tr>
         <tr><td></td><td>{{$thanks}}</td></tr>
 	<tr><td></td><td>{{$site_admin}}</td></tr>
+        <tr><td></td><td>{{$nsettings}}</td></tr>
 <td
         style="text-align:center;margin-left:auto;margin-right:auto;"><strong><a
         href="{{$siteurl}}/settings">Mail Opt-out </a></strong></td>

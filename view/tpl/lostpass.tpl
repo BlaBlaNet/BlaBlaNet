@@ -9,7 +9,7 @@
 <div id="login-name-wrapper">
         <label for="login-name" id="label-login-name">{{$name}}</label>
         <input type="text" maxlength="60" name="login-name" id="login-name" value="" />
-		<input type="submit" name="submit" id="lostpass-submit-button" value="{{$submit}}" onsubmit="return checkform(this);" />
+		<input type="submit" name="submit" id="lostpass-submit-button" onsubmit="return checkform(this);" value="{{$submit}}"/>
 </div>
 <!-- START CAPTCHA -->
 <br>
@@ -70,6 +70,9 @@ if (str1 == str2){
 return true;
 }else{
 return false;
+notice( t('No valid account found.') . EOL);
+                        goaway(z_root());
+
 }
 }
 
