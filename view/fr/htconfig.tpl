@@ -87,3 +87,24 @@ App::$config['system']['directory_mode']  = DIRECTORY_MODE_NORMAL;
 
 App::$config['system']['theme'] = 'suckerberg';
 
+
+///////////////META TAGS CONFIGURATION HOME BASE////////////////////////////////
+//$a->config['metatag']['hreflang'] = '<link rel="alternate" href="https://blablanet.com/" hreflang="en" />';
+$a->config['metatag']['description'] = '<meta name="description" content="BlaBlanet Ants Node the social network service. Connect with friends, family . Share photos and videos, send messages and chat with people you know." />
+';
+$a->config['metatag']['robots'] = '<meta name="robots" content="index" />';
+$a->config['metatag']['keywords'] = '<meta name="keywords" content="social, network, networking, service, friends, family, vpn, blogs, photos, videos, files, directory, encryption" />';
+//////Registration Description
+$a->config['metatag']['descriptionR'] = '<meta name="description" content="Register in BlaBlanet the decentralized social network service here you own your privacy and your data." />';
+//////Login Description
+$a->config['metatag']['descriptionL'] = '<meta name="description" content="Login in BlaBlanet enjoy with Friend share your ideas and feelings." />';
+/////Directory Description
+$a->config['metatag']['descriptionD'] = '<meta name="description" content="Here you will find the latest friends Join BlablaNet Social Network." />';
+////Directory PUBLIC
+$a->config['metatag']['descriptionP'] = '<meta name=" The latest Public Sites by BlaBlaNet." />';
+///Directory APPS
+$a->config['metatag']['descriptionA'] = '<meta name="description" content="BlaBlanet Social Network Lastes Applications, Apps, utils and extras for enjoy." />';
+////Latest News
+$a->config['metatag']['descriptionN'] = '<meta name=" The latest News Around the World update 24 hours in BlaBlaNet Social Network." />';
+
+

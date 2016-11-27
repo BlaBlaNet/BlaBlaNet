@@ -120,7 +120,7 @@ App::$config['system']['theme'] = 'suckerberg';
 
 ///////////////META TAGS CONFIGURATION HOME BASE////////////////////////////////
 //App::$config['metatag']['hreflang'] = '<link rel="alternate" href="https://blablanet.com/" hreflang="en" />';
-App::$config['metatag']['description'] = '<meta name="description" content="BlaBlanet the social network service. Connect with friends, family . Share photos and videos, send messages and chat with people you know." />
+App::$config['metatag']['description'] = '<meta name="description" content="BlaBlanet Ants Node  the social network service. Connect with friends, family . Share photos and videos, send messages and chat with people you know." />
 ';
 App::$config['metatag']['robots'] = '<meta name="robots" content="index" />';
 App::$config['metatag']['keywords'] = '<meta name="keywords" content="social, network, networking, service, friends, family, vpn, blogs, photos, videos, files, directory, encryption" />';
