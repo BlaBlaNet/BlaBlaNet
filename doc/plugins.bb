@@ -295,7 +295,7 @@ If you want to keep your plugin hidden from the siteinfo page, simply create a f
 
 ***Porting Friendica Plugins***
 
-$Projectname uses a similar plugin architecture to the Friendica project. The authentication, identity, and permissions systems are completely different. Many Friendica can be ported reasonably easily by renaming a few functions - and then ensuring that the permissions model is adhered to. The functions which need to be renamed are:
+ The authentication, identity, and permissions systems are completely different. Many Friendica can be ported reasonably easily by renaming a few functions - and then ensuring that the permissions model is adhered to. The functions which need to be renamed are:
 
 [li] Friendica's pluginname_install() is pluginname_load()[/li]
 
@@ -309,4 +309,4 @@ $Projectname has _install and _uninstall functions but these are used differentl
 
 Changing these will often allow your plugin to function, but please double check all your permission and identity code because the concepts behind it are completely different in $Projectname. Many structured data names (especially DB schema columns) are also quite different.
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

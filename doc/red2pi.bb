@@ -339,4 +339,4 @@ Save and exit.
 Follow the instructions here:
 [url=https://github.com/friendica/friendica/wiki/Running-Friendica-with-SSL]https://github.com/friendica/friendica/wiki/Running-Friendica-with-SSL[/url]
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

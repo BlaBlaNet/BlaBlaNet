@@ -36,3 +36,5 @@ minimum_feedcheck_minutes - lowest setting allowed for polling rss feeds
 chatrooms - maximum chatrooms
 chatters_inroom - maximum chatters per room
 access_tokens - maximum number of Guest Access Tokens per channel
+
+#include doc/macros/main_footer_root.bb;

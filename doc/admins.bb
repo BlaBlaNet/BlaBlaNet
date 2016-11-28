@@ -12,4 +12,4 @@
 [h3]Frequently asked questions[/h3]
 [zrl=[baseurl]/help/faq_admins]FAQ For Admins[/zrl]
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

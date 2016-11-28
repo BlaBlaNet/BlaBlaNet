@@ -30,4 +30,4 @@ To translate documentation, or provided documentation in languages other than En
 
 To create documentation that has no equivalent file in English, you can create a new file with a name of your choosing - but you'll also need to provide a localised version of the index page (main.bb in English) to make it accessible from the menu.
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

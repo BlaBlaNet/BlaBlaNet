@@ -28,4 +28,9 @@ For translating documentation, create a directory in */doc* named by the languag
 
 * Administration Guide (pre-install)
 
-#include doc/macros/main_footer.bb;
+* New Theme Framework 
+
+* New Chat System 
+
+
+#include doc/macros/main_footer_root.bb;

@@ -40,10 +40,12 @@ Zot
 API extensions
 	More, more, more.
 
-Evangelism
+Evolution
 	More documentation. More, more, more.
 	Libzot
 
 DNS abstraction for V3
 	Allow a channel to live in an arbitrary "DNS" namespace, for instance "mike@core.BlaBlaNet". Use our directories and zot to find the actual DNS location via redirection. This could potentially allow hubs to be hidden behind tor or alt-roots and accessible only via the matrix.
+
+#include doc/macros/main_footer_root.bb;
  

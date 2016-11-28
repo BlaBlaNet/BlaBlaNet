@@ -8,7 +8,7 @@ The strings used in the UI of BlaBlaNet is translated at [Transifex][1] and then
 included in the git repository at github. If you want to help with translation
 for any language, be it correcting terms or translating BlaBlaNet to a
 currently not supported language, please register an account at transifex.com
-and contact the Redmatrix translation team there.
+and contact the BlaBlaNettranslation team there.
 
 Translating BlaBlaNet is simple. Just use the online tool at transifex. If you
 don't want to deal with git & co. that is fine, we check the status of the
@@ -87,7 +87,7 @@ Known Problems
 
 Links
 ------
-[1]:   http://www.transifex.com/projects/p/red-matrix/
+[1]:   http://www.transifex.com/projects/blablanet/
 
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

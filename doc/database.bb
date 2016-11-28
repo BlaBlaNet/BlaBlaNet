@@ -62,3 +62,4 @@
 [tr][td][zrl=[baseurl]/help/database/db_xprof]xprof[/zrl][/td][td]if this hub is a directory server, contains basic public profile info of everybody in the network[/td][/tr]
 [tr][td][zrl=[baseurl]/help/database/db_xtag]xtag[/zrl][/td][td]if this hub is a directory server, contains tags or interests of everybody in the network[/td][/tr]
 [/table]
+#include doc/macros/main_footer_root.bb;

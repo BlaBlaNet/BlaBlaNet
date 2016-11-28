@@ -1568,7 +1568,8 @@ function widget_admin($arr) {
 		'themes'    => array(z_root() . '/admin/themes/',   t('Themes'),         'themes'),
 		'queue'     => array(z_root() . '/admin/queue',     t('Inspect queue'),  'queue'),
 		'profs'     => array(z_root() . '/admin/profs',     t('Profile Fields'), 'profs'),
-		'dbsync'    => array(z_root() . '/admin/dbsync/',   t('DB updates'),     'dbsync')
+		'dbsync'    => array(z_root() . '/admin/dbsync/',   t('DB updates'),     'dbsync'),
+                'help'      => array(z_root() . '/help/tocAdmin/',  '?')
 
 	);
 

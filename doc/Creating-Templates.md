@@ -90,4 +90,4 @@ Use the CSS file to position the region on the page where desired and optionally
 
 [To be continued] 
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

@@ -18,5 +18,5 @@ If a code issue has been uncovered, please report it on the project bugtracker (
 [li][zrl=[baseurl]/help/problems-following-an-update]Problems following an update[/zrl][/li]
 [/ul]
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;
 

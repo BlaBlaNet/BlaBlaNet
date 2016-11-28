@@ -101,5 +101,5 @@ Options are:
   [*= system.realm_token ]
 [/dl]
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;
 

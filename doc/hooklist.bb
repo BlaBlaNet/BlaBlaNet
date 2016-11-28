@@ -547,3 +547,6 @@ Hooks allow plugins/addons to "hook into" the code at many points and alter the 
 
 [zrl=[baseurl]/help/hook/zot_finger]zot_finger[/zrl]
 	Called when a zot-info packet has been requested (this is our webfinger discovery mechanism)
+
+
+#include doc/macros/main_footer_root.bb;

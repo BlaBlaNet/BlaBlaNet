@@ -75,4 +75,4 @@ theme are as follows:
 If a your_schema_name.css file is found, the content of this file will be attached to the end of style.css.
 This gives the schem developer the possiblity to override any style component.
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

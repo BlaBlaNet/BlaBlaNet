@@ -135,4 +135,4 @@ Foreslåtte Red API utvidelser til Twitter API-et
 *	api/albums/destroy					(R),J
 *	api/friends/permissions				(R),J
 
-
+#include doc/macros/main_footer_root.bb;

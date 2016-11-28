@@ -69,4 +69,4 @@ In the interests of consistency we adopt the following code styling. We may acce
 [b]See Also[/b]
 [zrl=[baseurl]/help/sql_conventions]SQL Conventions[/zrl]
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

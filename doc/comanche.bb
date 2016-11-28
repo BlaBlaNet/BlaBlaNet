@@ -258,4 +258,4 @@ You can use an 'if' construct to make decisions. These are currently based on sy
 
 [/code]
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

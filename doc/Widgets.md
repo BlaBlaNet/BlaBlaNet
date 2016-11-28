@@ -140,4 +140,4 @@ If you want a widget named 'slugfish', create widget/slugfish.php containing
     }
 
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;

@@ -92,4 +92,5 @@ All channels are configured to "ping" their directory server once a month, at so
 
 Channels may be configured to be "hidden" from the directory. These channels may still exist in the directory but will be un-searchable and some "sensitive" personal information will not be stored at all.
 
+#include doc/macros/main_footer_root.bb;
        

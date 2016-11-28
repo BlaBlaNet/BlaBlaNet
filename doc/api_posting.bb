@@ -1,4 +1,4 @@
-[b][size=xx-large]Posting to the Matrix via the API[/size][/b]
+[b][size=xx-large]Posting to the Network via the API[/size][/b]
 
 The API allows you to post to the red# by HTTP POST request. Below you see an example using the command line tool cURL:
 
@@ -22,3 +22,6 @@ To post to a specific channel, replace the email address with the channel nickna
 Instead of calling [observer=1][observer.baseurl][/observer][observer=0]example.com[/observer]/api/statuses/update which returns a json (you could also add .json on the end to clarify) output, you can use [observer.baseurl]/api/statuses/update.xml to get an xml formatted return.
 
 Instead of Basic HTTP Authentification you could also use oAuth.
+
+#include doc/macros/main_footer_root.bb;
+

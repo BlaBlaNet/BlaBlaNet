@@ -75,4 +75,4 @@ Use the custom_home addon available in the main addons repository.
 - PRIMARY. This allows you to run a completely separate 'Network' of directory servers with your own Realm. By default, all servers are on the RED_GLOBAL realm unless the config:system/directory_realm setting is overridden. [i]Do not use this unless you have your own directory_realm.[/i]
 - STANDALONE. This is like primary, except it's a 'Network' all on it's own without talking to any other servers. Use this if you have only one server and want to be segregated from the Red#Matrix directory listings.
 
-#include doc/macros/main_footer.bb;
+#include doc/macros/main_footer_root.bb;
