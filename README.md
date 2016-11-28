@@ -5,8 +5,8 @@ BlaBlaNet is a feature rich and highly flexible OpenSource Social Network Kit wr
 
 It's perfect for individual:
 - Social Intranets
-- Enterprise Social Networks
-- Private Social Networks
+- [Enterprise Social Networks](https://github.com/BlaBlaNet/BlaBlaNet/wiki/Private-Social-Network)
+- [Private Social Networks](https://github.com/BlaBlaNet/BlaBlaNet/wiki/Private-Social-Network)
 
 More information:
 - [Homepage & Demo](https://blablanet.com)
@@ -174,6 +174,8 @@ using web forms.
 ********          THIS NEXT STEP IS IMPORTANT!!!!                ***********
 ****************************************************************************
 ****************************************************************************
+At this Point for Private Social Networks please Visit before continue for more 
+information: https://github.com/BlaBlaNet/BlaBlaNet/wiki/Private-Social-Network
 
 8. Set up a cron job or scheduled task to run the Cron manager once every 10-15 
 minutes to perform background processing and maintenance. Example:
