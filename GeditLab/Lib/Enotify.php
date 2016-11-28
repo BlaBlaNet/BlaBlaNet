@@ -61,6 +61,7 @@ class Enotify {
 		$product    = t('$projectname'); // PLATFORM_NAME;
 		$siteurl    = z_root();
 		$thanks     = t('Thank You,');
+		$nsettings  = t('Notification Settings');
 		$sitename   = get_config('system','sitename');
 		$site_admin = sprintf( t('%s Administrator'), $sitename);
 

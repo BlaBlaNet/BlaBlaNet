@@ -84,7 +84,7 @@ App::$config['system']['directory_mode']  = DIRECTORY_MODE_NORMAL;
 
 // default system theme
 
-App::$config['system']['theme'] = 'suckerberg';
+App::$config['system']['theme'] = 'MrBlue';
 
 ///////////////META TAGS CONFIGURATION HOME BASE////////////////////////////////
 //$a->config['metatag']['hreflang'] = '<link rel="alternate" href="https://blablanet.com/" hreflang="en" />';

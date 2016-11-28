@@ -65,19 +65,19 @@ By default, $nav is placed in the &quot;nav&quot; page region and $content is pl
 
 To select a theme for your page, use the 'theme' tag.
 [code]
-	[theme]suckerberg[/theme]
+	[theme]MrBlue[/theme]
 
 [/code]
-This will select the theme named &quot;suckerberg&quot;. By default your channel's preferred theme will be used.
+This will select the theme named &quot;MrBlue&quot;. By default your channel's preferred theme will be used.
 
 [code]
-	[theme=passion]suckerberg[/theme]
+	[theme=passion]MrBlue[/theme]
 
 [/code]
-This will select the theme named &quot;suckerberg&quot; and select the &quot;passion&quot; schema (theme variant). Alternatively it may be possible to use a condensed theme notation for this. 
+This will select the theme named &quot;MrBlue&quot; and select the &quot;passion&quot; schema (theme variant). Alternatively it may be possible to use a condensed theme notation for this. 
 
 [code]
-	[theme]suckerberg:passion[/theme]
+	[theme]MrBlue:passion[/theme]
 
 [/code]
 

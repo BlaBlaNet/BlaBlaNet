@@ -104,7 +104,7 @@ App::$config['system']['directory_mode']  = DIRECTORY_MODE_NORMAL;
 
 // default system theme
 
-App::$config['system']['theme'] = 'suckerberg';
+App::$config['system']['theme'] = 'MrBlue';
 
 
 // PHP error logging setup
