@@ -54,7 +54,7 @@ Eventually we hope to make this a selectable box from the site admin panel.
 
 [h2]Directory realms[/h2]
 
-Large organisations may wish to use directory 'realms' rather than a single standalone directory. The standard and default realm is known as RED_GLOBAL. By creating a new realm, your organisation has the ability to create its own hierarchy of primary and secondary servers and clients. 
+Large organisations may wish to use directory 'realms' rather than a single standalone directory. The standard and default realm is known as BLA_BLANET. By creating a new realm, your organisation has the ability to create its own hierarchy of primary and secondary servers and clients. 
 
 [code]
 util/config system directory_realm MY_REALM
@@ -62,11 +62,11 @@ util/config system directory_realm MY_REALM
 
 Your realm *must* have a primary directory. Create this first. Then set the realm the same on all sites within your directory realm (servers and clients). 
 
-You may also provide a "sub-realm" that operates indepently from the RED_GLOBAL realm (or any other realm) but allows cross membership and some ability to lookup members of the entire directory space. This has only undergone light testing so be prepared to help out and fix any issues that may arise. A sub-realm contains its parent realm within the realm name.
+You may also provide a "sub-realm" that operates indepently from the BLA_BLANET realm (or any other realm) but allows cross membership and some ability to lookup members of the entire directory space. This has only undergone light testing so be prepared to help out and fix any issues that may arise. A sub-realm contains its parent realm within the realm name.
 
  
 [code]
-util/config system directory_realm RED_GLOBAL:MY_REALM
+util/config system directory_realm BLA_BLANET:MY_REALM
 [/code]
   
 
@@ -84,7 +84,7 @@ util/config system realm_token my-secret-realm-password
 
 Mirroring occurs with a daily transaction log of activities which are shared between directory servers. In the case of directory and profile updates, the channel address performing the update is transmitted, and the other directory servers probe that channel at its source for changes. We do not and should not trust any information given us by other directory servers. We always check the information at the source.  
 
-Ratings are handled slightly differently - an encrypted packet (signed by the channel that created the rating) is passed between the servers. This signature needs to be verified before the rating is accepted. Ratings are always published to the primary directory server and propagated to all other directory servers from there. For this reason there can only be one primary server in a realm. If a misconfigured site claims to be a primary directory, it is ignored in the RED_GLOBAL realm. For other realms there is currently no such protection. Be aware of this when working with alternate realms.  
+Ratings are handled slightly differently - an encrypted packet (signed by the channel that created the rating) is passed between the servers. This signature needs to be verified before the rating is accepted. Ratings are always published to the primary directory server and propagated to all other directory servers from there. For this reason there can only be one primary server in a realm. If a misconfigured site claims to be a primary directory, it is ignored in the BLA_BLANET realm. For other realms there is currently no such protection. Be aware of this when working with alternate realms.  
 
 Newly created directory servers are not provided a "full dump", but for performance reasons and minimal disruption to the other servers in the network, they are brought online slowly. It may take up to a month for a new secondary directory server to provide a full view of the network. Please do not add any secondary servers to the hard-coded list of fallback directory servers until it has been operating as a directory for at least a month.
 
