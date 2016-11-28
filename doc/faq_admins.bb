@@ -72,7 +72,7 @@ Use the custom_home addon available in the main addons repository.
 [/code]
 - The default is NORMAL. This off-loads most directory services to a different server. The server used is the config:system/directory_server. This setting MAY be updated by the code to one of the project secondaries if the current server is unreachable. You should either be in control of this other server, or should trust it to use this setting.
 - SECONDARY. This allows your local site to act as a directory server without exposing your member's queries to another server. It requires extra processing time during the cron polling, and is not recommended to be run on a shared web host.
-- PRIMARY. This allows you to run a completely separate 'Network' of directory servers with your own Realm. By default, all servers are on the RED_GLOBAL realm unless the config:system/directory_realm setting is overridden. [i]Do not use this unless you have your own directory_realm.[/i]
+- PRIMARY. This allows you to run a completely separate 'Network' of directory servers with your own Realm. By default, all servers are on the BLA_BLANET realm unless the config:system/directory_realm setting is overridden. [i]Do not use this unless you have your own directory_realm.[/i]
 - STANDALONE. This is like primary, except it's a 'Network' all on it's own without talking to any other servers. Use this if you have only one server and want to be segregated from the Red#Matrix directory listings.
 
 #include doc/macros/main_footer_root.bb;

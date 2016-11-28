@@ -931,8 +931,8 @@ function import_xchan($arr,$ud_flags = UPDATE_FLAGS_UPDATED, $ud_arr = null) {
 
 		// We're some kind of directory server. However we can only add directory information
 		// if the entry is in the same realm (or is a sub-realm). Sub-realms are denoted by
-		// including the parent realm in the name. e.g. 'RED_GLOBAL:foo' would allow an entry to
-		// be in directories for the local realm (foo) and also the RED_GLOBAL realm.
+		// including the parent realm in the name. e.g. 'BLA_BLANET:foo' would allow an entry to
+		// be in directories for the local realm (foo) and also the BLA_BLANET realm.
 
 		if(array_key_exists('profile',$arr) && is_array($arr['profile']) && (! $other_realm)) {
 			$profile_changed = import_directory_profile($xchan_hash,$arr['profile'],$address,$ud_flags, 1);

@@ -6,7 +6,7 @@ namespace GeditLab\Module;
  * With no args, return a JSON array of directory servers for this realm.
  *
  * @FIXME Not yet implemented: Some realms may require authentication to join their realm.
- * The RED_GLOBAL realm does not require authentication.
+ * The BLA_BLANET realm does not require authentication.
  * We would then need a flag in the site table to indicate that they've been
  * validated by the PRIMARY directory for that realm. Sites claiming to be PRIMARY
  * but are not the realm PRIMARY will be marked invalid.

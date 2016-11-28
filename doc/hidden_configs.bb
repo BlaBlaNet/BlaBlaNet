@@ -43,7 +43,7 @@ Options are:
   [*= system.default_permissions_role ] If set to a valid permissions role name, use that role for the first channel created by a new account and don't ask for the "Channel Type" on the channel creation form. Examples of valid names are: 'social', 'social_restricted', 'social_private',  'forum', 'forum_restricted' and 'forum_private'.  Read more about permissions roles [zrl=[baseurl]/help/roles]here[/zrl].
   [*= system.default_profile_photo ] Set the profile photo that new channels start with. This should contain the name of a directory located under [font=courier]images/default_profile_photos/[/font], or be left unset. If not set then 'rainbow_man' is assumed.
   [*= system.directorytags ] Set the number of keyword tags displayed on the directory page. Default is 50 unless set to a  positive integer.
-  [*= system.disable_directory_keywords ] If '1', do not show directory keywords. If the hub is a directory server, prevent returning tags to any directory clients. Please do not set this for directory servers in the RED_GLOBAL realm. 
+  [*= system.disable_directory_keywords ] If '1', do not show directory keywords. If the hub is a directory server, prevent returning tags to any directory clients. Please do not set this for directory servers in the BLA_BLANET realm. 
   [*= system.disable_discover_tab ] This allows you to completely disable the ability to discover public content from external sites.
   [*= system.disable_dreport ] If '1', don't store or link to delivery reports
   [*= system.dlogfile ] Logfile to use for logging development errors.  Exactly the same as logger otherwise.  This isn't magic, and requires your own logging statements.  Developer tool.
