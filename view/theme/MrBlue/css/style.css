@@ -1,8 +1,8 @@
 **
  * MrBlue
- *
- * Based on redbasic
- * by Sean Tilley <sean@deadsuperhero.com>
+ * 
+ * Based on a Theme of Sean Tilley
+ * 
  */
 
 
@@ -46,7 +46,7 @@ span.oembed.video {
 span.oembed.video a {
 	float: left;
 	position: relative;
-	width: 755%;
+	width:120%;
 }
 
 span.item.app {

@@ -1899,3 +1899,7 @@ function channel_reddress($channel) {
 		return '';
 	return strtolower($channel['channel_address'] . '@' . App::get_hostname());
 }
+
+
+
+
