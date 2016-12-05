@@ -19,7 +19,7 @@ class Display {
 		$theme             = ((x($_POST,'theme')) ? notags(trim($_POST['theme']))  : $existing_theme);
 
 		if(! $theme)
-			$theme = 'redbasic';
+			$theme = 'Zafiro';
 
 		$mobile_theme      = ((x($_POST,'mobile_theme')) ? notags(trim($_POST['mobile_theme']))  : '');
 		$preload_images    = ((x($_POST,'preload_images')) ? intval($_POST['preload_images'])  : 0);
@@ -102,7 +102,7 @@ class Display {
 
 		$default_theme = get_config('system','theme');
 		if(! $default_theme)
-			$default_theme = 'redbasic';
+			$default_theme = 'Zafiro';
 
 		$themespec = explode(':', \App::$channel['channel_theme']);
 		$existing_theme  = $themespec[0];

@@ -20,7 +20,7 @@ class Browser extends DAV\Browser\Plugin {
 	/**
 	 * @see set_writeable()
 	 * @see \Sabre\DAV\Auth\Backend\BackendInterface
-	 * @var RedBasicAuth
+	 * @var ZafiroAuth
 	 */
 	private $auth;
 
@@ -36,7 +36,7 @@ class Browser extends DAV\Browser\Plugin {
 	 * Disable assets with $enableAssets = false. Should get some thumbnail views
 	 * anyway.
 	 *
-	 * @param RedBasicAuth &$auth
+	 * @param ZafiroAuth &$auth
 	 */
 	public function __construct(&$auth) {
 		$this->auth = $auth;

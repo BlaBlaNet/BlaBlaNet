@@ -371,8 +371,8 @@ msgstr "Sicherer Modus"
 #: ../../mod/filestorage.php:159 ../../mod/admin.php:428
 #: ../../mod/settings.php:579 ../../mod/removeme.php:60
 #: ../../mod/connedit.php:647 ../../mod/connedit.php:675
-#: ../../view/theme/redbasic/php/config.php:104
-#: ../../view/theme/redbasic/php/config.php:129 ../../boot.php:1554
+#: ../../view/theme/Zafiro/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:129 ../../boot.php:1554
 msgid "No"
 msgstr "Nein"
 
@@ -383,8 +383,8 @@ msgstr "Nein"
 #: ../../mod/menu.php:151 ../../mod/filestorage.php:151
 #: ../../mod/filestorage.php:159 ../../mod/admin.php:430
 #: ../../mod/settings.php:579 ../../mod/removeme.php:60
-#: ../../view/theme/redbasic/php/config.php:104
-#: ../../view/theme/redbasic/php/config.php:129 ../../boot.php:1554
+#: ../../view/theme/Zafiro/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:129 ../../boot.php:1554
 msgid "Yes"
 msgstr "Ja"
 
@@ -534,7 +534,7 @@ msgstr "Beschreibung (optional)"
 #: ../../mod/connedit.php:704 ../../mod/mail.php:355 ../../mod/appman.php:99
 #: ../../mod/pconfig.php:108 ../../mod/poll.php:68
 #: ../../mod/bulksetclose.php:24 ../../view/theme/apw/php/config.php:256
-#: ../../view/theme/redbasic/php/config.php:99
+#: ../../view/theme/Zafiro/php/config.php:99
 msgid "Submit"
 msgstr "Bestätigen"
 
@@ -8787,7 +8787,7 @@ msgid "Monospace"
 msgstr "Monospace (dicktengleich)"
 
 #: ../../view/theme/apw/php/config.php:259
-#: ../../view/theme/redbasic/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:102
 msgid "Theme settings"
 msgstr "Theme-Einstellungen"
 
@@ -8796,7 +8796,7 @@ msgid "Set scheme"
 msgstr "Schema festlegen"
 
 #: ../../view/theme/apw/php/config.php:261
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set font-size for posts and comments"
 msgstr "Schriftgröße für Beiträge und Kommentare festlegen"
 
@@ -8916,131 +8916,131 @@ msgstr "Linker offset der Seitenleiste"
 msgid "Right offset of the aside element"
 msgstr "Rechter offset der Seitenleiste"
 
-#: ../../view/theme/redbasic/php/config.php:82
+#: ../../view/theme/Zafiro/php/config.php:82
 msgid "Light (Red Matrix default)"
 msgstr "Hell (RedMatrix-Voreinstellung)"
 
-#: ../../view/theme/redbasic/php/config.php:103
+#: ../../view/theme/Zafiro/php/config.php:103
 msgid "Select scheme"
 msgstr "Schema wählen"
 
-#: ../../view/theme/redbasic/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:104
 msgid "Narrow navbar"
 msgstr "Schmale Navigationsleiste"
 
-#: ../../view/theme/redbasic/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:105
 msgid "Navigation bar background color"
 msgstr "Hintergrundfarbe der Navigationsleiste"
 
-#: ../../view/theme/redbasic/php/config.php:106
+#: ../../view/theme/Zafiro/php/config.php:106
 msgid "Navigation bar gradient top color"
 msgstr "Farbverlauf der Navigationsleiste: Farbe oben"
 
-#: ../../view/theme/redbasic/php/config.php:107
+#: ../../view/theme/Zafiro/php/config.php:107
 msgid "Navigation bar gradient bottom color"
 msgstr "Farbverlauf der Navigationsleiste: Farbe unten"
 
-#: ../../view/theme/redbasic/php/config.php:108
+#: ../../view/theme/Zafiro/php/config.php:108
 msgid "Navigation active button gradient top color"
 msgstr "Navigations-Button aktiv: Farbe für Farbverlauf oben"
 
-#: ../../view/theme/redbasic/php/config.php:109
+#: ../../view/theme/Zafiro/php/config.php:109
 msgid "Navigation active button gradient bottom color"
 msgstr "Navigations-Button aktiv: Farbe für Farbverlauf unten"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Navigation bar border color "
 msgstr "Farbe für den Rand der Navigationsleiste"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "Navigation bar icon color "
 msgstr "Farbe für die Icons der Navigationsleiste"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Navigation bar active icon color "
 msgstr "Farbe für aktive Icons der Navigationsleiste"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "link color"
 msgstr "Farbe für Links"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "Set font-color for banner"
 msgstr "Farbe der Schrift des Banners"
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Set the background color"
 msgstr "Hintergrundfarbe festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Set the background image"
 msgstr "Hintergrundbild festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Set the background color of items"
 msgstr "Hintergrundfarbe für Beiträge festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Set the background color of comments"
 msgstr "Hintergrundfarbe für Kommentare festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Set the border color of comments"
 msgstr "Farbe des Randes von Kommentaren festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "Set the indent for comments"
 msgstr "Einzugsbreite für Kommentare festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set the basic color for item icons"
 msgstr "Grundfarbe für Beitragssymbole festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set the hover color for item icons"
 msgstr "Farbe für Beitragssymbole unter dem Mauszeiger festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set font-size for the entire application"
 msgstr "Schriftgröße für die gesamte Anwendung festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Example: 14px"
 msgstr "Beispiel: 14px"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set font-color for posts and comments"
 msgstr "Schriftfarbe für Beiträge und Kommentare festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set radius of corners"
 msgstr "Eckenradius festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Set shadow depth of photos"
 msgstr "Schattentiefe von Fotos festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set maximum width of content region in pixel"
 msgstr "Maximalbreite des Inhaltsbereichs in Pixel festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Leave empty for default width"
 msgstr "Leer lassen für Standardbreite"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Center page content"
 msgstr "Seiteninhalt zentrieren"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Mindestdeckkraft der Navigationsleiste festlegen - zum Verstecken"
 
-#: ../../view/theme/redbasic/php/config.php:131
+#: ../../view/theme/Zafiro/php/config.php:131
 msgid "Set size of conversation author photo"
 msgstr "Größe der Avatare von Themenstartern festlegen"
 
-#: ../../view/theme/redbasic/php/config.php:132
+#: ../../view/theme/Zafiro/php/config.php:132
 msgid "Set size of followup author photos"
 msgstr "Größe der Avatare von Kommentatoren festlegen"
 

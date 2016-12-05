@@ -29,7 +29,7 @@ class File extends DAV\Node implements DAV\IFile {
 	private $data;
 	/**
 	 * @see \Sabre\DAV\Auth\Backend\BackendInterface
-	 * @var \RedMatrix\RedDAV\RedBasicAuth
+	 * @var \RedMatrix\RedDAV\ZafiroAuth
 	 */
 	private $auth;
 	/**

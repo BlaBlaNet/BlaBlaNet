@@ -38,13 +38,13 @@ Inside it, put the following information - edit as needed
 
     function mytheme_init(&$a) {
 
-        App::$theme_info['extends'] = 'redbasic';
+        App::$theme_info['extends'] = 'Zafiro';
 
 
     }
 
 
-Remember to rename the mytheme_init function with your theme name. In this case we will be extending the theme 'redbasic'. 
+Remember to rename the mytheme_init function with your theme name. In this case we will be extending the theme 'Zafiro'. 
 
 
 Now create another file. We call this a PCSS file, but it's really a PHP file.
@@ -55,13 +55,13 @@ In it, put the following:
 
     <?php
 
-    require_once('view/theme/redbasic/php/style.php');
+    require_once('view/theme/Zafiro/php/style.php');
 
     echo @file_get_contents('view/theme/mytheme/css/style.css');
 
 
 
-That's it. This tells the software to read the PCSS information for the redbasic theme first, and then read our CSS file which will just consist of changes we want to make from our parent theme (redbasic). 
+That's it. This tells the software to read the PCSS information for the Zafiro theme first, and then read our CSS file which will just consist of changes we want to make from our parent theme (Zafiro). 
 
 Now create the actual CSS file for your theme.  Put it in view/theme/mytheme/css/style.css (where we just told the software to look for it). For our example, we'll just change the body background color so you can see that it works. You can use any CSS you'd like. 
 
@@ -75,20 +75,20 @@ You've just successfully created a derived theme. This needs to be enabled in th
 
 **Lesson 2**
 
-If you want to use the redbasic schemas for your derived theme, you have to do a bit more.
+If you want to use the Zafiro schemas for your derived theme, you have to do a bit more.
 
-Do everything as above, but don't create view/theme/mytheme/php/style.php, but copy instead  view/theme/redbasic/php/style.php to view/theme/mytheme/php/style.php. Modify that file and remove (or comment out) these two lines:
+Do everything as above, but don't create view/theme/mytheme/php/style.php, but copy instead  view/theme/Zafiro/php/style.php to view/theme/mytheme/php/style.php. Modify that file and remove (or comment out) these two lines:
 
-	if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'redbasic')
-		set_pconfig(local_channel(), 'redbasic', 'schema', '---');
+	if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'Zafiro')
+		set_pconfig(local_channel(), 'Zafiro', 'schema', '---');
 	
 Also add this line at the bottom:
 
 	echo @file_get_contents('view/theme/mytheme/css/style.css');
 
-To show the schema selector you have to copy view/theme/redbasic/tpl/theme_settings.tpl to  view/theme/mytheme/tpl/theme_settings.tpl. Modify that file and replace the lines:
+To show the schema selector you have to copy view/theme/Zafiro/tpl/theme_settings.tpl to  view/theme/mytheme/tpl/theme_settings.tpl. Modify that file and replace the lines:
 
-	{{if $theme == redbasic}}
+	{{if $theme == Zafiro}}
 	{{include file="field_select.tpl" field=$schema}}
 	{{/if}}
 

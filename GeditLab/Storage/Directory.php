@@ -46,7 +46,7 @@ class Directory extends DAV\Node implements DAV\ICollection, DAV\IQuota {
 	 * @brief Sets up the directory node, expects a full path.
 	 *
 	 * @param string $ext_path a full path
-	 * @param RedBasicAuth &$auth_plugin
+	 * @param ZafiroAuth &$auth_plugin
 	 */
 	public function __construct($ext_path, &$auth_plugin) {
 //		$ext_path = urldecode($ext_path);

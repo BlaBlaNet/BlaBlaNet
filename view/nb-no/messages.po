@@ -1550,7 +1550,7 @@ msgstr "Beskriv (valgfritt)"
 #: ../../mod/mood.php:134 ../../mod/mail.php:355 ../../mod/appman.php:99
 #: ../../mod/poll.php:68 ../../mod/bulksetclose.php:24
 #: ../../view/theme/apw/php/config.php:256
-#: ../../view/theme/redbasic/php/config.php:97
+#: ../../view/theme/Zafiro/php/config.php:97
 msgid "Submit"
 msgstr "Send"
 
@@ -3947,14 +3947,14 @@ msgid "Settings updated."
 msgstr "Innstillinger oppdatert."
 
 #: ../../mod/settings.php:573 ../../mod/api.php:106 ../../mod/admin.php:419
-#: ../../mod/removeme.php:60 ../../view/theme/redbasic/php/config.php:102
-#: ../../view/theme/redbasic/php/config.php:127 ../../boot.php:1556
+#: ../../mod/removeme.php:60 ../../view/theme/Zafiro/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:127 ../../boot.php:1556
 msgid "No"
 msgstr "Nei"
 
 #: ../../mod/settings.php:573 ../../mod/api.php:105 ../../mod/admin.php:421
-#: ../../mod/removeme.php:60 ../../view/theme/redbasic/php/config.php:102
-#: ../../view/theme/redbasic/php/config.php:127 ../../boot.php:1556
+#: ../../mod/removeme.php:60 ../../view/theme/Zafiro/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:127 ../../boot.php:1556
 msgid "Yes"
 msgstr "Ja"
 
@@ -8586,7 +8586,7 @@ msgid "Monospace"
 msgstr "Monospace"
 
 #: ../../view/theme/apw/php/config.php:259
-#: ../../view/theme/redbasic/php/config.php:100
+#: ../../view/theme/Zafiro/php/config.php:100
 msgid "Theme settings"
 msgstr "Temainnstillinger"
 
@@ -8595,7 +8595,7 @@ msgid "Set scheme"
 msgstr "Angi skjema"
 
 #: ../../view/theme/apw/php/config.php:261
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set font-size for posts and comments"
 msgstr "Angi skriftstørrelse for innlegg og kommentarer"
 
@@ -8715,131 +8715,131 @@ msgstr "Til venstre for sidestolpen"
 msgid "Right offset of the aside element"
 msgstr "Til høyre for sidestolpen"
 
-#: ../../view/theme/redbasic/php/config.php:82
+#: ../../view/theme/Zafiro/php/config.php:82
 msgid "Light (BlaBlaNet default)"
 msgstr "Lys (BlaBlaNet standard)"
 
-#: ../../view/theme/redbasic/php/config.php:101
+#: ../../view/theme/Zafiro/php/config.php:101
 msgid "Select scheme"
 msgstr "Velg skjema"
 
-#: ../../view/theme/redbasic/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:102
 msgid "Narrow navbar"
 msgstr "Smal navigasjonslinje"
 
-#: ../../view/theme/redbasic/php/config.php:103
+#: ../../view/theme/Zafiro/php/config.php:103
 msgid "Navigation bar background color"
 msgstr "Navigasjonslinjens bakgrunnsfarge"
 
-#: ../../view/theme/redbasic/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:104
 msgid "Navigation bar gradient top color"
 msgstr "Navigasjonslinjens graderte toppfarge"
 
-#: ../../view/theme/redbasic/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:105
 msgid "Navigation bar gradient bottom color"
 msgstr "Navigasjonslinjens graderte bunnfarge"
 
-#: ../../view/theme/redbasic/php/config.php:106
+#: ../../view/theme/Zafiro/php/config.php:106
 msgid "Navigation active button gradient top color"
 msgstr "Aktiv navigasjonsknapp sin graderte toppfarge"
 
-#: ../../view/theme/redbasic/php/config.php:107
+#: ../../view/theme/Zafiro/php/config.php:107
 msgid "Navigation active button gradient bottom color"
 msgstr "Aktiv navigasjonsknapp sin graderte bunnfarge"
 
-#: ../../view/theme/redbasic/php/config.php:108
+#: ../../view/theme/Zafiro/php/config.php:108
 msgid "Navigation bar border color "
 msgstr "Navigasjonslinjens kantfarge"
 
-#: ../../view/theme/redbasic/php/config.php:109
+#: ../../view/theme/Zafiro/php/config.php:109
 msgid "Navigation bar icon color "
 msgstr "Navigasjonslinjens ikonfarge"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Navigation bar active icon color "
 msgstr "Navigasjonslinjens aktive ikoners farge"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "link color"
 msgstr "lenkefarge"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Set font-color for banner"
 msgstr "Angi skriftfargen for banneret"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "Set the background color"
 msgstr "Angi bakgrunnsfargen"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "Set the background image"
 msgstr "Angi bakgrunnsbilde"
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Set the background color of items"
 msgstr "Angi bakgrunnsfargen til elementer"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Set the background color of comments"
 msgstr "Angi bakgrunnsfargen til kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Set the border color of comments"
 msgstr "Angi kantfargen til kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Set the indent for comments"
 msgstr "Angi innrykket til kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Set the basic color for item icons"
 msgstr "Angi grunnfargen for elementikoner"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "Set the hover color for item icons"
 msgstr "Angi fargen til elementikoner ved berøring"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set font-size for the entire application"
 msgstr "Angi skriftstørrelsen for hele programmet"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Example: 14px"
 msgstr "Eksempel: 14px"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set font-color for posts and comments"
 msgstr "Angi skriftfargen for innlegg og kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set radius of corners"
 msgstr "Angi hjørneradius"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set shadow depth of photos"
 msgstr "Angi skyggedybden til bilder"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set maximum width of content region in pixel"
 msgstr "Angi største bredde for innholdsregionen i pixler"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Leave empty for default width"
 msgstr "La feltet stå tomt for å bruke standard bredde"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Center page content"
 msgstr "Midtstill sideinnhold"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Angi minste dekkevne for navigasjonslinjen - for å skjule den"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Set size of conversation author photo"
 msgstr "Angi størrelsen for samtalens forfatterbilde"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Set size of followup author photos"
 msgstr "Angi størrelsen på forfatterbilder ved oppfølging"
 

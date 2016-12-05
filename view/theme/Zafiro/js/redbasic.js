@@ -1,5 +1,5 @@
 /**
- * redbasic theme specific JavaScript
+ * Zafiro theme specific JavaScript
  */
 $(document).ready(function() {
 

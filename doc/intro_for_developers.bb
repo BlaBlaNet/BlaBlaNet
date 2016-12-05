@@ -102,9 +102,9 @@
 
 This is a short documentation on what I found while trying to modify $Projectname's appearance.
 
-First, you'll need to create a new theme. This is in /view/theme, and I chose to copy 'redbasic' since it's the only available for now. Let's assume I named it .
+First, you'll need to create a new theme. This is in /view/theme, and I chose to copy 'Zafiro' since it's the only available for now. Let's assume I named it .
 
-Oh, and don't forget to rename the _init function in /php/theme.php to be _init() instead of redbasic_init().
+Oh, and don't forget to rename the _init function in /php/theme.php to be _init() instead of Zafiro_init().
 
 At that point, if you need to add javascript or css files, add them to /js or /css, and then &quot;register&quot; them in _init() through head_add_js('file.js') and head_add_css('file.css').
 

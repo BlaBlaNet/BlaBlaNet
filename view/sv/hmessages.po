@@ -2135,7 +2135,7 @@ msgstr "Kommentera"
 #: ../../mod/appman.php:99 ../../mod/mood.php:135 ../../mod/mail.php:355
 #: ../../mod/xchan.php:11 ../../mod/rate.php:153 ../../mod/profiles.php:667
 #: ../../mod/poll.php:68 ../../view/theme/apw/php/config.php:256
-#: ../../view/theme/redbasic/php/config.php:99
+#: ../../view/theme/Zafiro/php/config.php:99
 msgid "Submit"
 msgstr "Skicka"
 
@@ -8256,17 +8256,17 @@ msgid "Monospace"
 msgstr "Monospace"
 
 #: ../../view/theme/apw/php/config.php:259
-#: ../../view/theme/redbasic/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:102
 msgid "Theme settings"
 msgstr "Temainställningar"
 
 #: ../../view/theme/apw/php/config.php:260
-#: ../../view/theme/redbasic/php/config.php:103
+#: ../../view/theme/Zafiro/php/config.php:103
 msgid "Set scheme"
 msgstr "Välj variant"
 
 #: ../../view/theme/apw/php/config.php:261
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set font-size for posts and comments"
 msgstr "Välj textstorlek för inlägg och kommentarer"
 
@@ -8386,127 +8386,127 @@ msgstr "Vänster offset för sidoelement"
 msgid "Right offset of the aside element"
 msgstr "Höger offset för sidoelement"
 
-#: ../../view/theme/redbasic/php/config.php:84
+#: ../../view/theme/Zafiro/php/config.php:84
 msgid "Light (BlaBlaNet default)"
 msgstr "Light (standard för BlaBlaNet)"
 
-#: ../../view/theme/redbasic/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:104
 msgid "Narrow navbar"
 msgstr "Smal navigeringslist"
 
-#: ../../view/theme/redbasic/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:105
 msgid "Navigation bar background color"
 msgstr "Navigeringslistens bakgrundsfärg"
 
-#: ../../view/theme/redbasic/php/config.php:106
+#: ../../view/theme/Zafiro/php/config.php:106
 msgid "Navigation bar gradient top color"
 msgstr "Övre gradientfärg i navigeringslisten"
 
-#: ../../view/theme/redbasic/php/config.php:107
+#: ../../view/theme/Zafiro/php/config.php:107
 msgid "Navigation bar gradient bottom color"
 msgstr "Undre gradientfärg i navigeringslisten"
 
-#: ../../view/theme/redbasic/php/config.php:108
+#: ../../view/theme/Zafiro/php/config.php:108
 msgid "Navigation active button gradient top color"
 msgstr "Övre gradientfärg på aktiv knapp i navigeringslisten"
 
-#: ../../view/theme/redbasic/php/config.php:109
+#: ../../view/theme/Zafiro/php/config.php:109
 msgid "Navigation active button gradient bottom color"
 msgstr "Undre gradientfärg på aktiv knapp i navigeringslisten"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Navigation bar border color "
 msgstr "Färg på navigeringslistens kant"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "Navigation bar icon color "
 msgstr "Färg på ikoner i navigeringslisten"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Navigation bar active icon color "
 msgstr "Färg på aktiv ikon i navigeringslisten"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "link color"
 msgstr "Länkfärg"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "Set font-color for banner"
 msgstr "Välj textfärg för sidhuvudet"
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Set the background color"
 msgstr "Välj bakgrundsfärg"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Set the background image"
 msgstr "Välj bakgrundsbild"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Set the background color of items"
 msgstr "Välj bakgrundsfärg för inlägg"
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Set the background color of comments"
 msgstr "Välj bakgrundsfärg för kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Set the border color of comments"
 msgstr "Välj kantfärg för kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "Set the indent for comments"
 msgstr "Välj indrag för kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set the basic color for item icons"
 msgstr "Välj basfärg för inläggsikoner"
 
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set the hover color for item icons"
 msgstr "Välj färg på inläggsikon under muspekare"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set font-size for the entire application"
 msgstr "Välj textstorlek för hela applikationen"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set font-color for posts and comments"
 msgstr "Välj textfärg för inlägg och kommentarer"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set radius of corners"
 msgstr "Välj hörnradie"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Set shadow depth of photos"
 msgstr "Välj skuggdjup för foton"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set maximum width of conversation regions"
 msgstr "Välj maxbredd på konversationsfält"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Center conversation regions"
 msgstr "Centrera konversationsfält"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Välj lägsta opacitet för navigeringslisten - för att dölja den"
 
-#: ../../view/theme/redbasic/php/config.php:131
+#: ../../view/theme/Zafiro/php/config.php:131
 msgid "Set size of conversation author photo"
 msgstr "Välj storlek på foto för trådskapare"
 
-#: ../../view/theme/redbasic/php/config.php:132
+#: ../../view/theme/Zafiro/php/config.php:132
 msgid "Set size of followup author photos"
 msgstr "Välj storlek på svarande personers foton"
 
-#: ../../view/theme/redbasic/php/config.php:133
+#: ../../view/theme/Zafiro/php/config.php:133
 msgid "Sloppy photo albums"
 msgstr "Oordnade fotoalbum"
 
-#: ../../view/theme/redbasic/php/config.php:133
+#: ../../view/theme/Zafiro/php/config.php:133
 msgid "Are you a clean desk or a messy desk person?"
 msgstr "Föredrar du ett tomt eller stökigt skrivbord?"
 

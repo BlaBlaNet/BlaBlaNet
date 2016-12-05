@@ -1,5 +1,5 @@
 /**
- * Redbasic
+ * Zafiro
  *
  * Based on duepuntozero Friendica style
  * Originally by Fabio Comuni <fabrix.xm@gmail.com>
@@ -1916,7 +1916,7 @@ dl.bb-dl > dd > li {
 	content:"\f069";
 }
 
-/* Modified original CSS to match input in Redbasic */
+/* Modified original CSS to match input in Zafiro */
 .jothidden .bootstrap-tagsinput {
 	border: 0px solid transparent;
 	margin-bottom: 0px;

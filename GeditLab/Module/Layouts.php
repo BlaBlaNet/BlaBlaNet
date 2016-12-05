@@ -90,7 +90,7 @@ class Layouts extends \GeditLab\Web\Controller {
 			return;
 		}
 
-		// This feature is not exposed in redbasic ui since it is not clear why one would want to
+		// This feature is not exposed in Zafiro ui since it is not clear why one would want to
 		// download a json encoded pdl file - we dont have a possibility to import it.
 		// Use the buildin share/install feature instead.
 

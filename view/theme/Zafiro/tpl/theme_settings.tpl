@@ -31,13 +31,13 @@
 
 <script>
 	$(function(){
-		$('#id_redbasic_nav_bg,#id_redbasic_nav_gradient_top,#id_redbasic_nav_gradient_bottom,#id_redbasic_nav_active_gradient_top,#id_redbasic_nav_active_gradient_bottom').colorpicker({format: 'rgba'});
-		$('#id_redbasic_nav_bd,#id_redbasic_nav_icon_colour ,#id_redbasic_nav_active_icon_colour,#id_redbasic_banner_colour,#id_redbasic_link_colour,#id_redbasic_background_colour').colorpicker();
-		$('#id_redbasic_toolicon_colour,#id_redbasic_toolicon_activecolour,#id_redbasic_font_colour').colorpicker();
-		$('#id_redbasic_item_colour,#id_redbasic_comment_item_colour,#id_redbasic_comment_border_colour').colorpicker({format: 'rgba'});
+		$('#id_Zafiro_nav_bg,#id_Zafiro_nav_gradient_top,#id_Zafiro_nav_gradient_bottom,#id_Zafiro_nav_active_gradient_top,#id_Zafiro_nav_active_gradient_bottom').colorpicker({format: 'rgba'});
+		$('#id_Zafiro_nav_bd,#id_Zafiro_nav_icon_colour ,#id_Zafiro_nav_active_icon_colour,#id_Zafiro_banner_colour,#id_Zafiro_link_colour,#id_Zafiro_background_colour').colorpicker();
+		$('#id_Zafiro_toolicon_colour,#id_Zafiro_toolicon_activecolour,#id_Zafiro_font_colour').colorpicker();
+		$('#id_Zafiro_item_colour,#id_Zafiro_comment_item_colour,#id_Zafiro_comment_border_colour').colorpicker({format: 'rgba'});
 	});
 </script>
 {{/if}}
 <div class="settings-submit-wrapper" >
-	<button type="submit" name="redbasic-settings-submit" class="btn btn-primary">{{$submit}}</button>
+	<button type="submit" name="Zafiro-settings-submit" class="btn btn-primary">{{$submit}}</button>
 </div>

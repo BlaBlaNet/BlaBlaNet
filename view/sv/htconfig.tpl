@@ -74,5 +74,5 @@ App::$config['system']['directory_mode']  = DIRECTORY_MODE_NORMAL;
 
 // default system theme
 
-App::$config['system']['theme'] = 'redbasic';
+App::$config['system']['theme'] = 'Zafiro';
 

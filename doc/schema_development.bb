@@ -34,7 +34,7 @@ You schema does not need to - and should not - contain all of these values.  Onl
 that differ from the defaults should be listed.  This gives you some very powerful options
 with very few lines of code.
 
-Note the options available differ with each theme.  The options available with the Redbasic 
+Note the options available differ with each theme.  The options available with the Zafiro 
 theme are as follows:
 
 [li] nav_colour

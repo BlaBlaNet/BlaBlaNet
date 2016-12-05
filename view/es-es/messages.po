@@ -358,8 +358,8 @@ msgstr "Modo seguro"
 #: ../../mod/filestorage.php:159 ../../mod/admin.php:428
 #: ../../mod/settings.php:579 ../../mod/removeme.php:60
 #: ../../mod/connedit.php:647 ../../mod/connedit.php:675
-#: ../../view/theme/redbasic/php/config.php:104
-#: ../../view/theme/redbasic/php/config.php:129 ../../boot.php:1554
+#: ../../view/theme/Zafiro/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:129 ../../boot.php:1554
 msgid "No"
 msgstr "No"
 
@@ -370,8 +370,8 @@ msgstr "No"
 #: ../../mod/menu.php:151 ../../mod/filestorage.php:151
 #: ../../mod/filestorage.php:159 ../../mod/admin.php:430
 #: ../../mod/settings.php:579 ../../mod/removeme.php:60
-#: ../../view/theme/redbasic/php/config.php:104
-#: ../../view/theme/redbasic/php/config.php:129 ../../boot.php:1554
+#: ../../view/theme/Zafiro/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:129 ../../boot.php:1554
 msgid "Yes"
 msgstr "Sí"
 
@@ -521,7 +521,7 @@ msgstr "Describir (opcional)"
 #: ../../mod/connedit.php:704 ../../mod/mail.php:355 ../../mod/appman.php:99
 #: ../../mod/pconfig.php:108 ../../mod/poll.php:68
 #: ../../mod/bulksetclose.php:24 ../../view/theme/apw/php/config.php:256
-#: ../../view/theme/redbasic/php/config.php:99
+#: ../../view/theme/Zafiro/php/config.php:99
 msgid "Submit"
 msgstr "Enviar"
 
@@ -8862,7 +8862,7 @@ msgid "Monospace"
 msgstr "Monospace"
 
 #: ../../view/theme/apw/php/config.php:259
-#: ../../view/theme/redbasic/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:102
 msgid "Theme settings"
 msgstr "Ajustes del tema"
 
@@ -8871,7 +8871,7 @@ msgid "Set scheme"
 msgstr "Ajustar esquema"
 
 #: ../../view/theme/apw/php/config.php:261
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set font-size for posts and comments"
 msgstr "Ajustar el tamaño del tipo de letra para entradas y comentarios"
 
@@ -8991,131 +8991,131 @@ msgstr "Desplazamiento izquierdo del panel lateral"
 msgid "Right offset of the aside element"
 msgstr "Desplazamiento derecho del elemento del panel lateral"
 
-#: ../../view/theme/redbasic/php/config.php:82
+#: ../../view/theme/Zafiro/php/config.php:82
 msgid "Light (Red Matrix default)"
 msgstr "Ligero (predeterminado de RedMatrix)"
 
-#: ../../view/theme/redbasic/php/config.php:103
+#: ../../view/theme/Zafiro/php/config.php:103
 msgid "Select scheme"
 msgstr "Elegir un esquema"
 
-#: ../../view/theme/redbasic/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:104
 msgid "Narrow navbar"
 msgstr "Estrechar la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:105
 msgid "Navigation bar background color"
 msgstr "Color de fondo de la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:106
+#: ../../view/theme/Zafiro/php/config.php:106
 msgid "Navigation bar gradient top color"
 msgstr "Color superior del gradiente de la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:107
+#: ../../view/theme/Zafiro/php/config.php:107
 msgid "Navigation bar gradient bottom color"
 msgstr "Color inferior del gradiente de la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:108
+#: ../../view/theme/Zafiro/php/config.php:108
 msgid "Navigation active button gradient top color"
 msgstr "Color superior del gradiente del botón activo de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:109
+#: ../../view/theme/Zafiro/php/config.php:109
 msgid "Navigation active button gradient bottom color"
 msgstr "Color inferior del gradiente del botón activo de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Navigation bar border color "
 msgstr "Color del borde de la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "Navigation bar icon color "
 msgstr "Color del icono de la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Navigation bar active icon color "
 msgstr "Color del icono activo de la barra de navegación"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "link color"
 msgstr "Color del enlace"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "Set font-color for banner"
 msgstr "Ajustar el color del tipo de letra para el \"banner\""
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Set the background color"
 msgstr "Ajustar el color de fondo"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Set the background image"
 msgstr "Ajustar la imagen de fondo"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Set the background color of items"
 msgstr "Ajustar el color de los elementos de fondo"
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Set the background color of comments"
 msgstr "Ajustar el color de fondo de los comentarios"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Set the border color of comments"
 msgstr "Ajustar el color del borde de los comentarios"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "Set the indent for comments"
 msgstr "Ajustar la indentación de los comentarios"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set the basic color for item icons"
 msgstr "Ajustar el color básico para los iconos de los elementos"
 
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set the hover color for item icons"
 msgstr "Ajustar el color flotante para los iconos de los elementos"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set font-size for the entire application"
 msgstr "Ajustar el tamaño de letra para toda la aplicación"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Example: 14px"
 msgstr "Ejemplo: 14px"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set font-color for posts and comments"
 msgstr "Establecer el color de la letra para publicaciones y comentarios"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set radius of corners"
 msgstr "Establecer el radio de curvatura de las esquinas"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Set shadow depth of photos"
 msgstr "Ajustar la profundidad de sombras de las fotos"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set maximum width of content region in pixel"
 msgstr "Ajustar la anchura máxima de la región de contenido, en pixels"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Leave empty for default width"
 msgstr "Dejar en blanco para la anchura predeterminada"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Center page content"
 msgstr "Contenido del centro de la página"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Ajustar la opacidad mínima de la barra de navegación - para ocultarla"
 
-#: ../../view/theme/redbasic/php/config.php:131
+#: ../../view/theme/Zafiro/php/config.php:131
 msgid "Set size of conversation author photo"
 msgstr "Ajustar el tamaño de la foto del autor de la conversación"
 
-#: ../../view/theme/redbasic/php/config.php:132
+#: ../../view/theme/Zafiro/php/config.php:132
 msgid "Set size of followup author photos"
 msgstr "Ajustar el tamaño de foto de los seguidores del autor"
 

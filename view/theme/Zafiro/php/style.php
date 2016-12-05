@@ -6,40 +6,40 @@ if(! App::$install) {
 	$uid = get_theme_uid();
 
 	if($uid) {
-		load_pconfig($uid,'redbasic');
+		load_pconfig($uid,'Zafiro');
 	}
 
 	// Load the owners pconfig
-	$nav_bg = get_pconfig($uid, "redbasic", "nav_bg");
-	$nav_gradient_top = get_pconfig($uid, "redbasic", "nav_gradient_top");
-	$nav_gradient_bottom = get_pconfig($uid, "redbasic", "nav_gradient_bottom");
-	$nav_active_gradient_top = get_pconfig($uid, "redbasic", "nav_active_gradient_top");
-	$nav_active_gradient_bottom = get_pconfig($uid, "redbasic", "nav_active_gradient_bottom");
-	$nav_bd = get_pconfig($uid, "redbasic", "nav_bd");
-	$nav_icon_colour = get_pconfig($uid, "redbasic", "nav_icon_colour");
-	$nav_active_icon_colour = get_pconfig($uid, "redbasic", "nav_active_icon_colour");
-	$narrow_navbar = get_pconfig($uid,'redbasic','narrow_navbar');
-	$banner_colour = get_pconfig($uid,'redbasic','banner_colour');
-	$link_colour = get_pconfig($uid, "redbasic", "link_colour");
-	$schema = get_pconfig($uid,'redbasic','schema');
-	$bgcolour = get_pconfig($uid, "redbasic", "background_colour");
-	$background_image = get_pconfig($uid, "redbasic", "background_image");
-	$toolicon_colour = get_pconfig($uid,'redbasic','toolicon_colour');
-	$toolicon_activecolour = get_pconfig($uid,'redbasic','toolicon_activecolour');
-	$item_colour = get_pconfig($uid, "redbasic", "item_colour");
-	$comment_item_colour = get_pconfig($uid, "redbasic", "comment_item_colour");
-	$comment_border_colour = get_pconfig($uid, "redbasic", "comment_border_colour");
-	$comment_indent = get_pconfig($uid, "redbasic", "comment_indent");
-	$body_font_size = get_pconfig($uid, "redbasic", "body_font_size");
-	$font_size = get_pconfig($uid, "redbasic", "font_size");
-	$font_colour = get_pconfig($uid, "redbasic", "font_colour");
-	$radius = get_pconfig($uid, "redbasic", "radius");
-	$shadow = get_pconfig($uid,"redbasic","photo_shadow");
-	$converse_width=get_pconfig($uid,"redbasic","converse_width");
-	$align_left=get_pconfig($uid,"redbasic","align_left");
-	$nav_min_opacity=get_pconfig($uid,'redbasic','nav_min_opacity');
-	$top_photo=get_pconfig($uid,'redbasic','top_photo');
-	$reply_photo=get_pconfig($uid,'redbasic','reply_photo');
+	$nav_bg = get_pconfig($uid, "Zafiro", "nav_bg");
+	$nav_gradient_top = get_pconfig($uid, "Zafiro", "nav_gradient_top");
+	$nav_gradient_bottom = get_pconfig($uid, "Zafiro", "nav_gradient_bottom");
+	$nav_active_gradient_top = get_pconfig($uid, "Zafiro", "nav_active_gradient_top");
+	$nav_active_gradient_bottom = get_pconfig($uid, "Zafiro", "nav_active_gradient_bottom");
+	$nav_bd = get_pconfig($uid, "Zafiro", "nav_bd");
+	$nav_icon_colour = get_pconfig($uid, "Zafiro", "nav_icon_colour");
+	$nav_active_icon_colour = get_pconfig($uid, "Zafiro", "nav_active_icon_colour");
+	$narrow_navbar = get_pconfig($uid,'Zafiro','narrow_navbar');
+	$banner_colour = get_pconfig($uid,'Zafiro','banner_colour');
+	$link_colour = get_pconfig($uid, "Zafiro", "link_colour");
+	$schema = get_pconfig($uid,'Zafiro','schema');
+	$bgcolour = get_pconfig($uid, "Zafiro", "background_colour");
+	$background_image = get_pconfig($uid, "Zafiro", "background_image");
+	$toolicon_colour = get_pconfig($uid,'Zafiro','toolicon_colour');
+	$toolicon_activecolour = get_pconfig($uid,'Zafiro','toolicon_activecolour');
+	$item_colour = get_pconfig($uid, "Zafiro", "item_colour");
+	$comment_item_colour = get_pconfig($uid, "Zafiro", "comment_item_colour");
+	$comment_border_colour = get_pconfig($uid, "Zafiro", "comment_border_colour");
+	$comment_indent = get_pconfig($uid, "Zafiro", "comment_indent");
+	$body_font_size = get_pconfig($uid, "Zafiro", "body_font_size");
+	$font_size = get_pconfig($uid, "Zafiro", "font_size");
+	$font_colour = get_pconfig($uid, "Zafiro", "font_colour");
+	$radius = get_pconfig($uid, "Zafiro", "radius");
+	$shadow = get_pconfig($uid,"Zafiro","photo_shadow");
+	$converse_width=get_pconfig($uid,"Zafiro","converse_width");
+	$align_left=get_pconfig($uid,"Zafiro","align_left");
+	$nav_min_opacity=get_pconfig($uid,'Zafiro','nav_min_opacity');
+	$top_photo=get_pconfig($uid,'Zafiro','top_photo');
+	$reply_photo=get_pconfig($uid,'Zafiro','reply_photo');
 }
 
 // Now load the scheme.  If a value is changed above, we'll keep the settings
@@ -56,13 +56,13 @@ if($_REQUEST['schema']) {
 if (($schema) && ($schema != '---')) {
 
 	// Check it exists, because this setting gets distributed to clones
-	if(file_exists('view/theme/redbasic/schema/' . $schema . '.php')) {
-		$schemefile = 'view/theme/redbasic/schema/' . $schema . '.php';
+	if(file_exists('view/theme/Zafiro/schema/' . $schema . '.php')) {
+		$schemefile = 'view/theme/Zafiro/schema/' . $schema . '.php';
 		require_once ($schemefile);
 	}
 
-	if(file_exists('view/theme/redbasic/schema/' . $schema . '.css')) {
-		$schemecss = file_get_contents('view/theme/redbasic/schema/' . $schema . '.css');
+	if(file_exists('view/theme/Zafiro/schema/' . $schema . '.css')) {
+		$schemecss = file_get_contents('view/theme/Zafiro/schema/' . $schema . '.css');
 	}
 
 }
@@ -72,13 +72,13 @@ if (($schema) && ($schema != '---')) {
 // default.php and default.css MUST be symlinks to existing schema files.
 if (! $schema) {
 
-	if(file_exists('view/theme/redbasic/schema/default.php')) {
-		$schemefile = 'view/theme/redbasic/schema/default.php';
+	if(file_exists('view/theme/Zafiro/schema/default.php')) {
+		$schemefile = 'view/theme/Zafiro/schema/default.php';
 		require_once ($schemefile);
 	}
 
-	if(file_exists('view/theme/redbasic/schema/default.css')) {
-		$schemecss = file_get_contents('view/theme/redbasic/schema/default.css');
+	if(file_exists('view/theme/Zafiro/schema/default.css')) {
+		$schemecss = file_get_contents('view/theme/Zafiro/schema/default.css');
 	}
 
 }
@@ -149,16 +149,16 @@ else {
 }
 
 // Apply the settings
-if(file_exists('view/theme/redbasic/css/style.css')) {
+if(file_exists('view/theme/Zafiro/css/style.css')) {
 
-	$x = file_get_contents('view/theme/redbasic/css/style.css');
+	$x = file_get_contents('view/theme/Zafiro/css/style.css');
 
-	if($narrow_navbar && file_exists('view/theme/redbasic/css/narrow_navbar.css')) {
-		$x .= file_get_contents('view/theme/redbasic/css/narrow_navbar.css');
+	if($narrow_navbar && file_exists('view/theme/Zafiro/css/narrow_navbar.css')) {
+		$x .= file_get_contents('view/theme/Zafiro/css/narrow_navbar.css');
 	}
 
-	if($align_left && file_exists('view/theme/redbasic/css/align_left.css')) {
-		$x .= file_get_contents('view/theme/redbasic/css/align_left.css');
+	if($align_left && file_exists('view/theme/Zafiro/css/align_left.css')) {
+		$x .= file_get_contents('view/theme/Zafiro/css/align_left.css');
 	}
 
 	if($schemecss) {
@@ -218,5 +218,5 @@ if(file_exists('view/theme/redbasic/css/style.css')) {
 
 // Set the schema to the default schema in derived themes. See the documentation for creating derived themes how to override this. 
 
-if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'redbasic')
-	set_pconfig(local_channel(), 'redbasic', 'schema', '---');
+if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'Zafiro')
+	set_pconfig(local_channel(), 'Zafiro', 'schema', '---');

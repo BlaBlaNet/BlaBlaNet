@@ -1191,7 +1191,7 @@ msgstr[1] "нравится"
 msgstr[2] "нравится"
 
 #: ../../include/comanche.php:35 ../../view/theme/apw/php/config.php:185
-#: ../../view/theme/redbasic/php/config.php:84
+#: ../../view/theme/Zafiro/php/config.php:84
 msgid "Default"
 msgstr "По умолчанию"
 
@@ -2929,7 +2929,7 @@ msgstr "Комментарий"
 #: ../../view/theme/apw/php/config.php:256
 #: ../../view/theme/blogga/php/config.php:67
 #: ../../view/theme/blogga/view/theme/blog/config.php:67
-#: ../../view/theme/redbasic/php/config.php:99
+#: ../../view/theme/Zafiro/php/config.php:99
 msgid "Submit"
 msgstr "Отправить"
 
@@ -7517,17 +7517,17 @@ msgstr ""
 #: ../../view/theme/apw/php/config.php:259
 #: ../../view/theme/blogga/php/config.php:69
 #: ../../view/theme/blogga/view/theme/blog/config.php:69
-#: ../../view/theme/redbasic/php/config.php:102
+#: ../../view/theme/Zafiro/php/config.php:102
 msgid "Theme settings"
 msgstr "Настройки темы"
 
 #: ../../view/theme/apw/php/config.php:260
-#: ../../view/theme/redbasic/php/config.php:103
+#: ../../view/theme/Zafiro/php/config.php:103
 msgid "Set scheme"
 msgstr "Установить схему"
 
 #: ../../view/theme/apw/php/config.php:261
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set font-size for posts and comments"
 msgstr "Установить размер шрифта для сообщений и комментариев"
 
@@ -7662,123 +7662,123 @@ msgstr "Графика заголовока"
 msgid "Header image only on profile pages"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:104
 msgid "Narrow navbar"
 msgstr "Узкая панель навигации"
 
-#: ../../view/theme/redbasic/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:105
 msgid "Navigation bar background colour"
 msgstr "Панель навигации, цвет фона"
 
-#: ../../view/theme/redbasic/php/config.php:106
+#: ../../view/theme/Zafiro/php/config.php:106
 msgid "Navigation bar gradient top colour"
 msgstr "Панель навигации, цвет градиента вверху"
 
-#: ../../view/theme/redbasic/php/config.php:107
+#: ../../view/theme/Zafiro/php/config.php:107
 msgid "Navigation bar gradient bottom colour"
 msgstr "Панель навигации, цвет градиента внизу"
 
-#: ../../view/theme/redbasic/php/config.php:108
+#: ../../view/theme/Zafiro/php/config.php:108
 msgid "Navigation active button gradient top colour"
 msgstr "Панель навигации, цвет градиента вверху активной кнопки"
 
-#: ../../view/theme/redbasic/php/config.php:109
+#: ../../view/theme/Zafiro/php/config.php:109
 msgid "Navigation active button gradient bottom colour"
 msgstr "Панель навигации, цвет градиента внизу активной кнопки"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Navigation bar border colour "
 msgstr "Панель навигации, цвет границы"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "Navigation bar icon colour "
 msgstr "Панель навигации, цвет значков"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Navigation bar active icon colour "
 msgstr "Панель навигации, цвет активного значка"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "link colour"
 msgstr "Цвет ссылок"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "Set font-colour for banner"
 msgstr "Цвет текста в шапке"
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Set the background colour"
 msgstr "Цвет фона на странице канала"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Set the background image"
 msgstr "Фоновое изображение"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Set the background colour of items"
 msgstr "Цвет фона для постов и других элементов"
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Set the background colour of comments"
 msgstr "Цвет фона для комментариев"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Set the border colour of comments"
 msgstr "Цвет границы для области комментариев"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "Set the indent for comments"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set the basic colour for item icons"
 msgstr "Основной цвет в иконках редактирования"
 
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set the hover colour for item icons"
 msgstr "Цвет в иконках редактирования при наведении мыши"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set font-size for the entire application"
 msgstr "Установить размер шрифта для системы в целом"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set font-colour for posts and comments"
 msgstr "Цвет шрифта для постов и комментариев"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set radius of corners"
 msgstr "Радиус скруглений"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Set shadow depth of photos"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set maximum width of conversation regions"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Center conversation regions"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Панель навигации, прозрачность"
 
-#: ../../view/theme/redbasic/php/config.php:131
+#: ../../view/theme/Zafiro/php/config.php:131
 msgid "Set size of conversation author photo"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:132
+#: ../../view/theme/Zafiro/php/config.php:132
 msgid "Set size of followup author photos"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:133
+#: ../../view/theme/Zafiro/php/config.php:133
 msgid "Sloppy photo albums"
 msgstr ""
 
-#: ../../view/theme/redbasic/php/config.php:133
+#: ../../view/theme/Zafiro/php/config.php:133
 msgid "Are you a clean desk or a messy desk person?"
 msgstr ""
 

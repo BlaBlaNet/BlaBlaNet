@@ -120,7 +120,7 @@ This places the menu called &quot;mymenu&quot; at this location on the page, whi
 	[menu=horizontal]mymenu[/menu]
 
 [/code]
-This places the menu called &quot;mymenu&quot; at this location on the page, which must be inside a region. Additionally it applies the "horizontal" class to the menu. "horizontal" is defined in the redbasic theme. It may or may not be available in other themes. 
+This places the menu called &quot;mymenu&quot; at this location on the page, which must be inside a region. Additionally it applies the "horizontal" class to the menu. "horizontal" is defined in the Zafiro theme. It may or may not be available in other themes. 
 
 [code]
 	[menu][var=wrap]none[/var]mymenu[/menu]

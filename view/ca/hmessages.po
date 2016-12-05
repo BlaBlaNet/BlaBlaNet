@@ -378,7 +378,7 @@ msgstr "Importar"
 #: ../../GeditLab/Module/Thing.php:362 ../../GeditLab/Module/Xchan.php:15
 #: ../../GeditLab/Lib/ThreadItem.php:710 ../../include/widgets.php:757
 #: ../../include/widgets.php:769 ../../include/js_strings.php:22
-#: ../../view/theme/redbasic/php/config.php:99
+#: ../../view/theme/Zafiro/php/config.php:99
 msgid "Submit"
 msgstr "Enviar"
 
@@ -586,8 +586,8 @@ msgstr "Ara està conectat amb"
 #: ../../GeditLab/Module/Profiles.php:647 ../../GeditLab/Module/Admin.php:459
 #: ../../GeditLab/Module/Removeme.php:61 ../../GeditLab/Module/Settings.php:581
 #: ../../include/dir_fns.php:143 ../../include/dir_fns.php:144
-#: ../../include/dir_fns.php:145 ../../view/theme/redbasic/php/config.php:105
-#: ../../view/theme/redbasic/php/config.php:130 ../../boot.php:1707
+#: ../../include/dir_fns.php:145 ../../view/theme/Zafiro/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:130 ../../boot.php:1707
 msgid "No"
 msgstr "No"
 
@@ -601,8 +601,8 @@ msgstr "No"
 #: ../../GeditLab/Module/Profiles.php:647 ../../GeditLab/Module/Admin.php:461
 #: ../../GeditLab/Module/Removeme.php:61 ../../GeditLab/Module/Settings.php:581
 #: ../../include/dir_fns.php:143 ../../include/dir_fns.php:144
-#: ../../include/dir_fns.php:145 ../../view/theme/redbasic/php/config.php:105
-#: ../../view/theme/redbasic/php/config.php:130 ../../boot.php:1707
+#: ../../include/dir_fns.php:145 ../../view/theme/Zafiro/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:130 ../../boot.php:1707
 msgid "Yes"
 msgstr "Sí"
 
@@ -9633,139 +9633,139 @@ msgstr "Adjuntat:"
 msgid "$Projectname event notification:"
 msgstr "Notificació d'esdeveniment de $Projectname"
 
-#: ../../view/theme/redbasic/php/config.php:82
+#: ../../view/theme/Zafiro/php/config.php:82
 msgid "Focus (Blablanet default)"
 msgstr "Focus (Blablanet per defecte)"
 
-#: ../../view/theme/redbasic/php/config.php:103
+#: ../../view/theme/Zafiro/php/config.php:103
 msgid "Theme settings"
 msgstr "Ajustos de tema"
 
-#: ../../view/theme/redbasic/php/config.php:104
+#: ../../view/theme/Zafiro/php/config.php:104
 msgid "Select scheme"
 msgstr "Tria esquema"
 
-#: ../../view/theme/redbasic/php/config.php:105
+#: ../../view/theme/Zafiro/php/config.php:105
 msgid "Narrow navbar"
 msgstr "Barra de navegació estreta"
 
-#: ../../view/theme/redbasic/php/config.php:106
+#: ../../view/theme/Zafiro/php/config.php:106
 msgid "Navigation bar background color"
 msgstr "Color de fons de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:107
+#: ../../view/theme/Zafiro/php/config.php:107
 msgid "Navigation bar gradient top color"
 msgstr "Gradient de color de la part superior de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:108
+#: ../../view/theme/Zafiro/php/config.php:108
 msgid "Navigation bar gradient bottom color"
 msgstr "Gradient de color de la part inferior de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:109
+#: ../../view/theme/Zafiro/php/config.php:109
 msgid "Navigation active button gradient top color"
 msgstr "Gradient de color de la part superior del botó actiu de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Navigation active button gradient bottom color"
 msgstr "Gradient de color de la part inferior del botó actiu de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "Navigation bar border color "
 msgstr "Color de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Navigation bar icon color "
 msgstr "Color de la icona de la barra de navegació"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "Navigation bar active icon color "
 msgstr "Color de la icona de la barra de navegació activa"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "link color"
 msgstr "Color d'enllaç"
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Set font-color for banner"
 msgstr "Ajusta el color del tipus de lletra per la senyera"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Set the background color"
 msgstr "Ajusta el color de fons"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Set the background image"
 msgstr "Ajusta la imatge de fons"
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Set the background color of items"
 msgstr "ajusta el color dels articles de fons"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Set the background color of comments"
 msgstr "Ajusta el color dels comentaris en segon pla"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "Set the border color of comments"
 msgstr "Canviar el color del marge dels comentaris"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set the indent for comments"
 msgstr "ajusta l'indentació dels comentaris"
 
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set the basic color for item icons"
 msgstr "ajusta el color basic per les icones dels articles"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set the hover color for item icons"
 msgstr "Ajusta el color de la libració de les icones dels articles"
 
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set font-size for the entire application"
 msgstr "Ajusta la mida del tipus de lletra per tota l'aplicació"
 
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Example: 14px"
 msgstr "Exemple: 14px"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set font-size for posts and comments"
 msgstr "Ajusta la mida del tipus de lletra per a entrades i comentaris"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set font-color for posts and comments"
 msgstr "Ajusta el color del tipus de lletra per entrades i comentaris"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Set radius of corners"
 msgstr "Ajusta el radi de les cantonades"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set shadow depth of photos"
 msgstr "Ajusta la profunditat d'ombres de les fotos"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Set maximum width of content region in pixel"
 msgstr "Ajusta l'amplada màxima de la zona de contingut en pixels"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Leave empty for default width"
 msgstr "Deixa en blanc per l'amplada predeterminada"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Left align page content"
 msgstr "Alineació esquerra del contingut de la pàgina"
 
-#: ../../view/theme/redbasic/php/config.php:131
+#: ../../view/theme/Zafiro/php/config.php:131
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Ajusta la opacitat mínima de la harra de navegació - per amagar-la"
 
-#: ../../view/theme/redbasic/php/config.php:132
+#: ../../view/theme/Zafiro/php/config.php:132
 msgid "Set size of conversation author photo"
 msgstr "Ajusta la mida de la foto del autor a la conversa"
 
-#: ../../view/theme/redbasic/php/config.php:133
+#: ../../view/theme/Zafiro/php/config.php:133
 msgid "Set size of followup author photos"
 msgstr "Ajusta la mida del seguidor de les fotos de l'autor"
 

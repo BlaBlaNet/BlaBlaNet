@@ -1,6 +1,6 @@
 BlaBlaNet 1.15 (2016-10-01)
 	- Change Widgets.php Remove Display Setting Make User menu easy and Friendly
-        - Force MrBlue Theme Install again Redbasic
+        - Force MrBlue Theme Install again Zafiro
         - Remove Images
         - Changes to Zot Protocol
         - Add Metatags to the .htconfig File 
@@ -22,4 +22,3 @@ BlaBlaNet 1.15 (2016-10-01)
         - Youtuve videos in MrBlue Theme Ajust size
         - Add gitignore
         - Add Adminer to Administrator for Manager Local database missing Links etc 
-

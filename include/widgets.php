@@ -1569,7 +1569,8 @@ function widget_admin($arr) {
 		'queue'     => array(z_root() . '/admin/queue',     t('Inspect queue'),  'queue'),
 		'profs'     => array(z_root() . '/admin/profs',     t('Profile Fields'), 'profs'),
 		'dbsync'    => array(z_root() . '/admin/dbsync/',   t('DB updates'),     'dbsync'),
-                'help'      => array(z_root() . '/help/tocAdmin/',  t ('?'),             'help')
+        //'Dbmanager' => array(z_root() . '/.extras/Dbmanager.php',   t('DB Manager'),     ''),
+        'help'      => array(z_root() . '/help/tocAdmin/',  t ('?'),             'help')
 
 	);
 

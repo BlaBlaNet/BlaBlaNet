@@ -3,7 +3,7 @@
 
 /**
  * Name: bookmarker
- * Description: Replace #^ with a bookmark icon. Font awesome is used for Redbasic and derived themes. A neutral dark grey PNG file is used for other themes.
+ * Description: Replace #^ with a bookmark icon. Font awesome is used for Zafiro and derived themes. A neutral dark grey PNG file is used for other themes.
  * Version: 1.1
  * Author: Mike Macgirvin <mike@zothub.com>
  * Maintainer:
@@ -28,7 +28,7 @@ function bookmarker_prepare_body(&$a,&$b) {
 	if(! strpos($b['html'],'bookmark-identifier'))
 		return;
 
-	if(function_exists('redbasic_init') || App::$theme_info['extends'] == 'redbasic')
+	if(function_exists('Zafiro_init') || App::$theme_info['extends'] == 'Zafiro')
 		$bookmarkicon = '<i class="fa fa-bookmark"></i>';
 	else 
 		$bookmarkicon = '<img src="addon/bookmarker/bookmarker.png" width="19px" height="20px" alt="#^" />';

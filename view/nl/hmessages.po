@@ -617,7 +617,7 @@ msgstr "Dit proces kan enkele minuten in beslag nemen. Klik maar één keer op o
 #: ../../GeditLab/Module/Settings/Oauth.php:87
 #: ../../GeditLab/Module/Settings/Tokens.php:167
 #: ../../GeditLab/Lib/ThreadItem.php:725 ../../include/js_strings.php:22
-#: ../../include/widgets.php:796 ../../view/theme/redbasic/php/config.php:106
+#: ../../include/widgets.php:796 ../../view/theme/Zafiro/php/config.php:106
 msgid "Submit"
 msgstr "Opslaan"
 
@@ -1352,8 +1352,8 @@ msgstr "Niet ondersteund"
 #: ../../GeditLab/Module/Settings/Channel.php:289
 #: ../../GeditLab/Module/Settings/Display.php:101 ../../include/dir_fns.php:143
 #: ../../include/dir_fns.php:144 ../../include/dir_fns.php:145
-#: ../../view/theme/redbasic/php/config.php:111
-#: ../../view/theme/redbasic/php/config.php:136 ../../boot.php:1743
+#: ../../view/theme/Zafiro/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:136 ../../boot.php:1743
 msgid "No"
 msgstr "Nee"
 
@@ -1374,8 +1374,8 @@ msgstr "Ja - met goedkeuring"
 #: ../../GeditLab/Module/Settings/Channel.php:289
 #: ../../GeditLab/Module/Settings/Display.php:101 ../../include/dir_fns.php:143
 #: ../../include/dir_fns.php:144 ../../include/dir_fns.php:145
-#: ../../view/theme/redbasic/php/config.php:111
-#: ../../view/theme/redbasic/php/config.php:136 ../../boot.php:1743
+#: ../../view/theme/Zafiro/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:136 ../../boot.php:1743
 msgid "Yes"
 msgstr "Ja"
 
@@ -9986,135 +9986,135 @@ msgstr "opslag in database mislukt."
 msgid "Empty path"
 msgstr "Ontbrekende locatie"
 
-#: ../../view/theme/redbasic/php/config.php:9
+#: ../../view/theme/Zafiro/php/config.php:9
 msgid "Focus (Blablanet default)"
 msgstr "Focus (Blablanet-standaard)"
 
-#: ../../view/theme/redbasic/php/config.php:110
+#: ../../view/theme/Zafiro/php/config.php:110
 msgid "Theme settings"
 msgstr "Thema-instellingen"
 
-#: ../../view/theme/redbasic/php/config.php:111
+#: ../../view/theme/Zafiro/php/config.php:111
 msgid "Narrow navbar"
 msgstr "Smalle navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:112
+#: ../../view/theme/Zafiro/php/config.php:112
 msgid "Navigation bar background color"
 msgstr "Achtergrondkleur navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:113
+#: ../../view/theme/Zafiro/php/config.php:113
 msgid "Navigation bar gradient top color"
 msgstr "Bovenste gradiëntkleur navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:114
+#: ../../view/theme/Zafiro/php/config.php:114
 msgid "Navigation bar gradient bottom color"
 msgstr "Onderste gradiëntkleur navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:115
+#: ../../view/theme/Zafiro/php/config.php:115
 msgid "Navigation active button gradient top color"
 msgstr "Bovenste gradiëntkleur actieve knop navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:116
+#: ../../view/theme/Zafiro/php/config.php:116
 msgid "Navigation active button gradient bottom color"
 msgstr "Onderste gradiëntkleur actieve knop op navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:117
+#: ../../view/theme/Zafiro/php/config.php:117
 msgid "Navigation bar border color "
 msgstr "Randkleur navigatiebalk "
 
-#: ../../view/theme/redbasic/php/config.php:118
+#: ../../view/theme/Zafiro/php/config.php:118
 msgid "Navigation bar icon color "
 msgstr "Pictogramkleur navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:119
+#: ../../view/theme/Zafiro/php/config.php:119
 msgid "Navigation bar active icon color "
 msgstr "Actieve pictogramkleur navigatiebalk"
 
-#: ../../view/theme/redbasic/php/config.php:120
+#: ../../view/theme/Zafiro/php/config.php:120
 msgid "link color"
 msgstr "Linkkleur instellen"
 
-#: ../../view/theme/redbasic/php/config.php:121
+#: ../../view/theme/Zafiro/php/config.php:121
 msgid "Set font-color for banner"
 msgstr "Tekstkleur van banner instellen"
 
-#: ../../view/theme/redbasic/php/config.php:122
+#: ../../view/theme/Zafiro/php/config.php:122
 msgid "Set the background color"
 msgstr "Achtergrondkleur instellen"
 
-#: ../../view/theme/redbasic/php/config.php:123
+#: ../../view/theme/Zafiro/php/config.php:123
 msgid "Set the background image"
 msgstr "Achtergrondafbeelding instellen"
 
-#: ../../view/theme/redbasic/php/config.php:124
+#: ../../view/theme/Zafiro/php/config.php:124
 msgid "Set the background color of items"
 msgstr "Achtergrondkleur items instellen"
 
-#: ../../view/theme/redbasic/php/config.php:125
+#: ../../view/theme/Zafiro/php/config.php:125
 msgid "Set the background color of comments"
 msgstr "Achtergrondkleur reacties instellen"
 
-#: ../../view/theme/redbasic/php/config.php:126
+#: ../../view/theme/Zafiro/php/config.php:126
 msgid "Set the border color of comments"
 msgstr "Randkleur reacties instellen"
 
-#: ../../view/theme/redbasic/php/config.php:127
+#: ../../view/theme/Zafiro/php/config.php:127
 msgid "Set the indent for comments"
 msgstr "Inspringen reacties instellen"
 
-#: ../../view/theme/redbasic/php/config.php:128
+#: ../../view/theme/Zafiro/php/config.php:128
 msgid "Set the basic color for item icons"
 msgstr "Basiskleur itempictogrammen instellen"
 
-#: ../../view/theme/redbasic/php/config.php:129
+#: ../../view/theme/Zafiro/php/config.php:129
 msgid "Set the hover color for item icons"
 msgstr "Hoverkleur itempictogrammen instellen"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Set font-size for the entire application"
 msgstr "Tekstgrootte van de volledige applicatie instellen"
 
-#: ../../view/theme/redbasic/php/config.php:130
+#: ../../view/theme/Zafiro/php/config.php:130
 msgid "Example: 14px"
 msgstr "Voorbeeld: 14px"
 
-#: ../../view/theme/redbasic/php/config.php:131
+#: ../../view/theme/Zafiro/php/config.php:131
 msgid "Set font-size for posts and comments"
 msgstr "Lettergrootte voor berichten en reacties instellen"
 
-#: ../../view/theme/redbasic/php/config.php:132
+#: ../../view/theme/Zafiro/php/config.php:132
 msgid "Set font-color for posts and comments"
 msgstr "Tekstkleur van berichten en reacties"
 
-#: ../../view/theme/redbasic/php/config.php:133
+#: ../../view/theme/Zafiro/php/config.php:133
 msgid "Set radius of corners"
 msgstr "Radius van hoeken instellen"
 
-#: ../../view/theme/redbasic/php/config.php:134
+#: ../../view/theme/Zafiro/php/config.php:134
 msgid "Set shadow depth of photos"
 msgstr "Schaduwdiepte van foto's instellen"
 
-#: ../../view/theme/redbasic/php/config.php:135
+#: ../../view/theme/Zafiro/php/config.php:135
 msgid "Set maximum width of content region in pixel"
 msgstr "Maximumbreedte conversatieruimte instellen (in pixels)"
 
-#: ../../view/theme/redbasic/php/config.php:135
+#: ../../view/theme/Zafiro/php/config.php:135
 msgid "Leave empty for default width"
 msgstr "Laat leeg voor standaardbreedte"
 
-#: ../../view/theme/redbasic/php/config.php:136
+#: ../../view/theme/Zafiro/php/config.php:136
 msgid "Left align page content"
 msgstr "Inhoud links uitlijnen"
 
-#: ../../view/theme/redbasic/php/config.php:137
+#: ../../view/theme/Zafiro/php/config.php:137
 msgid "Set minimum opacity of nav bar - to hide it"
 msgstr "Minimale ondoorzichtigheid navigatiebalk (- om te verbergen)"
 
-#: ../../view/theme/redbasic/php/config.php:138
+#: ../../view/theme/Zafiro/php/config.php:138
 msgid "Set size of conversation author photo"
 msgstr "Grootte profielfoto's van berichten instellen"
 
-#: ../../view/theme/redbasic/php/config.php:139
+#: ../../view/theme/Zafiro/php/config.php:139
 msgid "Set size of followup author photos"
 msgstr "Grootte profielfoto's van reacties instellen"
 

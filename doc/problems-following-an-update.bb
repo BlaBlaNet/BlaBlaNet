@@ -28,11 +28,11 @@ We use the Smarty3 template engine to generate pages.  These templates are compi
 
 [b]Theme Issues[/b]
 
-There are many themes for $Projectname.  Only Redbasic is officialy supported by the core developers.  This applies [i]even if a core developer happens to support an additional theme[/i].  This means new features are only guaranteed to work in Redbasic.
+There are many themes for $Projectname.  Only Zafiro is officialy supported by the core developers.  This applies [i]even if a core developer happens to support an additional theme[/i].  This means new features are only guaranteed to work in Zafiro.
 
-Redbasic uses a few javascript libraries that are done differently, or entirely absent in other themes.  This means new features may only work properly in Redbasic.  Before reporting an issue, therefore, you should switch to Redbasic to see if it exists there.  If the issue goes away, this is not a bug - it's a theme that isn't up to date.
+Zafiro uses a few javascript libraries that are done differently, or entirely absent in other themes.  This means new features may only work properly in Zafiro.  Before reporting an issue, therefore, you should switch to Zafiro to see if it exists there.  If the issue goes away, this is not a bug - it's a theme that isn't up to date.
 
-Should you report an issue with the theme developers then?  No.  Theme developers use their themes.  Chances are, they know.  Give them two or three days to catch up and [i]then[/i] report the issue if it's still not fixed.  There are two workarounds for this situation.  Firstly, you can temporarily use Redbasic.  Secondly, most themes are open source too - open a pull request and make yourself a friend.
+Should you report an issue with the theme developers then?  No.  Theme developers use their themes.  Chances are, they know.  Give them two or three days to catch up and [i]then[/i] report the issue if it's still not fixed.  There are two workarounds for this situation.  Firstly, you can temporarily use Zafiro.  Secondly, most themes are open source too - open a pull request and make yourself a friend.
 
 #include doc/macros/troubleshooting_footer.bb;
 

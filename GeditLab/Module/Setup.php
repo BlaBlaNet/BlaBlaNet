@@ -703,7 +703,7 @@ class Setup extends \GeditLab\Web\Controller {
 	function what_next() {
 		$a = get_app();
 		// install the standard theme
-		set_config('system', 'allowed_themes', 'redbasic');
+		set_config('system', 'allowed_themes', 'Zafiro');
 	
 
 		// Set a lenient list of ciphers if using openssl. Other ssl engines

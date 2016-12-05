@@ -11,7 +11,7 @@ class Theme {
 	static $session_theme = null;
 	static $session_mobile_theme = null;
 
-	static $base_themes = array('redbasic');	
+	static $base_themes = array('Zafiro');	
 
 	static public function current(){
 
